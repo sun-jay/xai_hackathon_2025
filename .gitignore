@@ -1,5 +1,10 @@
 # Environment variables
 .env
-.env.*
+.env.local
+.env.*.local
 *.env
+
+# Allow .env.example files
+!.env.example
+!**/.env.example
 
