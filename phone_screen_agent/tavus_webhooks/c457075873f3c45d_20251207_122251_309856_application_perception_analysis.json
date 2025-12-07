@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-07T12:22:51.310063",
+  "headers": {
+    "host": "e46f6fbfa1a3.ngrok-free.app",
+    "user-agent": "python-requests/2.32.0",
+    "content-length": "2475",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "x-forwarded-for": "54.196.75.163",
+    "x-forwarded-host": "e46f6fbfa1a3.ngrok-free.app",
+    "x-forwarded-proto": "https"
+  },
+  "payload": {
+    "properties": {
+      "analysis": "Here's a summary of the visual observations from the video call over the last 3600 seconds:\n\n*   **User Appearance and Behavior:**\n    *   The user is consistently a light-skinned man, appearing to be in his 30s or 40s, with short brown/dark hair and facial hair. He is always seen wearing light-colored over-ear headphones and typically a dark top, in an indoor setting characterized by exposed industrial-style ceilings, metallic structures, and green plants.\n    *   A predominant behavioral pattern throughout the call was the user exhibiting signs of fatigue and discomfort. This was frequently indicated by a downward gaze, eyes being closed or nearly closed, and resting his head or face in his hands.\n    *   Specific gestures indicating discomfort or weariness include rubbing his eyes, forehead, or temple, and supporting his cheek with his hand. There was also an instance of him adjusting his headphones.\n    *   While mostly looking downwards or introspectively, there were a few moments where he appeared to look directly at the camera, suggesting occasional direct engagement.\n\n*   **Emotional States:**\n    *   The user's emotional state largely revolved around themes of tiredness, fatigue, and discomfort. Initially, he appeared bored, pensive, or disengaged.\n    *   This quickly progressed to and consistently included signs of being tired, overwhelmed, stressed, or experiencing physical discomfort such as headaches or eye strain. Descriptions often used terms like \"somber,\" \"reflective,\" \"weary,\" \"subdued,\" \"strained,\" and \"struggling.\"\n    *   Although there were occasional observations of him being focused, engaged, or contemplative, these moments were frequently intertwined with or quickly followed by indicators of weariness, suggesting that even focused states might have been accompanied by underlying fatigue or effort. The overall emotional trajectory indicates a persistent state of quiet weariness or discomfort.\n\n*   **Ambient Awareness Queries and Screen Activities:**\n    *   No specific ambient awareness queries were provided or answered in the observations.\n    *   No notable screen activities were explicitly mentioned in the observations."
+    },
+    "conversation_id": "c457075873f3c45d",
+    "webhook_url": "https://e46f6fbfa1a3.ngrok-free.app/tavus-webhook",
+    "message_type": "application",
+    "event_type": "application.perception_analysis",
+    "timestamp": "2025-12-07T12:22:51.121376Z"
+  }
+}
