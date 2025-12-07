@@ -1,47 +1,55 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useState } from 'react'
 import { VideoBox } from '@/components/VideoBox'
 import { useTavusConversation } from '@/hooks/useTavusConversation'
 import { getSystemDesignContext } from '@/lib/conversation-context'
 
 export default function SystemDesignPage() {
     const { conversationState, startConversation } = useTavusConversation()
+    const [isStarting, setIsStarting] = useState(false)
 
-    // Initialize Tavus conversation on page load
-    useEffect(() => {
-        // Temporarily disabled
-        /*
-        const initializeTavusConversation = async () => {
-            try {
-                const conversationalContext = getSystemDesignContext()
+    const handleStartCall = async () => {
+        setIsStarting(true)
+        try {
+            const conversationalContext = getSystemDesignContext()
 
-                const conversationConfig = {
-                    replica_id: process.env.NEXT_PUBLIC_TAVUS_REPLICA_ID || '',
-                    persona_id: process.env.NEXT_PUBLIC_TAVUS_PERSONA_ID || '',
-                    conversational_context: conversationalContext,
-                    custom_greeting: "Hi I am your Grok interviewer, I will be conducting your system design interview today."
-                }
-
-                console.log('🚀 Starting Tavus conversation with config:', conversationConfig)
-
-                await startConversation(conversationConfig)
-            } catch (error) {
-                console.error('Failed to initialize Tavus conversation:', error)
+            const conversationConfig = {
+                replica_id: process.env.NEXT_PUBLIC_TAVUS_REPLICA_ID || '',
+                persona_id: process.env.NEXT_PUBLIC_TAVUS_PERSONA_ID || '',
+                conversational_context: conversationalContext,
+                custom_greeting: "Hi I am your Grok interviewer, I will be conducting your system design interview today."
             }
-        }
 
-        initializeTavusConversation()
-        */
-    }, [startConversation])
+            console.log('🚀 Starting Tavus conversation with config:', conversationConfig)
+
+            await startConversation(conversationConfig)
+        } catch (error) {
+            console.error('Failed to initialize Tavus conversation:', error)
+        } finally {
+            setIsStarting(false)
+        }
+    }
 
     return (
         <div className="space-y-6">
-            <div>
-                <h1 className="text-3xl font-light text-foreground">System Design Interview</h1>
-                <p className="text-muted-foreground mt-1">
-                    Collaborate on the system design diagram below.
-                </p>
+            <div className="flex items-center justify-between">
+                <div>
+                    <h1 className="text-3xl font-light text-foreground">System Design Interview</h1>
+                    <p className="text-muted-foreground mt-1">
+                        Collaborate on the system design diagram below.
+                    </p>
+                </div>
+
+                {!conversationState.conversationUrl && (
+                    <button
+                        onClick={handleStartCall}
+                        disabled={isStarting || conversationState.status === 'loading'}
+                        className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    >
+                        {isStarting || conversationState.status === 'loading' ? 'Starting...' : 'Start Call'}
+                    </button>
+                )}
             </div>
 
             <VideoBox

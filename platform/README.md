@@ -29,6 +29,35 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Configuration
+
+Create a `.env.local` file in the root directory with the following environment variables:
+
+```bash
+# Tavus Configuration
+TAVUS_API_KEY=your_tavus_api_key
+TAVUS_REPLICA_ID=your_replica_id
+TAVUS_PERSONA_ID=your_persona_id
+
+# Public Tavus Configuration (accessible in browser)
+NEXT_PUBLIC_TAVUS_REPLICA_ID=your_replica_id
+NEXT_PUBLIC_TAVUS_PERSONA_ID=your_persona_id
+
+# Webhook Configuration
+NEXT_PUBLIC_WEBHOOK_BASE_URL=https://your-ngrok-url.ngrok-free.app
+```
+
+### Configuration Details
+
+- **TAVUS_API_KEY**: Your Tavus API key for server-side operations
+- **TAVUS_REPLICA_ID**: The ID of your Tavus replica (avatar)
+- **TAVUS_PERSONA_ID**: The ID of your Tavus persona (personality/behavior)
+- **NEXT_PUBLIC_TAVUS_REPLICA_ID**: Same as TAVUS_REPLICA_ID, but accessible in the browser
+- **NEXT_PUBLIC_TAVUS_PERSONA_ID**: Same as TAVUS_PERSONA_ID, but accessible in the browser
+- **NEXT_PUBLIC_WEBHOOK_BASE_URL**: Your ngrok or public URL for receiving Tavus webhooks (e.g., `https://abc123.ngrok-free.app`)
+
+> **Note**: Variables prefixed with `NEXT_PUBLIC_` are exposed to the browser. Server-side variables (without the prefix) are only accessible in API routes.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

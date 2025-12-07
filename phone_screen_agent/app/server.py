@@ -1,11 +1,18 @@
 import json
 import os
 import asyncio
+import requests
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, Any, Optional
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from concurrent.futures import TimeoutError as ConnectionTimeoutError
 from retell import Retell
+from openai import OpenAI
+from pydantic import BaseModel
 from .custom_types import (
     ConfigResponse,
     ResponseRequiredRequest,
@@ -16,6 +23,283 @@ load_dotenv(override=True)
 app = FastAPI()
 retell = Retell(api_key=os.environ["RETELL_API_KEY"])
 
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:3002"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# OpenAI client for Excalidraw analysis
+EXCALIDRAW_BASE_URL = os.getenv("EXCALIDRAW_BASE_URL", "http://localhost:3010")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+
+openai_client = OpenAI(base_url=OPENAI_BASE_URL, api_key=OPENAI_API_KEY)
+
+# In-memory storage for call data
+call_data_store: Dict[str, Dict[str, Any]] = {}
+
+# Create directories for storing data
+CALL_DATA_DIR = Path("call_data")
+CALL_DATA_DIR.mkdir(exist_ok=True)
+
+TAVUS_WEBHOOK_DIR = Path("tavus_webhooks")
+TAVUS_WEBHOOK_DIR.mkdir(exist_ok=True)
+
+
+# Pydantic models
+class CheckDiagramRequest(BaseModel):
+    conversation_id: str
+
+
+# Helper functions for Excalidraw
+def get_scene_elements():
+    """Fetch all elements from the Excalidraw canvas."""
+    resp = requests.get(f"{EXCALIDRAW_BASE_URL}/api/elements")
+    data = resp.json()
+    print(f"Fetched {len(data.get('elements', []))} elements from Excalidraw")
+    resp.raise_for_status()
+    return data.get("elements", [])
+
+
+def call_llm_for_db_highlight(elements):
+    """Ask LLM to find the DB SPOF and return patches."""
+    prompt = f"""
+You are an expert system design interviewer. You are looking at a candidate's Excalidraw diagram.
+
+You get a JSON array of elements (rectangles, arrows, text, etc.).
+Each element has properties like id, type, x, y, width, height, text, strokeColor, backgroundColor, etc.
+
+The diagram represents a 3-tier web service:
+- load balancer
+- business logic / application
+- database
+
+Treat the database as a single point of failure (SPOF).
+
+Task:
+1. Find the element that represents the database tier (based on its text, position, or other hints).
+2. Return JSON with:
+   - "elements_to_update": minimal patches to visually highlight the DB (bright red stroke, light red background).
+   - "elements_to_create": a list of new elements to add:
+     - A text element with text "SPOF" placed near the database.
+   - "feedback": A short, constructive feedback message to the candidate about the SPOF.
+
+Respond with **only** JSON of the form:
+
+{{
+  "feedback": "Your feedback message here...",
+  "elements_to_update": [
+    {{"id": "<element-id>", "strokeColor": "#ff0000", "backgroundColor": "#ffe5e5"}}
+  ],
+  "elements_to_create": [
+    {{
+      "type": "text",
+      "x": <calculated-x>,
+      "y": <calculated-y>,
+      "text": "SPOF",
+      "fontSize": 20,
+      "strokeColor": "#ff0000"
+    }}
+  ]
+}}
+
+Here is the current elements array (pretty-printed JSON):
+
+{json.dumps(elements, indent=2)}
+    """
+
+    completion = openai_client.chat.completions.create(
+        model=OPENAI_MODEL,
+        messages=[
+            {
+                "role": "system",
+                "content": "You return only valid JSON that can be parsed by Python json.loads.",
+            },
+            {"role": "user", "content": prompt},
+        ],
+        temperature=0,
+    )
+
+    content = completion.choices[0].message.content.strip()
+    if content.startswith("```"):
+        content = content.strip("`")
+        if content.lower().startswith("json"):
+            content = content[4:].lstrip()
+
+    data = json.loads(content)
+    return data
+
+
+def build_element_lookup(elements):
+    return {el["id"]: el for el in elements if "id" in el}
+
+
+def apply_updates(elements, updates):
+    """For each element patch {id, ...props}, merge into original and PUT back."""
+    by_id = build_element_lookup(elements)
+
+    for patch in updates:
+        el_id = patch.get("id")
+        if not el_id or el_id not in by_id:
+            print(f"Skipping unknown element id: {el_id}")
+            continue
+
+        original = by_id[el_id]
+        updated = {**original, **patch}
+
+        url = f"{EXCALIDRAW_BASE_URL}/api/elements/{el_id}"
+        resp = requests.put(url, json=updated)
+        try:
+            resp.raise_for_status()
+            print(f"Updated element {el_id}")
+        except Exception as e:
+            print(f"Failed to update {el_id}: {e}, response={resp.text}")
+
+
+def create_elements(new_elements):
+    """POST new elements to the canvas."""
+    if not new_elements:
+        return
+
+    url = f"{EXCALIDRAW_BASE_URL}/api/elements"
+    
+    success_count = 0
+    for el in new_elements:
+        try:
+            resp = requests.post(url, json=el)
+            resp.raise_for_status()
+            success_count += 1
+        except Exception as e:
+            print(f"Failed to create element {el.get('type')}: {e}, response={resp.text}")
+            
+    if success_count > 0:
+        print(f"Created {success_count} new elements")
+
+
+# Helper functions for Retell call data
+def fetch_retell_call_details(call_id: str) -> Optional[Dict[str, Any]]:
+    """Fetch full call details from Retell API."""
+    retell_api_key = os.getenv("RETELL_API_KEY")
+    if not retell_api_key:
+        print("RETELL_API_KEY not set, skipping API call")
+        return None
+    
+    try:
+        headers = {
+            "Authorization": f"Bearer {retell_api_key}",
+            "Content-Type": "application/json"
+        }
+        response = requests.get(
+            f"https://api.retellai.com/v2/get-call/{call_id}",
+            headers=headers
+        )
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        print(f"Error fetching call details for {call_id}: {e}")
+        return None
+
+
+def save_call_data(call_id: str, data: Dict[str, Any]):
+    """Save merged call data to JSON file."""
+    file_path = CALL_DATA_DIR / f"{call_id}.json"
+    try:
+        with open(file_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"Saved call data to {file_path}")
+    except Exception as e:
+        print(f"Error saving call data: {e}")
+
+
+# Excalidraw endpoint
+@app.post("/check_diagram")
+async def check_diagram(request: CheckDiagramRequest):
+    try:
+        print(f"Checking diagram for conversation: {request.conversation_id}")
+        
+        elements = get_scene_elements()
+        print(f"Fetched {len(elements)} elements from Excalidraw")
+
+        llm_response = call_llm_for_db_highlight(elements)
+        updates = llm_response.get("elements_to_update", [])
+        creates = llm_response.get("elements_to_create", [])
+        feedback = llm_response.get("feedback", "I've analyzed your diagram.")
+
+        print("LLM suggested updates:", updates)
+        print("LLM suggested creates:", creates)
+
+        apply_updates(elements, updates)
+        create_elements(creates)
+
+        print("Done. Check your Excalidraw room; DB should be highlighted and labeled.")
+        return {"feedback": feedback}
+
+    except Exception as e:
+        print(f"Error in check_diagram: {e}")
+        from fastapi import HTTPException
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# Handle webhook from Tavus. Dump all payloads to files for debugging.
+@app.post("/tavus-webhook")
+async def handle_tavus_webhook(request: Request):
+    try:
+        post_data = await request.json()
+        
+        # Verbose logging
+        print("=" * 80)
+        print("TAVUS WEBHOOK RECEIVED")
+        print("=" * 80)
+        print(f"Headers: {dict(request.headers)}")
+        print(f"Raw payload: {json.dumps(post_data, indent=2)}")
+        print("=" * 80)
+        
+        # Extract key fields from payload
+        conversation_id = post_data.get("conversation_id", "unknown")
+        event_type = post_data.get("event_type", "unknown")
+        
+        # Generate filename: conversation_id_datetime_event.json
+        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S_%f")
+        
+        # Clean event_type for filename (replace dots with underscores)
+        event_clean = event_type.replace(".", "_")
+        
+        filename = f"{conversation_id}_{timestamp}_{event_clean}.json"
+        file_path = TAVUS_WEBHOOK_DIR / filename
+        
+        # Save full webhook data
+        webhook_data = {
+            "timestamp": datetime.utcnow().isoformat(),
+            "headers": dict(request.headers),
+            "payload": post_data
+        }
+        
+        with open(file_path, 'w') as f:
+            json.dump(webhook_data, f, indent=2)
+        
+        print(f"✓ Saved Tavus webhook to: {file_path}")
+        print(f"  Conversation ID: {conversation_id}")
+        print(f"  Event Type: {event_type}")
+        print("=" * 80)
+        
+        return JSONResponse(status_code=200, content={"received": True})
+    
+    except Exception as err:
+        print("=" * 80)
+        print(f"❌ ERROR in Tavus webhook: {err}")
+        print(f"Error type: {type(err).__name__}")
+        import traceback
+        print(f"Traceback:\n{traceback.format_exc()}")
+        print("=" * 80)
+        return JSONResponse(
+            status_code=500, content={"message": "Internal Server Error", "error": str(err)}
+        )
+
 
 # Handle webhook from Retell server. This is used to receive events from Retell server.
 # Including call_started, call_ended, call_analyzed
@@ -23,31 +307,110 @@ retell = Retell(api_key=os.environ["RETELL_API_KEY"])
 async def handle_webhook(request: Request):
     try:
         post_data = await request.json()
-        valid_signature = retell.verify(
-            json.dumps(post_data, separators=(",", ":"), ensure_ascii=False),
-            api_key=str(os.environ["RETELL_API_KEY"]),
-            signature=str(request.headers.get("X-Retell-Signature")),
-        )
-        if not valid_signature:
-            print(
-                "Received Unauthorized",
-                post_data["event"],
-                post_data["data"]["call_id"],
-            )
-            return JSONResponse(status_code=401, content={"message": "Unauthorized"})
-        if post_data["event"] == "call_started":
-            print("Call started event", post_data["data"]["call_id"])
-        elif post_data["event"] == "call_ended":
-            print("Call ended event", post_data["data"]["call_id"])
-        elif post_data["event"] == "call_analyzed":
-            print("Call analyzed event", post_data["data"]["call_id"])
+        
+        # Verbose logging for debugging
+        print("=" * 80)
+        print("WEBHOOK RECEIVED")
+        print("=" * 80)
+        print(f"Headers: {dict(request.headers)}")
+        print(f"Raw payload: {json.dumps(post_data, indent=2)}")
+        print("=" * 80)
+        
+        # Verify signature
+        skip_verification = os.getenv("SKIP_SIGNATURE_VERIFICATION", "false").lower() == "true"
+        
+        if skip_verification:
+            print("⚠ SKIPPING signature verification (SKIP_SIGNATURE_VERIFICATION=true)")
+            valid_signature = True
         else:
-            print("Unknown event", post_data["event"])
+            try:
+                valid_signature = retell.verify(
+                    json.dumps(post_data, separators=(",", ":"), ensure_ascii=False),
+                    api_key=str(os.environ["RETELL_API_KEY"]),
+                    signature=str(request.headers.get("X-Retell-Signature")),
+                )
+            except Exception as verify_err:
+                print(f"⚠ Signature verification error: {verify_err}")
+                valid_signature = False
+        
+        if not valid_signature:
+            event = post_data.get("event")
+            call_data = post_data.get("data") or post_data.get("call", {})
+            call_id = call_data.get("call_id")
+            print(f"❌ Received Unauthorized - Event: {event}, Call ID: {call_id}")
+            print("=" * 80)
+            return JSONResponse(status_code=401, content={"message": "Unauthorized"})
+        
+        event = post_data.get("event")
+        # Handle both payload structures: {"event": "...", "data": {...}} and {"event": "...", "call": {...}}
+        call_data = post_data.get("data") or post_data.get("call", {})
+        call_id = call_data.get("call_id")
+        
+        print(f"✓ Signature verified")
+        print(f"Event: {event}")
+        print(f"Call ID: {call_id}")
+        print(f"Call data keys: {list(call_data.keys())}")
+        
+        if not call_id:
+            print(f"ERROR: No call_id found in payload. Available keys: {list(post_data.keys())}")
+            return JSONResponse(status_code=400, content={"message": "call_id missing from payload"})
+        
+        if event == "call_started":
+            print(f"✓ Call started event: {call_id}")
+        elif event == "call_ended":
+            print(f"✓ Call ended event: {call_id}")
+            # Store call data in memory
+            call_data_store[call_id] = {
+                "event": event,
+                "call_ended_data": call_data,
+                "received_at": datetime.utcnow().isoformat()
+            }
+            print(f"✓ Stored call_ended data for {call_id}")
+        elif event == "call_analyzed":
+            print(f"✓ Call analyzed event: {call_id}")
+            # Get stored call_ended data
+            stored_data = call_data_store.get(call_id, {})
+            print(f"✓ Retrieved stored data: {bool(stored_data)}")
+            
+            # Fetch full call details from Retell API
+            print(f"→ Fetching call details from Retell API...")
+            api_call_data = fetch_retell_call_details(call_id)
+            print(f"✓ API call data retrieved: {bool(api_call_data)}")
+            
+            # Merge all data
+            merged_data = {
+                "call_id": call_id,
+                "call_ended_webhook": stored_data.get("call_ended_data"),
+                "call_analyzed_webhook": call_data,
+                "retell_api_data": api_call_data,
+                "timestamps": {
+                    "call_ended_received": stored_data.get("received_at"),
+                    "call_analyzed_received": datetime.utcnow().isoformat()
+                }
+            }
+            
+            # Save merged data to JSON file
+            print(f"→ Saving merged data to file...")
+            save_call_data(call_id, merged_data)
+            
+            # Clean up from memory
+            if call_id in call_data_store:
+                del call_data_store[call_id]
+                print(f"✓ Cleaned up memory for {call_id}")
+        else:
+            print(f"⚠ Unknown event: {event}")
+        
+        print("=" * 80)
         return JSONResponse(status_code=200, content={"received": True})
     except Exception as err:
-        print(f"Error in webhook: {err}")
+        print("=" * 80)
+        print(f"❌ ERROR in webhook: {err}")
+        print(f"Error type: {type(err).__name__}")
+        import traceback
+        print(f"Traceback:\n{traceback.format_exc()}")
+        print("=" * 80)
         return JSONResponse(
-            status_code=500, content={"message": "Internal Server Error"}
+            status_code=500, content={"message": "Internal Server Error", "error": str(err)}
         )
 
 
