@@ -3,9 +3,12 @@ import json
 import requests
 from dotenv import load_dotenv
 from openai import OpenAI
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from typing import Dict, Any, Optional
+from datetime import datetime
+from pathlib import Path
 import uvicorn
 
 load_dotenv()
@@ -14,6 +17,7 @@ EXCALIDRAW_BASE_URL = os.getenv("EXCALIDRAW_BASE_URL", "http://localhost:3010")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+RETELL_API_KEY = os.getenv("RETELL_API_KEY")
 
 client = OpenAI(base_url=OPENAI_BASE_URL, api_key=OPENAI_API_KEY)
 
@@ -22,14 +26,25 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Allow frontend
+    allow_origins=["http://localhost:3000", "http://localhost:3002"],  # Allow frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# In-memory storage for call data
+call_data_store: Dict[str, Dict[str, Any]] = {}
+
+# Create directory for storing call data
+CALL_DATA_DIR = Path("call_data")
+CALL_DATA_DIR.mkdir(exist_ok=True)
+
 class CheckDiagramRequest(BaseModel):
     conversation_id: str
+
+class RetellWebhookPayload(BaseModel):
+    event: str
+    call: Dict[str, Any]
 
 def get_scene_elements():
     """Fetch all elements from the Excalidraw canvas."""
@@ -170,6 +185,39 @@ def create_elements(new_elements):
         print(f"Created {success_count} new elements")
 
 
+def fetch_retell_call_details(call_id: str) -> Optional[Dict[str, Any]]:
+    """Fetch full call details from Retell API."""
+    if not RETELL_API_KEY:
+        print("RETELL_API_KEY not set, skipping API call")
+        return None
+    
+    try:
+        headers = {
+            "Authorization": f"Bearer {RETELL_API_KEY}",
+            "Content-Type": "application/json"
+        }
+        response = requests.get(
+            f"https://api.retellai.com/v2/get-call/{call_id}",
+            headers=headers
+        )
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        print(f"Error fetching call details for {call_id}: {e}")
+        return None
+
+
+def save_call_data(call_id: str, data: Dict[str, Any]):
+    """Save merged call data to JSON file."""
+    file_path = CALL_DATA_DIR / f"{call_id}.json"
+    try:
+        with open(file_path, 'w') as f:
+            json.dump(data, f, indent=2)
+        print(f"Saved call data to {file_path}")
+    except Exception as e:
+        print(f"Error saving call data: {e}")
+
+
 @app.post("/check_diagram")
 async def check_diagram(request: CheckDiagramRequest):
     try:
@@ -200,6 +248,72 @@ async def check_diagram(request: CheckDiagramRequest):
 
     except Exception as e:
         print(f"Error in check_diagram: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/retell_call_ended")
+async def retell_call_ended(payload: RetellWebhookPayload):
+    """Handle Retell call_ended webhook."""
+    try:
+        call_id = payload.call.get("call_id")
+        if not call_id:
+            raise HTTPException(status_code=400, detail="call_id missing from payload")
+        
+        print(f"Received call_ended webhook for call_id: {call_id}")
+        
+        # Store call data in memory
+        call_data_store[call_id] = {
+            "event": payload.event,
+            "call_ended_data": payload.call,
+            "received_at": datetime.utcnow().isoformat()
+        }
+        
+        return {"status": "success", "message": f"Call ended data stored for {call_id}"}
+    
+    except Exception as e:
+        print(f"Error in retell_call_ended: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/retell_call_analyzed")
+async def retell_call_analyzed(payload: RetellWebhookPayload):
+    """Handle Retell call_analyzed webhook."""
+    try:
+        call_id = payload.call.get("call_id")
+        if not call_id:
+            raise HTTPException(status_code=400, detail="call_id missing from payload")
+        
+        print(f"Received call_analyzed webhook for call_id: {call_id}")
+        
+        # Get stored call_ended data
+        stored_data = call_data_store.get(call_id, {})
+        
+        # Fetch full call details from Retell API
+        api_call_data = fetch_retell_call_details(call_id)
+        
+        # Merge all data
+        merged_data = {
+            "call_id": call_id,
+            "call_ended_webhook": stored_data.get("call_ended_data"),
+            "call_analyzed_webhook": payload.call,
+            "retell_api_data": api_call_data,
+            "timestamps": {
+                "call_ended_received": stored_data.get("received_at"),
+                "call_analyzed_received": datetime.utcnow().isoformat()
+            }
+        }
+        
+        # Save merged data to JSON file
+        save_call_data(call_id, merged_data)
+        
+        # Clean up from memory
+        if call_id in call_data_store:
+            del call_data_store[call_id]
+        
+        return {"status": "success", "message": f"Call data saved for {call_id}"}
+    
+    except Exception as e:
+        print(f"Error in retell_call_analyzed: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
