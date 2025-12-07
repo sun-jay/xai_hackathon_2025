@@ -277,12 +277,12 @@ async def handle_tavus_webhook(request: Request):
     try:
         post_data = await request.json()
         
-        # Log webhook receipt
-        print(f"📥 Tavus webhook: {event_type} (conversation: {conversation_id})")
-        
         # Extract key fields from payload
         conversation_id = post_data.get("conversation_id", "unknown")
         event_type = post_data.get("event_type", "unknown")
+        
+        # Log webhook receipt
+        print(f"📥 Tavus webhook: {event_type} (conversation: {conversation_id})")
         
         # Generate filename: conversation_id_datetime_event.json
         timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S_%f")
@@ -306,7 +306,9 @@ async def handle_tavus_webhook(request: Request):
         print(f"✓ Saved to: {file_path.name}")
         
         # Check if this webhook contains a transcript (for grading)
-        has_transcript = "transcript" in post_data.get("payload", {}).get("properties", {})
+        # Transcript comes in the payload.properties.transcript field
+        properties = post_data.get("properties", {})
+        has_transcript = "transcript" in properties and isinstance(properties.get("transcript"), list) and len(properties.get("transcript", [])) > 0
         
         if has_transcript:
             print("📊 Transcript detected - grading system design interview...")

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-07T13:51:57.753356",
+  "headers": {
+    "host": "e46f6fbfa1a3.ngrok-free.app",
+    "user-agent": "python-requests/2.32.0",
+    "content-length": "2461",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "x-forwarded-for": "3.228.65.121",
+    "x-forwarded-host": "e46f6fbfa1a3.ngrok-free.app",
+    "x-forwarded-proto": "https"
+  },
+  "payload": {
+    "properties": {
+      "analysis": "Here's a summary of the visual observations from the video call over the last 3600.0 seconds:\n\n*   **User's Appearance & Setting:** The user consistently appeared as a light-skinned male, likely in his 30s-40s, with short dark hair and a beard or stubble. He wore light-colored over-ear headphones and a dark top (sometimes described as a hoodie or green shirt). The background remained constant, featuring a modern indoor setting with an open/white ceiling, exposed metal beams or grid structures, and two rectangular planters with green plants.\n*   **Dominant Emotional States & Engagement:** Throughout the call, the user was primarily in a state of deep thought, contemplation, and focused engagement. Emotions ranged from serious and reflective to calm and attentive, often suggesting intense mental processing, problem-solving, or active listening.\n*   **Key Gestures Indicating Thought/Concentration:** A recurring behavioral pattern was the user's upward gaze (often slightly to the right or left) combined with specific hand gestures. These included:\n    *   Resting a hand on his chin, suggesting deep thought, processing information, or considering complex ideas.\n    *   Touching his temple, eyebrow, or forehead, indicating mental effort, concentration, recalling information, or wrestling with difficult problems.\n*   **Moments of Discomfort or Weariness:** Interspersed with the periods of intense focus were instances where the user appeared to be experiencing mild discomfort, weariness, or slight frustration. This was indicated by gestures such as rubbing his eyes, or the suggestion of a \"furrowed brow\" or \"slight discomfort\" while touching his temple.\n*   **Varied Gaze & Attentiveness:** While often looking upwards in thought, the user also directed his gaze downwards, around, or directly at the camera, sometimes with a slightly open mouth, suggesting active observation, listening intently, or speaking. Moments of neutral expression were noted when looking directly at the camera, indicating attentiveness without overt emotional display.\n*   **No Notable Screen Activities:** The observations did not include any details about the user's screen activities."
+    },
+    "conversation_id": "c186f4754fb44498",
+    "webhook_url": "https://e46f6fbfa1a3.ngrok-free.app/tavus-webhook",
+    "event_type": "application.perception_analysis",
+    "message_type": "application",
+    "timestamp": "2025-12-07T13:51:57.627290Z"
+  }
+}

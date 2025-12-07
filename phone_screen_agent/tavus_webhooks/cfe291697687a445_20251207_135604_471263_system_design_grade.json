@@ -1,0 +1,7 @@
+{
+  "score": 0,
+  "reasoning": "There was no discussion of scalability, reliability, tradeoffs, or technical depth (25% + 15%), with zero mention of SPOFs, replication, backups, or component explanations. Communication was absent (10%), as the candidate did not explain any design, draw a diagram, or respond to prompts. The transcript shows the interviewer setting up the interview perfectly per the rubric, but the candidate's non-participation results in a Strong No score, indicating major gaps and clear rejection.",
+  "summary": "The interview began with the interviewer introducing the system design task for a scalable web-based note-taking app and prompting a verbal high-level architecture description. The candidate responded only with 'Hey.', showing no further participation, no requirements gathering, no design proposal, no diagram, and no responses to potential follow-ups on scalability or components. Overall performance was nonexistent, failing all rubric criteria.",
+  "interview_type": "system_design",
+  "graded_at": "2025-12-07T13:56:10.288420"
+}
