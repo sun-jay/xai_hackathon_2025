@@ -212,15 +212,23 @@ def extract_transcript_from_tavus(webhook_data: dict) -> str:
     """Extract transcript from Tavus webhook data."""
     try:
         # Tavus transcript is in payload -> properties -> transcript
+        # First try the nested structure (from saved webhook files)
         transcript_obj = webhook_data.get("payload", {}).get("properties", {}).get("transcript", [])
         
-        # Transcript is an array of messages with speaker and text
+        # If not found, try direct properties (from raw webhook)
+        if not transcript_obj:
+            transcript_obj = webhook_data.get("properties", {}).get("transcript", [])
+        
+        # Transcript is an array of messages with role and content
         if isinstance(transcript_obj, list):
             lines = []
             for msg in transcript_obj:
-                speaker = msg.get("speaker", "Unknown")
-                text = msg.get("text", "")
-                lines.append(f"{speaker}: {text}")
+                role = msg.get("role", "Unknown")
+                content = msg.get("content", "")
+                
+                # Skip empty content and system messages
+                if content and role != "system":
+                    lines.append(f"{role}: {content}")
             return "\n".join(lines)
         elif isinstance(transcript_obj, str):
             return transcript_obj
