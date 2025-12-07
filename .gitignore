@@ -8,3 +8,16 @@
 !.env.example
 !**/.env.example
 
+# Python virtual environments
+.venv/
+venv/
+**/.venv/
+**/venv/
+ENV/
+env/
+
+# Credential files
+**/credentials.json
+**/service-account.json
+**/*credentials*.json
+**/.credentials/

@@ -30,6 +30,11 @@ const navItems = [
     url: "/dashboard/settings",
     icon: Settings,
   },
+  {
+    title: "System Design Call",
+    url: "/dashboard/system-design",
+    icon: LayoutDashboard, // Using LayoutDashboard for now, could import another icon
+  },
 ];
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
