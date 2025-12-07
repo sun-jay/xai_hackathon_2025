@@ -277,13 +277,8 @@ async def handle_tavus_webhook(request: Request):
     try:
         post_data = await request.json()
         
-        # Verbose logging
-        print("=" * 80)
-        print("TAVUS WEBHOOK RECEIVED")
-        print("=" * 80)
-        print(f"Headers: {dict(request.headers)}")
-        print(f"Raw payload: {json.dumps(post_data, indent=2)}")
-        print("=" * 80)
+        # Log webhook receipt
+        print(f"📥 Tavus webhook: {event_type} (conversation: {conversation_id})")
         
         # Extract key fields from payload
         conversation_id = post_data.get("conversation_id", "unknown")
@@ -308,20 +303,40 @@ async def handle_tavus_webhook(request: Request):
         with open(file_path, 'w') as f:
             json.dump(webhook_data, f, indent=2)
         
-        print(f"✓ Saved Tavus webhook to: {file_path}")
-        print(f"  Conversation ID: {conversation_id}")
-        print(f"  Event Type: {event_type}")
-        print("=" * 80)
+        print(f"✓ Saved to: {file_path.name}")
+        
+        # Check if this webhook contains a transcript (for grading)
+        has_transcript = "transcript" in post_data.get("payload", {}).get("properties", {})
+        
+        if has_transcript:
+            print("📊 Transcript detected - grading system design interview...")
+            from .grading import grade_interview, extract_transcript_from_tavus
+            
+            # Extract Tavus transcript
+            tavus_transcript = extract_transcript_from_tavus(webhook_data)
+            
+            if tavus_transcript:
+                # Grade system design interview
+                grade = grade_interview(tavus_transcript, "system_design")
+                print(f"✓ System design grade: {grade['score']}/3")
+                
+                # Save grade to file
+                grade_filename = f"{conversation_id}_{timestamp}_system_design_grade.json"
+                grade_file_path = TAVUS_WEBHOOK_DIR / grade_filename
+                
+                with open(grade_file_path, 'w') as f:
+                    json.dump(grade, f, indent=2)
+                
+                print(f"✓ Saved grade to: {grade_file_path}")
+            else:
+                print("⚠ Could not extract transcript from Tavus webhook")
         
         return JSONResponse(status_code=200, content={"received": True})
     
     except Exception as err:
-        print("=" * 80)
-        print(f"❌ ERROR in Tavus webhook: {err}")
-        print(f"Error type: {type(err).__name__}")
+        print(f"❌ Tavus webhook error: {err}")
         import traceback
-        print(f"Traceback:\n{traceback.format_exc()}")
-        print("=" * 80)
+        traceback.print_exc()
         return JSONResponse(
             status_code=500, content={"message": "Internal Server Error", "error": str(err)}
         )
@@ -334,13 +349,11 @@ async def handle_webhook(request: Request):
     try:
         post_data = await request.json()
         
-        # Verbose logging for debugging
-        print("=" * 80)
-        print("WEBHOOK RECEIVED")
-        print("=" * 80)
-        print(f"Headers: {dict(request.headers)}")
-        print(f"Raw payload: {json.dumps(post_data, indent=2)}")
-        print("=" * 80)
+        # Log webhook receipt
+        event = post_data.get("event")
+        call_data = post_data.get("data") or post_data.get("call", {})
+        call_id = call_data.get("call_id", "unknown")
+        print(f"📥 Retell webhook: {event} (call: {call_id})")
         
         # Verify signature
         skip_verification = os.getenv("SKIP_SIGNATURE_VERIFICATION", "false").lower() == "true"
@@ -360,48 +373,46 @@ async def handle_webhook(request: Request):
                 valid_signature = False
         
         if not valid_signature:
-            event = post_data.get("event")
-            call_data = post_data.get("data") or post_data.get("call", {})
-            call_id = call_data.get("call_id")
-            print(f"❌ Received Unauthorized - Event: {event}, Call ID: {call_id}")
-            print("=" * 80)
+            print(f"❌ Unauthorized webhook")
             return JSONResponse(status_code=401, content={"message": "Unauthorized"})
         
-        event = post_data.get("event")
-        # Handle both payload structures: {"event": "...", "data": {...}} and {"event": "...", "call": {...}}
-        call_data = post_data.get("data") or post_data.get("call", {})
-        call_id = call_data.get("call_id")
-        
-        print(f"✓ Signature verified")
-        print(f"Event: {event}")
-        print(f"Call ID: {call_id}")
-        print(f"Call data keys: {list(call_data.keys())}")
-        
         if not call_id:
-            print(f"ERROR: No call_id found in payload. Available keys: {list(post_data.keys())}")
+            print(f"❌ No call_id in payload")
             return JSONResponse(status_code=400, content={"message": "call_id missing from payload"})
         
         if event == "call_started":
-            print(f"✓ Call started event: {call_id}")
+            print(f"✓ Call started: {call_id}")
         elif event == "call_ended":
-            print(f"✓ Call ended event: {call_id}")
+            print(f"✓ Call ended: {call_id}")
             # Store call data in memory
             call_data_store[call_id] = {
                 "event": event,
                 "call_ended_data": call_data,
                 "received_at": datetime.utcnow().isoformat()
             }
-            print(f"✓ Stored call_ended data for {call_id}")
+            # Grade phone screen interview
+            transcript = call_data.get("transcript", "")
+            if transcript:
+                print(f"📊 Grading phone screen...")
+                from .grading import grade_interview
+                
+                grade = grade_interview(transcript, "phone_screen")
+                print(f"✓ Grade: {grade['score']}/3 - Saved to {call_id}_phone_screen_grade.json")
+                
+                # Save grade to file
+                grade_filename = f"{call_id}_phone_screen_grade.json"
+                grade_file_path = CALL_DATA_DIR / grade_filename
+                
+                with open(grade_file_path, 'w') as f:
+                    json.dump(grade, f, indent=2)
+
         elif event == "call_analyzed":
-            print(f"✓ Call analyzed event: {call_id}")
+            print(f"✓ Call analyzed: {call_id}")
             # Get stored call_ended data
             stored_data = call_data_store.get(call_id, {})
-            print(f"✓ Retrieved stored data: {bool(stored_data)}")
             
             # Fetch full call details from Retell API
-            print(f"→ Fetching call details from Retell API...")
             api_call_data = fetch_retell_call_details(call_id)
-            print(f"✓ API call data retrieved: {bool(api_call_data)}")
             
             # Merge all data
             merged_data = {
@@ -416,25 +427,19 @@ async def handle_webhook(request: Request):
             }
             
             # Save merged data to JSON file
-            print(f"→ Saving merged data to file...")
             save_call_data(call_id, merged_data)
             
             # Clean up from memory
             if call_id in call_data_store:
                 del call_data_store[call_id]
-                print(f"✓ Cleaned up memory for {call_id}")
         else:
             print(f"⚠ Unknown event: {event}")
         
-        print("=" * 80)
         return JSONResponse(status_code=200, content={"received": True})
     except Exception as err:
-        print("=" * 80)
-        print(f"❌ ERROR in webhook: {err}")
-        print(f"Error type: {type(err).__name__}")
+        print(f"❌ Retell webhook error: {err}")
         import traceback
-        print(f"Traceback:\n{traceback.format_exc()}")
-        print("=" * 80)
+        traceback.print_exc()
         return JSONResponse(
             status_code=500, content={"message": "Internal Server Error", "error": str(err)}
         )

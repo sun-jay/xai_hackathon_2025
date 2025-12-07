@@ -1,0 +1,345 @@
+{
+  "call_id": "call_f393fc0e894a141f704b89b116d",
+  "call_ended_webhook": {
+    "call_id": "call_f393fc0e894a141f704b89b116d",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765113958950,
+    "end_timestamp": 1765113960516,
+    "duration_ms": 1566,
+    "transcript": "Agent: Hey there, I'm Grok \n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok ",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.417,
+            "end": 0.614
+          },
+          {
+            "word": "there, ",
+            "start": 0.614,
+            "end": 0.823
+          },
+          {
+            "word": "I'm ",
+            "start": 0.823,
+            "end": 0.998
+          },
+          {
+            "word": "Grok ",
+            "start": 0.998,
+            "end": 1.369
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok ",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.417,
+            "end": 0.614
+          },
+          {
+            "word": "there, ",
+            "start": 0.614,
+            "end": 0.823
+          },
+          {
+            "word": "I'm ",
+            "start": 0.823,
+            "end": 0.998
+          },
+          {
+            "word": "Grok ",
+            "start": 0.998,
+            "end": 1.369
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "tts": {
+        "p50": 299,
+        "p90": 299,
+        "p95": 299,
+        "p99": 299,
+        "min": 299,
+        "max": 299,
+        "num": 1,
+        "values": [
+          299
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 0.2333333
+        }
+      ],
+      "total_duration_unit_price": 0.1166666,
+      "total_duration_seconds": 2,
+      "combined_cost": 0.2333333
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsX2YzOTNmYzBlODk0YTE0MWY3MDRiODliMTE2ZCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMTQ1NTgsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.r-k-1q3JkGslvz5oqqsld7xIT-75WZszxqUUVX_Iks0"
+  },
+  "call_analyzed_webhook": {
+    "call_id": "call_f393fc0e894a141f704b89b116d",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765113958950,
+    "end_timestamp": 1765113960516,
+    "duration_ms": 1566,
+    "transcript": "Agent: Hey there, I'm Grok \n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok ",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.417,
+            "end": 0.614
+          },
+          {
+            "word": "there, ",
+            "start": 0.614,
+            "end": 0.823
+          },
+          {
+            "word": "I'm ",
+            "start": 0.823,
+            "end": 0.998
+          },
+          {
+            "word": "Grok ",
+            "start": 0.998,
+            "end": 1.369
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok ",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.417,
+            "end": 0.614
+          },
+          {
+            "word": "there, ",
+            "start": 0.614,
+            "end": 0.823
+          },
+          {
+            "word": "I'm ",
+            "start": 0.823,
+            "end": 0.998
+          },
+          {
+            "word": "Grok ",
+            "start": 0.998,
+            "end": 1.369
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "tts": {
+        "p50": 299,
+        "p90": 299,
+        "p95": 299,
+        "p99": 299,
+        "min": 299,
+        "max": 299,
+        "num": 1,
+        "values": [
+          299
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 0.2333333
+        }
+      ],
+      "total_duration_unit_price": 0.1166666,
+      "total_duration_seconds": 2,
+      "combined_cost": 0.2333333
+    },
+    "call_analysis": {
+      "call_summary": "The call was initiated by the agent Grok, but there was no further interaction or information exchanged during the call.",
+      "in_voicemail": false,
+      "user_sentiment": "Neutral",
+      "call_successful": false,
+      "custom_analysis_data": {}
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsX2YzOTNmYzBlODk0YTE0MWY3MDRiODliMTE2ZCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMTQ1NTgsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.r-k-1q3JkGslvz5oqqsld7xIT-75WZszxqUUVX_Iks0"
+  },
+  "retell_api_data": {
+    "call_id": "call_f393fc0e894a141f704b89b116d",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765113958950,
+    "end_timestamp": 1765113960516,
+    "duration_ms": 1566,
+    "transcript": "Agent: Hey there, I'm Grok \n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok ",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.417,
+            "end": 0.614
+          },
+          {
+            "word": "there, ",
+            "start": 0.614,
+            "end": 0.823
+          },
+          {
+            "word": "I'm ",
+            "start": 0.823,
+            "end": 0.998
+          },
+          {
+            "word": "Grok ",
+            "start": 0.998,
+            "end": 1.369
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok ",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.417,
+            "end": 0.614
+          },
+          {
+            "word": "there, ",
+            "start": 0.614,
+            "end": 0.823
+          },
+          {
+            "word": "I'm ",
+            "start": 0.823,
+            "end": 0.998
+          },
+          {
+            "word": "Grok ",
+            "start": 0.998,
+            "end": 1.369
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/fb2ddfb12fd5b9ec633a9a4a56e68afabe8230cd5a581fb5a954877dbc0de323/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "tts": {
+        "p99": 299,
+        "min": 299,
+        "max": 299,
+        "p90": 299,
+        "num": 1,
+        "values": [
+          299
+        ],
+        "p50": 299,
+        "p95": 299
+      }
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.1166666,
+      "product_costs": [
+        {
+          "unit_price": 0.1166667,
+          "product": "elevenlabs_tts",
+          "cost": 0.2333333
+        }
+      ],
+      "combined_cost": 0.2333333,
+      "total_duration_seconds": 2
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The call was initiated by the agent Grok, but there was no further interaction or information exchanged during the call.",
+      "user_sentiment": "Neutral",
+      "custom_analysis_data": {},
+      "call_successful": false
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsX2YzOTNmYzBlODk0YTE0MWY3MDRiODliMTE2ZCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMTQ1NTgsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.r-k-1q3JkGslvz5oqqsld7xIT-75WZszxqUUVX_Iks0"
+  },
+  "timestamps": {
+    "call_ended_received": "2025-12-07T13:26:00.788656",
+    "call_analyzed_received": "2025-12-07T13:26:03.327481"
+  }
+}

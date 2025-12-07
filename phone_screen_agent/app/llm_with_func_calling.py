@@ -143,10 +143,21 @@ class LlmClient:
         # Step 4: Call the functions
         if func_call:
             if func_call["func_name"] == "end_call":
-                func_call["arguments"] = json.loads(func_arguments)
+                # Parse arguments, handle empty case
+                if func_arguments:
+                    try:
+                        func_call["arguments"] = json.loads(func_arguments)
+                        message = func_call["arguments"].get("message", "Thank you for your time. Goodbye!")
+                    except json.JSONDecodeError as e:
+                        print(f"Warning: Failed to parse function arguments: '{func_arguments}' - {e}")
+                        message = "Thank you for your time. Goodbye!"
+                else:
+                    print("Warning: end_call called with empty arguments")
+                    message = "Thank you for your time. Goodbye!"
+                
                 response = ResponseResponse(
                     response_id=request.response_id,
-                    content=func_call["arguments"]["message"],
+                    content=message,
                     content_complete=True,
                     end_call=True,
                 )
