@@ -82,6 +82,43 @@ export function VideoBox({ conversationUrl, isLoading = false }: VideoBoxProps) 
             result = "I'm having trouble connecting to the diagram checking service. Please make sure the backend is running."
           }
           break
+        case 'end_call':
+          // End the call
+          try {
+            console.log('🔚 Ending call via tool call')
+            result = "I'll end the call now. Thank you for the interview!"
+
+            // Send the response first, then end the call after a short delay
+            if (callRef.current) {
+              callRef.current.sendAppMessage({
+                message_type: 'conversation',
+                event_type: 'conversation.echo',
+                conversation_id: conversation_id,
+                properties: {
+                  modality: 'text',
+                  text: result,
+                  done: true
+                }
+              }, '*')
+
+              // End the call after 2 seconds to allow the message to be sent
+              setTimeout(() => {
+                if (callRef.current) {
+                  console.log('🔚 Leaving call')
+                  callRef.current.leave()
+                  setIsConnected(false)
+                  setRemoteParticipants({})
+                }
+              }, 2000)
+            }
+
+            // Return early since we already sent the message
+            return
+          } catch (err) {
+            console.error('Failed to end call:', err)
+            result = "I encountered an error trying to end the call."
+          }
+          break
         default:
           result = `Unknown function: ${name}`
       }

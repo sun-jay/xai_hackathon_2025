@@ -44,7 +44,7 @@ export function useTavusConversation() {
       return conversationData
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred'
-      
+
       setConversationState(prev => ({
         ...prev,
         status: 'error',
@@ -64,9 +64,26 @@ export function useTavusConversation() {
     })
   }, [])
 
+  const endConversation = useCallback(async () => {
+    // Reset the conversation state
+    resetConversation()
+
+    // If using Daily.js, leave the call
+    if (typeof window !== 'undefined' && (window as any)._dailyCallObject) {
+      try {
+        const callObject = (window as any)._dailyCallObject
+        await callObject.leave()
+        console.log('✓ Left Daily.js call')
+      } catch (error) {
+        console.error('Error leaving call:', error)
+      }
+    }
+  }, [resetConversation])
+
   return {
     conversationState,
     startConversation,
     resetConversation,
+    endConversation,
   }
 }

@@ -6,8 +6,9 @@ import { useTavusConversation } from '@/hooks/useTavusConversation'
 import { getSystemDesignContext } from '@/lib/conversation-context'
 
 export default function SystemDesignPage() {
-    const { conversationState, startConversation } = useTavusConversation()
+    const { conversationState, startConversation, endConversation } = useTavusConversation()
     const [isStarting, setIsStarting] = useState(false)
+    const [isEnding, setIsEnding] = useState(false)
 
     const handleStartCall = async () => {
         setIsStarting(true)
@@ -31,6 +32,18 @@ export default function SystemDesignPage() {
         }
     }
 
+    const handleEndCall = async () => {
+        setIsEnding(true)
+        try {
+            console.log('🔚 Ending Tavus conversation')
+            await endConversation()
+        } catch (error) {
+            console.error('Failed to end Tavus conversation:', error)
+        } finally {
+            setIsEnding(false)
+        }
+    }
+
     return (
         <div className="space-y-6">
             <div className="flex items-center justify-between">
@@ -41,15 +54,27 @@ export default function SystemDesignPage() {
                     </p>
                 </div>
 
-                {!conversationState.conversationUrl && (
-                    <button
-                        onClick={handleStartCall}
-                        disabled={isStarting || conversationState.status === 'loading'}
-                        className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    >
-                        {isStarting || conversationState.status === 'loading' ? 'Starting...' : 'Start Call'}
-                    </button>
-                )}
+                <div className="flex gap-2">
+                    {!conversationState.conversationUrl && (
+                        <button
+                            onClick={handleStartCall}
+                            disabled={isStarting || conversationState.status === 'loading'}
+                            className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                        >
+                            {isStarting || conversationState.status === 'loading' ? 'Starting...' : 'Start Call'}
+                        </button>
+                    )}
+
+                    {conversationState.conversationUrl && (
+                        <button
+                            onClick={handleEndCall}
+                            disabled={isEnding}
+                            className="px-4 py-2 bg-destructive text-destructive-foreground rounded-lg hover:bg-destructive/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                        >
+                            {isEnding ? 'Ending...' : 'End Call'}
+                        </button>
+                    )}
+                </div>
             </div>
 
             <VideoBox
