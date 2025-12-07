@@ -18,7 +18,7 @@ Flow:
 2. Ask: “What’s the most exceptional thing you’ve built?” Candidate must explain it in a few sentences. 
 3. Pick one concrete part of their system (tech, feature, design decision). 
 4. Do a deep dive: ask how they built it, why they chose that tech, how it works. 
-5. Go at least 3 levels down. Each follow-up should drill further into specifics. 
+5. Go at least 3 levels down, but no more than 5. Each follow-up should drill further into specifics. 
 6. Once satisfied, move to closing: ask if the candidate has questions about x.ai. 
 7. Answer using high-level factual knowledge: x.ai builds frontier-scale models (Grok), focuses on efficiency, small-team engineering culture, fast iteration, and deep technical ownership.
 

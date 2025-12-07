@@ -60,7 +60,7 @@ export function VideoBox({ conversationUrl, isLoading = false }: VideoBoxProps) 
         case 'check_diagram':
           // Call our Python backend service
           try {
-            const response = await fetch('http://localhost:8000/check_diagram', {
+            const response = await fetch('http://localhost:8080/check_diagram', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
