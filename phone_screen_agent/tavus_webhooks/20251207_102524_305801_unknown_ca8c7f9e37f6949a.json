@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-07T10:25:24.305887",
+  "headers": {
+    "host": "e46f6fbfa1a3.ngrok-free.app",
+    "user-agent": "python-requests/2.32.0",
+    "content-length": "2323",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "x-forwarded-for": "54.196.75.163",
+    "x-forwarded-host": "e46f6fbfa1a3.ngrok-free.app",
+    "x-forwarded-proto": "https"
+  },
+  "payload": {
+    "properties": {
+      "analysis": "Here's a summary of the visual observations from the video call:\n\n*   **User Appearance:** The user is consistently observed as a light-skinned male, likely in his 30s or early 40s, with short brown/dark hair and a beard. He is repeatedly seen wearing a black hooded top or hoodie, light grey over-ear headphones, and an orange watch or wristband on his left wrist (with one instance noting it on his right).\n*   **Behavior and Posture:** A dominant and consistent behavior throughout the call is the user resting one or both hands on his head. This frequently involves a hand on his forehead, sometimes covering an eye or rubbing his face, and on several occasions, one hand on his forehead while the other supports his chin. His gaze varies, including looking down and to the right, looking directly at the camera with a serious or pensive expression, looking down with eyes closed, and looking upwards and to the left or right. These postures and gazes consistently suggest deep thought, concentration, or internal processing.\n*   **Emotional States:** The user's emotional state predominantly conveys a sense of **pensive contemplation, fatigue, stress, or mild discomfort**. Recurring emotions mentioned include being tired, bored, reflective, melancholic, weary, sad, exhausted, frustrated, distressed, overwhelmed, and concerned. The frequent hand-to-forehead gesture is consistently interpreted as indicating a headache, mental strain, deep thought, or a need for a moment of quiet/disengagement. There are no observations suggesting positive or outwardly expressive emotions; the mood remains largely subdued, serious, and thoughtful.\n*   **Background:** The setting consistently appears to be an indoor environment, possibly an office or a modern public space, characterized by a white ceiling (sometimes with visible beams), grid-like metal structures or shelving units, and grey planters containing green leafy plants. Some observations also noted blurred figures or another person partially visible in the background, suggesting shared space."
+    },
+    "conversation_id": "ca8c7f9e37f6949a",
+    "webhook_url": "https://e46f6fbfa1a3.ngrok-free.app/tavus-webhook",
+    "event_type": "application.perception_analysis",
+    "message_type": "application",
+    "timestamp": "2025-12-07T10:25:24.118545Z"
+  }
+}

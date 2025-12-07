@@ -41,6 +41,15 @@ export async function POST(request: NextRequest) {
       tavusRequestBody.custom_greeting = body.custom_greeting
     }
 
+    // Add callback_url for webhooks
+    const baseUrl = process.env.NEXT_PUBLIC_WEBHOOK_BASE_URL
+    if (baseUrl) {
+      tavusRequestBody.callback_url = `${baseUrl}/tavus-webhook`
+      console.log('📞 Setting callback_url:', tavusRequestBody.callback_url)
+    } else {
+      console.warn('⚠️ NEXT_PUBLIC_WEBHOOK_BASE_URL not set, webhooks will not be enabled')
+    }
+
     // Add properties if provided, with default values for the specified timeouts
     tavusRequestBody.properties = {
       participant_left_timeout: 10, // 10 seconds

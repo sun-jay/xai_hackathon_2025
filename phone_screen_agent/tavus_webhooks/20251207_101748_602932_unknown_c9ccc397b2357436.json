@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-12-07T10:17:48.602998",
+  "headers": {
+    "host": "e46f6fbfa1a3.ngrok-free.app",
+    "user-agent": "python-requests/2.32.0",
+    "content-length": "308",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "x-forwarded-for": "54.196.75.163",
+    "x-forwarded-host": "e46f6fbfa1a3.ngrok-free.app",
+    "x-forwarded-proto": "https"
+  },
+  "payload": {
+    "properties": {
+      "replica_id": "r84e4a18ae3b",
+      "shutdown_reason": "end_conversation_endpoint_hit"
+    },
+    "conversation_id": "c9ccc397b2357436",
+    "webhook_url": "https://e46f6fbfa1a3.ngrok-free.app/tavus-webhook",
+    "event_type": "system.shutdown",
+    "message_type": "system",
+    "timestamp": "2025-12-07T10:17:48.185570Z"
+  }
+}

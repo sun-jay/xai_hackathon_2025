@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-12-07T10:20:48.387020",
+  "headers": {
+    "host": "e46f6fbfa1a3.ngrok-free.app",
+    "user-agent": "python-requests/2.32.0",
+    "content-length": "2286",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "x-forwarded-for": "3.228.65.121",
+    "x-forwarded-host": "e46f6fbfa1a3.ngrok-free.app",
+    "x-forwarded-proto": "https"
+  },
+  "payload": {
+    "properties": {
+      "analysis": "Here's a summary of the visual observations over the last 3600.0 seconds:\n\n*   **User Appearance:** The user is consistently described as a light-skinned male, appearing to be in his 30s or 40s, with short dark hair and a beard or stubble. He consistently wore a black hooded sweatshirt and light grey over-ear headphones.\n*   **Environment:** The setting remained consistent throughout, an indoor office or modern public space. The background featured a distinctive metal grid structure, rectangular planters with green leafy plants, and a white ceiling with visible structural elements or grid patterns. An office chair was occasionally visible, and other out-of-focus individuals were sometimes seen in the distant background.\n*   **User Behavior & Demeanor:**\n    *   The user remained relatively still throughout the observations.\n    *   Initially, he was seen looking directly forward, potentially at a screen.\n    *   However, his gaze frequently shifted to look slightly upwards and to the right or left in subsequent observations, suggesting a more internal focus.\n    *   His mouth was often slightly agape in several instances, particularly when looking upwards.\n    *   He appeared consistently focused, often suggesting he was listening intently through his headphones or absorbed in thought.\n*   **Significant Emotional States:**\n    *   The predominant emotional state was one of **contemplation, pensiveness, and deep thought**, often appearing calm, neutral, and reflective.\n    *   His expressions, particularly the upward gaze and slightly agape mouth, were interpreted as processing information, mild confusion, or mild astonishment/surprise at various points.\n    *   He generally displayed a subdued and internal mood, often appearing disengaged from direct interaction and instead absorbed in his own thoughts or listening. A subtle hint of weariness or mild concern was noted in one instance.\n*   **Screen Activities:** There were no specific observations detailing screen activities."
+    },
+    "conversation_id": "c9ccc397b2357436",
+    "webhook_url": "https://e46f6fbfa1a3.ngrok-free.app/tavus-webhook",
+    "event_type": "application.perception_analysis",
+    "message_type": "application",
+    "timestamp": "2025-12-07T10:20:48.221903Z"
+  }
+}

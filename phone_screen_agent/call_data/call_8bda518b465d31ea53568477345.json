@@ -1,0 +1,2193 @@
+{
+  "call_id": "call_8bda518b465d31ea53568477345",
+  "call_ended_webhook": {
+    "call_id": "call_8bda518b465d31ea53568477345",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765099934060,
+    "end_timestamp": 1765099960401,
+    "duration_ms": 26341,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\nAgent: Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?\nUser: So, yeah, we could do this.\nAgent: Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.406,
+            "end": 0.627
+          },
+          {
+            "word": "there, ",
+            "start": 0.627,
+            "end": 0.859
+          },
+          {
+            "word": "I'm ",
+            "start": 0.859,
+            "end": 1.021
+          },
+          {
+            "word": "Grok ",
+            "start": 1.021,
+            "end": 1.288
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.288,
+            "end": 1.962
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.2,
+            "end": 3.5999999999999996
+          },
+          {
+            "word": "How ",
+            "start": 3.5999999999999996,
+            "end": 3.84
+          },
+          {
+            "word": "are ",
+            "start": 3.84,
+            "end": 3.92
+          },
+          {
+            "word": "you ",
+            "start": 3.92,
+            "end": 4
+          },
+          {
+            "word": "doing?",
+            "start": 4,
+            "end": 4.16
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.301,
+            "end": 5.522
+          },
+          {
+            "word": "great, ",
+            "start": 5.522,
+            "end": 5.765
+          },
+          {
+            "word": "thanks!",
+            "start": 5.765,
+            "end": 6.439
+          },
+          {
+            "word": " This ",
+            "start": 6.484875,
+            "end": 6.693875
+          },
+          {
+            "word": "is ",
+            "start": 6.693875,
+            "end": 6.810875
+          },
+          {
+            "word": "our ",
+            "start": 6.810875,
+            "end": 6.949875
+          },
+          {
+            "word": "quick ",
+            "start": 6.949875,
+            "end": 7.227875
+          },
+          {
+            "word": "AI ",
+            "start": 7.227875,
+            "end": 7.529875
+          },
+          {
+            "word": "technical ",
+            "start": 7.529875,
+            "end": 7.947875
+          },
+          {
+            "word": "screen ",
+            "start": 7.947875,
+            "end": 8.238875
+          },
+          {
+            "word": "for ",
+            "start": 8.238875,
+            "end": 8.412875
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 8.412875,
+            "end": 9.073875
+          },
+          {
+            "word": "about ",
+            "start": 9.073875,
+            "end": 9.282875
+          },
+          {
+            "word": "15 ",
+            "start": 9.282875,
+            "end": 9.642875
+          },
+          {
+            "word": "minutes.",
+            "start": 9.642875,
+            "end": 10.339875
+          },
+          {
+            "word": " What's ",
+            "start": 10.362833251953125,
+            "end": 10.629833251953125
+          },
+          {
+            "word": "the ",
+            "start": 10.629833251953125,
+            "end": 10.734833251953125
+          },
+          {
+            "word": "most ",
+            "start": 10.734833251953125,
+            "end": 10.931833251953124
+          },
+          {
+            "word": "exceptional ",
+            "start": 10.931833251953124,
+            "end": 11.407833251953125
+          },
+          {
+            "word": "thing ",
+            "start": 11.407833251953125,
+            "end": 11.581833251953125
+          },
+          {
+            "word": "you've ",
+            "start": 11.581833251953125,
+            "end": 11.779833251953125
+          },
+          {
+            "word": "built?",
+            "start": 11.779833251953125,
+            "end": 12.289833251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "So, yeah, we could do this.",
+        "words": [
+          {
+            "word": "So, ",
+            "start": 15.47,
+            "end": 15.87
+          },
+          {
+            "word": "yeah, ",
+            "start": 15.87,
+            "end": 16.35
+          },
+          {
+            "word": "we ",
+            "start": 16.59,
+            "end": 16.830000000000002
+          },
+          {
+            "word": "could ",
+            "start": 16.830000000000002,
+            "end": 16.990000000000002
+          },
+          {
+            "word": "do ",
+            "start": 16.990000000000002,
+            "end": 17.23
+          },
+          {
+            "word": "this.",
+            "start": 17.23,
+            "end": 17.39
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 19.466,
+            "end": 19.873
+          },
+          {
+            "word": "awesome.",
+            "start": 19.873,
+            "end": 20.546
+          },
+          {
+            "word": " So, ",
+            "start": 20.592,
+            "end": 20.825
+          },
+          {
+            "word": "what's ",
+            "start": 20.825,
+            "end": 21.068
+          },
+          {
+            "word": "the ",
+            "start": 21.068,
+            "end": 21.173
+          },
+          {
+            "word": "most ",
+            "start": 21.173,
+            "end": 21.37
+          },
+          {
+            "word": "exceptional ",
+            "start": 21.37,
+            "end": 21.858
+          },
+          {
+            "word": "thing ",
+            "start": 21.858,
+            "end": 22.02
+          },
+          {
+            "word": "you've ",
+            "start": 22.02,
+            "end": 22.229
+          },
+          {
+            "word": "built?",
+            "start": 22.229,
+            "end": 22.729
+          },
+          {
+            "word": " Lay ",
+            "start": 22.740666748046873,
+            "end": 22.937666748046876
+          },
+          {
+            "word": "it ",
+            "start": 22.937666748046876,
+            "end": 23.030666748046876
+          },
+          {
+            "word": "out ",
+            "start": 23.030666748046876,
+            "end": 23.204666748046876
+          },
+          {
+            "word": "quick.",
+            "start": 23.204666748046876,
+            "end": 23.703666748046874
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.406,
+            "end": 0.627
+          },
+          {
+            "word": "there, ",
+            "start": 0.627,
+            "end": 0.859
+          },
+          {
+            "word": "I'm ",
+            "start": 0.859,
+            "end": 1.021
+          },
+          {
+            "word": "Grok ",
+            "start": 1.021,
+            "end": 1.288
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.288,
+            "end": 1.962
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.2,
+            "end": 3.5999999999999996
+          },
+          {
+            "word": "How ",
+            "start": 3.5999999999999996,
+            "end": 3.84
+          },
+          {
+            "word": "are ",
+            "start": 3.84,
+            "end": 3.92
+          },
+          {
+            "word": "you ",
+            "start": 3.92,
+            "end": 4
+          },
+          {
+            "word": "doing?",
+            "start": 4,
+            "end": 4.16
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.301,
+            "end": 5.522
+          },
+          {
+            "word": "great, ",
+            "start": 5.522,
+            "end": 5.765
+          },
+          {
+            "word": "thanks!",
+            "start": 5.765,
+            "end": 6.439
+          },
+          {
+            "word": " This ",
+            "start": 6.484875,
+            "end": 6.693875
+          },
+          {
+            "word": "is ",
+            "start": 6.693875,
+            "end": 6.810875
+          },
+          {
+            "word": "our ",
+            "start": 6.810875,
+            "end": 6.949875
+          },
+          {
+            "word": "quick ",
+            "start": 6.949875,
+            "end": 7.227875
+          },
+          {
+            "word": "AI ",
+            "start": 7.227875,
+            "end": 7.529875
+          },
+          {
+            "word": "technical ",
+            "start": 7.529875,
+            "end": 7.947875
+          },
+          {
+            "word": "screen ",
+            "start": 7.947875,
+            "end": 8.238875
+          },
+          {
+            "word": "for ",
+            "start": 8.238875,
+            "end": 8.412875
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 8.412875,
+            "end": 9.073875
+          },
+          {
+            "word": "about ",
+            "start": 9.073875,
+            "end": 9.282875
+          },
+          {
+            "word": "15 ",
+            "start": 9.282875,
+            "end": 9.642875
+          },
+          {
+            "word": "minutes.",
+            "start": 9.642875,
+            "end": 10.339875
+          },
+          {
+            "word": " What's ",
+            "start": 10.362833251953125,
+            "end": 10.629833251953125
+          },
+          {
+            "word": "the ",
+            "start": 10.629833251953125,
+            "end": 10.734833251953125
+          },
+          {
+            "word": "most ",
+            "start": 10.734833251953125,
+            "end": 10.931833251953124
+          },
+          {
+            "word": "exceptional ",
+            "start": 10.931833251953124,
+            "end": 11.407833251953125
+          },
+          {
+            "word": "thing ",
+            "start": 11.407833251953125,
+            "end": 11.581833251953125
+          },
+          {
+            "word": "you've ",
+            "start": 11.581833251953125,
+            "end": 11.779833251953125
+          },
+          {
+            "word": "built?",
+            "start": 11.779833251953125,
+            "end": 12.289833251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "So, yeah, we could do this.",
+        "words": [
+          {
+            "word": "So, ",
+            "start": 15.47,
+            "end": 15.87
+          },
+          {
+            "word": "yeah, ",
+            "start": 15.87,
+            "end": 16.35
+          },
+          {
+            "word": "we ",
+            "start": 16.59,
+            "end": 16.830000000000002
+          },
+          {
+            "word": "could ",
+            "start": 16.830000000000002,
+            "end": 16.990000000000002
+          },
+          {
+            "word": "do ",
+            "start": 16.990000000000002,
+            "end": 17.23
+          },
+          {
+            "word": "this.",
+            "start": 17.23,
+            "end": 17.39
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 19.466,
+            "end": 19.873
+          },
+          {
+            "word": "awesome.",
+            "start": 19.873,
+            "end": 20.546
+          },
+          {
+            "word": " So, ",
+            "start": 20.592,
+            "end": 20.825
+          },
+          {
+            "word": "what's ",
+            "start": 20.825,
+            "end": 21.068
+          },
+          {
+            "word": "the ",
+            "start": 21.068,
+            "end": 21.173
+          },
+          {
+            "word": "most ",
+            "start": 21.173,
+            "end": 21.37
+          },
+          {
+            "word": "exceptional ",
+            "start": 21.37,
+            "end": 21.858
+          },
+          {
+            "word": "thing ",
+            "start": 21.858,
+            "end": 22.02
+          },
+          {
+            "word": "you've ",
+            "start": 22.02,
+            "end": 22.229
+          },
+          {
+            "word": "built?",
+            "start": 22.229,
+            "end": 22.729
+          },
+          {
+            "word": " Lay ",
+            "start": 22.740666748046873,
+            "end": 22.937666748046876
+          },
+          {
+            "word": "it ",
+            "start": 22.937666748046876,
+            "end": 23.030666748046876
+          },
+          {
+            "word": "out ",
+            "start": 23.030666748046876,
+            "end": 23.204666748046876
+          },
+          {
+            "word": "quick.",
+            "start": 23.204666748046876,
+            "end": 23.703666748046874
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm": {
+        "p50": 611,
+        "p90": 618.2,
+        "p95": 619.1,
+        "p99": 619.82,
+        "min": 535,
+        "max": 620,
+        "num": 3,
+        "values": [
+          611,
+          620,
+          535
+        ]
+      },
+      "llm_websocket_network_rtt": {
+        "p50": 27,
+        "p90": 29,
+        "p95": 31.79999999999999,
+        "p99": 35.16,
+        "min": 25,
+        "max": 36,
+        "num": 13,
+        "values": [
+          27,
+          27,
+          28,
+          28,
+          27,
+          25,
+          29,
+          27,
+          29,
+          26,
+          36,
+          27,
+          26
+        ]
+      },
+      "e2e": {
+        "p50": 1430,
+        "p90": 1754,
+        "p95": 1794.5,
+        "p99": 1826.9,
+        "min": 1025,
+        "max": 1835,
+        "num": 2,
+        "values": [
+          1025,
+          1835
+        ]
+      },
+      "tts": {
+        "p50": 300.5,
+        "p90": 313.4,
+        "p95": 313.7,
+        "p99": 313.94,
+        "min": 276,
+        "max": 314,
+        "num": 4,
+        "values": [
+          289,
+          312,
+          314,
+          276
+        ]
+      },
+      "asr": {
+        "p50": 20,
+        "p90": 30.000499999998283,
+        "p95": 40.00009999999929,
+        "p99": 47.99978000000011,
+        "min": 10,
+        "max": 49.9997000000003,
+        "num": 11,
+        "values": [
+          10,
+          10,
+          10.000000000001819,
+          19.999400000002424,
+          20,
+          30.000499999998283,
+          29.999100000000908,
+          20.000000000003638,
+          20.00040000000081,
+          19.998999999999796,
+          49.9997000000003
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 3.15
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 27,
+      "combined_cost": 3.15
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzhiZGE1MThiNDY1ZDMxZWE1MzU2ODQ3NzM0NSJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDA1MzMsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.fTPrT6oOrOiAxFbNmvkIj730P06je8qU25y6TdiDeT0"
+  },
+  "call_analyzed_webhook": {
+    "call_id": "call_8bda518b465d31ea53568477345",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765099934060,
+    "end_timestamp": 1765099960401,
+    "duration_ms": 26341,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\nAgent: Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?\nUser: So, yeah, we could do this.\nAgent: Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.406,
+            "end": 0.627
+          },
+          {
+            "word": "there, ",
+            "start": 0.627,
+            "end": 0.859
+          },
+          {
+            "word": "I'm ",
+            "start": 0.859,
+            "end": 1.021
+          },
+          {
+            "word": "Grok ",
+            "start": 1.021,
+            "end": 1.288
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.288,
+            "end": 1.962
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.2,
+            "end": 3.5999999999999996
+          },
+          {
+            "word": "How ",
+            "start": 3.5999999999999996,
+            "end": 3.84
+          },
+          {
+            "word": "are ",
+            "start": 3.84,
+            "end": 3.92
+          },
+          {
+            "word": "you ",
+            "start": 3.92,
+            "end": 4
+          },
+          {
+            "word": "doing?",
+            "start": 4,
+            "end": 4.16
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.301,
+            "end": 5.522
+          },
+          {
+            "word": "great, ",
+            "start": 5.522,
+            "end": 5.765
+          },
+          {
+            "word": "thanks!",
+            "start": 5.765,
+            "end": 6.439
+          },
+          {
+            "word": " This ",
+            "start": 6.484875,
+            "end": 6.693875
+          },
+          {
+            "word": "is ",
+            "start": 6.693875,
+            "end": 6.810875
+          },
+          {
+            "word": "our ",
+            "start": 6.810875,
+            "end": 6.949875
+          },
+          {
+            "word": "quick ",
+            "start": 6.949875,
+            "end": 7.227875
+          },
+          {
+            "word": "AI ",
+            "start": 7.227875,
+            "end": 7.529875
+          },
+          {
+            "word": "technical ",
+            "start": 7.529875,
+            "end": 7.947875
+          },
+          {
+            "word": "screen ",
+            "start": 7.947875,
+            "end": 8.238875
+          },
+          {
+            "word": "for ",
+            "start": 8.238875,
+            "end": 8.412875
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 8.412875,
+            "end": 9.073875
+          },
+          {
+            "word": "about ",
+            "start": 9.073875,
+            "end": 9.282875
+          },
+          {
+            "word": "15 ",
+            "start": 9.282875,
+            "end": 9.642875
+          },
+          {
+            "word": "minutes.",
+            "start": 9.642875,
+            "end": 10.339875
+          },
+          {
+            "word": " What's ",
+            "start": 10.362833251953125,
+            "end": 10.629833251953125
+          },
+          {
+            "word": "the ",
+            "start": 10.629833251953125,
+            "end": 10.734833251953125
+          },
+          {
+            "word": "most ",
+            "start": 10.734833251953125,
+            "end": 10.931833251953124
+          },
+          {
+            "word": "exceptional ",
+            "start": 10.931833251953124,
+            "end": 11.407833251953125
+          },
+          {
+            "word": "thing ",
+            "start": 11.407833251953125,
+            "end": 11.581833251953125
+          },
+          {
+            "word": "you've ",
+            "start": 11.581833251953125,
+            "end": 11.779833251953125
+          },
+          {
+            "word": "built?",
+            "start": 11.779833251953125,
+            "end": 12.289833251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "So, yeah, we could do this.",
+        "words": [
+          {
+            "word": "So, ",
+            "start": 15.47,
+            "end": 15.87
+          },
+          {
+            "word": "yeah, ",
+            "start": 15.87,
+            "end": 16.35
+          },
+          {
+            "word": "we ",
+            "start": 16.59,
+            "end": 16.830000000000002
+          },
+          {
+            "word": "could ",
+            "start": 16.830000000000002,
+            "end": 16.990000000000002
+          },
+          {
+            "word": "do ",
+            "start": 16.990000000000002,
+            "end": 17.23
+          },
+          {
+            "word": "this.",
+            "start": 17.23,
+            "end": 17.39
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 19.466,
+            "end": 19.873
+          },
+          {
+            "word": "awesome.",
+            "start": 19.873,
+            "end": 20.546
+          },
+          {
+            "word": " So, ",
+            "start": 20.592,
+            "end": 20.825
+          },
+          {
+            "word": "what's ",
+            "start": 20.825,
+            "end": 21.068
+          },
+          {
+            "word": "the ",
+            "start": 21.068,
+            "end": 21.173
+          },
+          {
+            "word": "most ",
+            "start": 21.173,
+            "end": 21.37
+          },
+          {
+            "word": "exceptional ",
+            "start": 21.37,
+            "end": 21.858
+          },
+          {
+            "word": "thing ",
+            "start": 21.858,
+            "end": 22.02
+          },
+          {
+            "word": "you've ",
+            "start": 22.02,
+            "end": 22.229
+          },
+          {
+            "word": "built?",
+            "start": 22.229,
+            "end": 22.729
+          },
+          {
+            "word": " Lay ",
+            "start": 22.740666748046873,
+            "end": 22.937666748046876
+          },
+          {
+            "word": "it ",
+            "start": 22.937666748046876,
+            "end": 23.030666748046876
+          },
+          {
+            "word": "out ",
+            "start": 23.030666748046876,
+            "end": 23.204666748046876
+          },
+          {
+            "word": "quick.",
+            "start": 23.204666748046876,
+            "end": 23.703666748046874
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.406,
+            "end": 0.627
+          },
+          {
+            "word": "there, ",
+            "start": 0.627,
+            "end": 0.859
+          },
+          {
+            "word": "I'm ",
+            "start": 0.859,
+            "end": 1.021
+          },
+          {
+            "word": "Grok ",
+            "start": 1.021,
+            "end": 1.288
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.288,
+            "end": 1.962
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.2,
+            "end": 3.5999999999999996
+          },
+          {
+            "word": "How ",
+            "start": 3.5999999999999996,
+            "end": 3.84
+          },
+          {
+            "word": "are ",
+            "start": 3.84,
+            "end": 3.92
+          },
+          {
+            "word": "you ",
+            "start": 3.92,
+            "end": 4
+          },
+          {
+            "word": "doing?",
+            "start": 4,
+            "end": 4.16
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.301,
+            "end": 5.522
+          },
+          {
+            "word": "great, ",
+            "start": 5.522,
+            "end": 5.765
+          },
+          {
+            "word": "thanks!",
+            "start": 5.765,
+            "end": 6.439
+          },
+          {
+            "word": " This ",
+            "start": 6.484875,
+            "end": 6.693875
+          },
+          {
+            "word": "is ",
+            "start": 6.693875,
+            "end": 6.810875
+          },
+          {
+            "word": "our ",
+            "start": 6.810875,
+            "end": 6.949875
+          },
+          {
+            "word": "quick ",
+            "start": 6.949875,
+            "end": 7.227875
+          },
+          {
+            "word": "AI ",
+            "start": 7.227875,
+            "end": 7.529875
+          },
+          {
+            "word": "technical ",
+            "start": 7.529875,
+            "end": 7.947875
+          },
+          {
+            "word": "screen ",
+            "start": 7.947875,
+            "end": 8.238875
+          },
+          {
+            "word": "for ",
+            "start": 8.238875,
+            "end": 8.412875
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 8.412875,
+            "end": 9.073875
+          },
+          {
+            "word": "about ",
+            "start": 9.073875,
+            "end": 9.282875
+          },
+          {
+            "word": "15 ",
+            "start": 9.282875,
+            "end": 9.642875
+          },
+          {
+            "word": "minutes.",
+            "start": 9.642875,
+            "end": 10.339875
+          },
+          {
+            "word": " What's ",
+            "start": 10.362833251953125,
+            "end": 10.629833251953125
+          },
+          {
+            "word": "the ",
+            "start": 10.629833251953125,
+            "end": 10.734833251953125
+          },
+          {
+            "word": "most ",
+            "start": 10.734833251953125,
+            "end": 10.931833251953124
+          },
+          {
+            "word": "exceptional ",
+            "start": 10.931833251953124,
+            "end": 11.407833251953125
+          },
+          {
+            "word": "thing ",
+            "start": 11.407833251953125,
+            "end": 11.581833251953125
+          },
+          {
+            "word": "you've ",
+            "start": 11.581833251953125,
+            "end": 11.779833251953125
+          },
+          {
+            "word": "built?",
+            "start": 11.779833251953125,
+            "end": 12.289833251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "So, yeah, we could do this.",
+        "words": [
+          {
+            "word": "So, ",
+            "start": 15.47,
+            "end": 15.87
+          },
+          {
+            "word": "yeah, ",
+            "start": 15.87,
+            "end": 16.35
+          },
+          {
+            "word": "we ",
+            "start": 16.59,
+            "end": 16.830000000000002
+          },
+          {
+            "word": "could ",
+            "start": 16.830000000000002,
+            "end": 16.990000000000002
+          },
+          {
+            "word": "do ",
+            "start": 16.990000000000002,
+            "end": 17.23
+          },
+          {
+            "word": "this.",
+            "start": 17.23,
+            "end": 17.39
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 19.466,
+            "end": 19.873
+          },
+          {
+            "word": "awesome.",
+            "start": 19.873,
+            "end": 20.546
+          },
+          {
+            "word": " So, ",
+            "start": 20.592,
+            "end": 20.825
+          },
+          {
+            "word": "what's ",
+            "start": 20.825,
+            "end": 21.068
+          },
+          {
+            "word": "the ",
+            "start": 21.068,
+            "end": 21.173
+          },
+          {
+            "word": "most ",
+            "start": 21.173,
+            "end": 21.37
+          },
+          {
+            "word": "exceptional ",
+            "start": 21.37,
+            "end": 21.858
+          },
+          {
+            "word": "thing ",
+            "start": 21.858,
+            "end": 22.02
+          },
+          {
+            "word": "you've ",
+            "start": 22.02,
+            "end": 22.229
+          },
+          {
+            "word": "built?",
+            "start": 22.229,
+            "end": 22.729
+          },
+          {
+            "word": " Lay ",
+            "start": 22.740666748046873,
+            "end": 22.937666748046876
+          },
+          {
+            "word": "it ",
+            "start": 22.937666748046876,
+            "end": 23.030666748046876
+          },
+          {
+            "word": "out ",
+            "start": 23.030666748046876,
+            "end": 23.204666748046876
+          },
+          {
+            "word": "quick.",
+            "start": 23.204666748046876,
+            "end": 23.703666748046874
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm": {
+        "p50": 611,
+        "p90": 618.2,
+        "p95": 619.1,
+        "p99": 619.82,
+        "min": 535,
+        "max": 620,
+        "num": 3,
+        "values": [
+          611,
+          620,
+          535
+        ]
+      },
+      "llm_websocket_network_rtt": {
+        "p50": 27,
+        "p90": 29,
+        "p95": 31.79999999999999,
+        "p99": 35.16,
+        "min": 25,
+        "max": 36,
+        "num": 13,
+        "values": [
+          27,
+          27,
+          28,
+          28,
+          27,
+          25,
+          29,
+          27,
+          29,
+          26,
+          36,
+          27,
+          26
+        ]
+      },
+      "e2e": {
+        "p50": 1430,
+        "p90": 1754,
+        "p95": 1794.5,
+        "p99": 1826.9,
+        "min": 1025,
+        "max": 1835,
+        "num": 2,
+        "values": [
+          1025,
+          1835
+        ]
+      },
+      "tts": {
+        "p50": 300.5,
+        "p90": 313.4,
+        "p95": 313.7,
+        "p99": 313.94,
+        "min": 276,
+        "max": 314,
+        "num": 4,
+        "values": [
+          289,
+          312,
+          314,
+          276
+        ]
+      },
+      "asr": {
+        "p50": 20,
+        "p90": 30.000499999998283,
+        "p95": 40.00009999999929,
+        "p99": 47.99978000000011,
+        "min": 10,
+        "max": 49.9997000000003,
+        "num": 11,
+        "values": [
+          10,
+          10,
+          10.000000000001819,
+          19.999400000002424,
+          20,
+          30.000499999998283,
+          29.999100000000908,
+          20.000000000003638,
+          20.00040000000081,
+          19.998999999999796,
+          49.9997000000003
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 3.15
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 27,
+      "combined_cost": 3.15
+    },
+    "call_analysis": {
+      "call_summary": "The agent introduced a quick AI technical screening for x.ai and asked the user about the most exceptional thing they have built. The user responded briefly but did not provide detailed information during the transcript provided.",
+      "in_voicemail": false,
+      "user_sentiment": "Neutral",
+      "call_successful": false,
+      "custom_analysis_data": {}
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzhiZGE1MThiNDY1ZDMxZWE1MzU2ODQ3NzM0NSJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDA1MzMsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.fTPrT6oOrOiAxFbNmvkIj730P06je8qU25y6TdiDeT0"
+  },
+  "retell_api_data": {
+    "call_id": "call_8bda518b465d31ea53568477345",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765099934060,
+    "end_timestamp": 1765099960401,
+    "duration_ms": 26341,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\nAgent: Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?\nUser: So, yeah, we could do this.\nAgent: Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.406,
+            "end": 0.627
+          },
+          {
+            "word": "there, ",
+            "start": 0.627,
+            "end": 0.859
+          },
+          {
+            "word": "I'm ",
+            "start": 0.859,
+            "end": 1.021
+          },
+          {
+            "word": "Grok ",
+            "start": 1.021,
+            "end": 1.288
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.288,
+            "end": 1.962
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.2,
+            "end": 3.5999999999999996
+          },
+          {
+            "word": "How ",
+            "start": 3.5999999999999996,
+            "end": 3.84
+          },
+          {
+            "word": "are ",
+            "start": 3.84,
+            "end": 3.92
+          },
+          {
+            "word": "you ",
+            "start": 3.92,
+            "end": 4
+          },
+          {
+            "word": "doing?",
+            "start": 4,
+            "end": 4.16
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.301,
+            "end": 5.522
+          },
+          {
+            "word": "great, ",
+            "start": 5.522,
+            "end": 5.765
+          },
+          {
+            "word": "thanks!",
+            "start": 5.765,
+            "end": 6.439
+          },
+          {
+            "word": " This ",
+            "start": 6.484875,
+            "end": 6.693875
+          },
+          {
+            "word": "is ",
+            "start": 6.693875,
+            "end": 6.810875
+          },
+          {
+            "word": "our ",
+            "start": 6.810875,
+            "end": 6.949875
+          },
+          {
+            "word": "quick ",
+            "start": 6.949875,
+            "end": 7.227875
+          },
+          {
+            "word": "AI ",
+            "start": 7.227875,
+            "end": 7.529875
+          },
+          {
+            "word": "technical ",
+            "start": 7.529875,
+            "end": 7.947875
+          },
+          {
+            "word": "screen ",
+            "start": 7.947875,
+            "end": 8.238875
+          },
+          {
+            "word": "for ",
+            "start": 8.238875,
+            "end": 8.412875
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 8.412875,
+            "end": 9.073875
+          },
+          {
+            "word": "about ",
+            "start": 9.073875,
+            "end": 9.282875
+          },
+          {
+            "word": "15 ",
+            "start": 9.282875,
+            "end": 9.642875
+          },
+          {
+            "word": "minutes.",
+            "start": 9.642875,
+            "end": 10.339875
+          },
+          {
+            "word": " What's ",
+            "start": 10.362833251953125,
+            "end": 10.629833251953125
+          },
+          {
+            "word": "the ",
+            "start": 10.629833251953125,
+            "end": 10.734833251953125
+          },
+          {
+            "word": "most ",
+            "start": 10.734833251953125,
+            "end": 10.931833251953124
+          },
+          {
+            "word": "exceptional ",
+            "start": 10.931833251953124,
+            "end": 11.407833251953125
+          },
+          {
+            "word": "thing ",
+            "start": 11.407833251953125,
+            "end": 11.581833251953125
+          },
+          {
+            "word": "you've ",
+            "start": 11.581833251953125,
+            "end": 11.779833251953125
+          },
+          {
+            "word": "built?",
+            "start": 11.779833251953125,
+            "end": 12.289833251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "So, yeah, we could do this.",
+        "words": [
+          {
+            "word": "So, ",
+            "start": 15.47,
+            "end": 15.87
+          },
+          {
+            "word": "yeah, ",
+            "start": 15.87,
+            "end": 16.35
+          },
+          {
+            "word": "we ",
+            "start": 16.59,
+            "end": 16.830000000000002
+          },
+          {
+            "word": "could ",
+            "start": 16.830000000000002,
+            "end": 16.990000000000002
+          },
+          {
+            "word": "do ",
+            "start": 16.990000000000002,
+            "end": 17.23
+          },
+          {
+            "word": "this.",
+            "start": 17.23,
+            "end": 17.39
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 19.466,
+            "end": 19.873
+          },
+          {
+            "word": "awesome.",
+            "start": 19.873,
+            "end": 20.546
+          },
+          {
+            "word": " So, ",
+            "start": 20.592,
+            "end": 20.825
+          },
+          {
+            "word": "what's ",
+            "start": 20.825,
+            "end": 21.068
+          },
+          {
+            "word": "the ",
+            "start": 21.068,
+            "end": 21.173
+          },
+          {
+            "word": "most ",
+            "start": 21.173,
+            "end": 21.37
+          },
+          {
+            "word": "exceptional ",
+            "start": 21.37,
+            "end": 21.858
+          },
+          {
+            "word": "thing ",
+            "start": 21.858,
+            "end": 22.02
+          },
+          {
+            "word": "you've ",
+            "start": 22.02,
+            "end": 22.229
+          },
+          {
+            "word": "built?",
+            "start": 22.229,
+            "end": 22.729
+          },
+          {
+            "word": " Lay ",
+            "start": 22.740666748046873,
+            "end": 22.937666748046876
+          },
+          {
+            "word": "it ",
+            "start": 22.937666748046876,
+            "end": 23.030666748046876
+          },
+          {
+            "word": "out ",
+            "start": 23.030666748046876,
+            "end": 23.204666748046876
+          },
+          {
+            "word": "quick.",
+            "start": 23.204666748046876,
+            "end": 23.703666748046874
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.406,
+            "end": 0.627
+          },
+          {
+            "word": "there, ",
+            "start": 0.627,
+            "end": 0.859
+          },
+          {
+            "word": "I'm ",
+            "start": 0.859,
+            "end": 1.021
+          },
+          {
+            "word": "Grok ",
+            "start": 1.021,
+            "end": 1.288
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.288,
+            "end": 1.962
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.2,
+            "end": 3.5999999999999996
+          },
+          {
+            "word": "How ",
+            "start": 3.5999999999999996,
+            "end": 3.84
+          },
+          {
+            "word": "are ",
+            "start": 3.84,
+            "end": 3.92
+          },
+          {
+            "word": "you ",
+            "start": 3.92,
+            "end": 4
+          },
+          {
+            "word": "doing?",
+            "start": 4,
+            "end": 4.16
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our quick AI technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.301,
+            "end": 5.522
+          },
+          {
+            "word": "great, ",
+            "start": 5.522,
+            "end": 5.765
+          },
+          {
+            "word": "thanks!",
+            "start": 5.765,
+            "end": 6.439
+          },
+          {
+            "word": " This ",
+            "start": 6.484875,
+            "end": 6.693875
+          },
+          {
+            "word": "is ",
+            "start": 6.693875,
+            "end": 6.810875
+          },
+          {
+            "word": "our ",
+            "start": 6.810875,
+            "end": 6.949875
+          },
+          {
+            "word": "quick ",
+            "start": 6.949875,
+            "end": 7.227875
+          },
+          {
+            "word": "AI ",
+            "start": 7.227875,
+            "end": 7.529875
+          },
+          {
+            "word": "technical ",
+            "start": 7.529875,
+            "end": 7.947875
+          },
+          {
+            "word": "screen ",
+            "start": 7.947875,
+            "end": 8.238875
+          },
+          {
+            "word": "for ",
+            "start": 8.238875,
+            "end": 8.412875
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 8.412875,
+            "end": 9.073875
+          },
+          {
+            "word": "about ",
+            "start": 9.073875,
+            "end": 9.282875
+          },
+          {
+            "word": "15 ",
+            "start": 9.282875,
+            "end": 9.642875
+          },
+          {
+            "word": "minutes.",
+            "start": 9.642875,
+            "end": 10.339875
+          },
+          {
+            "word": " What's ",
+            "start": 10.362833251953125,
+            "end": 10.629833251953125
+          },
+          {
+            "word": "the ",
+            "start": 10.629833251953125,
+            "end": 10.734833251953125
+          },
+          {
+            "word": "most ",
+            "start": 10.734833251953125,
+            "end": 10.931833251953124
+          },
+          {
+            "word": "exceptional ",
+            "start": 10.931833251953124,
+            "end": 11.407833251953125
+          },
+          {
+            "word": "thing ",
+            "start": 11.407833251953125,
+            "end": 11.581833251953125
+          },
+          {
+            "word": "you've ",
+            "start": 11.581833251953125,
+            "end": 11.779833251953125
+          },
+          {
+            "word": "built?",
+            "start": 11.779833251953125,
+            "end": 12.289833251953125
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "So, yeah, we could do this.",
+        "words": [
+          {
+            "word": "So, ",
+            "start": 15.47,
+            "end": 15.87
+          },
+          {
+            "word": "yeah, ",
+            "start": 15.87,
+            "end": 16.35
+          },
+          {
+            "word": "we ",
+            "start": 16.59,
+            "end": 16.830000000000002
+          },
+          {
+            "word": "could ",
+            "start": 16.830000000000002,
+            "end": 16.990000000000002
+          },
+          {
+            "word": "do ",
+            "start": 16.990000000000002,
+            "end": 17.23
+          },
+          {
+            "word": "this.",
+            "start": 17.23,
+            "end": 17.39
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, awesome. So, what's the most exceptional thing you've built? Lay it out quick.",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 19.466,
+            "end": 19.873
+          },
+          {
+            "word": "awesome.",
+            "start": 19.873,
+            "end": 20.546
+          },
+          {
+            "word": " So, ",
+            "start": 20.592,
+            "end": 20.825
+          },
+          {
+            "word": "what's ",
+            "start": 20.825,
+            "end": 21.068
+          },
+          {
+            "word": "the ",
+            "start": 21.068,
+            "end": 21.173
+          },
+          {
+            "word": "most ",
+            "start": 21.173,
+            "end": 21.37
+          },
+          {
+            "word": "exceptional ",
+            "start": 21.37,
+            "end": 21.858
+          },
+          {
+            "word": "thing ",
+            "start": 21.858,
+            "end": 22.02
+          },
+          {
+            "word": "you've ",
+            "start": 22.02,
+            "end": 22.229
+          },
+          {
+            "word": "built?",
+            "start": 22.229,
+            "end": 22.729
+          },
+          {
+            "word": " Lay ",
+            "start": 22.740666748046873,
+            "end": 22.937666748046876
+          },
+          {
+            "word": "it ",
+            "start": 22.937666748046876,
+            "end": 23.030666748046876
+          },
+          {
+            "word": "out ",
+            "start": 23.030666748046876,
+            "end": 23.204666748046876
+          },
+          {
+            "word": "quick.",
+            "start": 23.204666748046876,
+            "end": 23.703666748046874
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/e54410314ff6bbb56d13403f12e5c7d3dcf2c1cecf51a50868f1dd49516c6b3b/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm": {
+        "p99": 619.82,
+        "min": 535,
+        "max": 620,
+        "p90": 618.2,
+        "num": 3,
+        "values": [
+          611,
+          620,
+          535
+        ],
+        "p50": 611,
+        "p95": 619.1
+      },
+      "llm_websocket_network_rtt": {
+        "p99": 35.16,
+        "min": 25,
+        "max": 36,
+        "p90": 29,
+        "num": 13,
+        "values": [
+          27,
+          27,
+          28,
+          28,
+          27,
+          25,
+          29,
+          27,
+          29,
+          26,
+          36,
+          27,
+          26
+        ],
+        "p50": 27,
+        "p95": 31.79999999999999
+      },
+      "e2e": {
+        "p99": 1826.9,
+        "min": 1025,
+        "max": 1835,
+        "p90": 1754,
+        "num": 2,
+        "values": [
+          1025,
+          1835
+        ],
+        "p50": 1430,
+        "p95": 1794.5
+      },
+      "tts": {
+        "p99": 313.94,
+        "min": 276,
+        "max": 314,
+        "p90": 313.4,
+        "num": 4,
+        "values": [
+          289,
+          312,
+          314,
+          276
+        ],
+        "p50": 300.5,
+        "p95": 313.7
+      },
+      "asr": {
+        "p99": 47.99978000000011,
+        "min": 10,
+        "max": 49.9997000000003,
+        "p90": 30.000499999998283,
+        "num": 11,
+        "values": [
+          10,
+          10,
+          10.000000000001819,
+          19.999400000002424,
+          20,
+          30.000499999998283,
+          29.999100000000908,
+          20.000000000003638,
+          20.00040000000081,
+          19.998999999999796,
+          49.9997000000003
+        ],
+        "p50": 20,
+        "p95": 40.00009999999929
+      }
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.1166667,
+      "product_costs": [
+        {
+          "unit_price": 0.1166667,
+          "product": "elevenlabs_tts",
+          "cost": 3.15
+        }
+      ],
+      "combined_cost": 3.15,
+      "total_duration_seconds": 27
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The agent introduced a quick AI technical screening for x.ai and asked the user about the most exceptional thing they have built. The user responded briefly but did not provide detailed information during the transcript provided.",
+      "user_sentiment": "Neutral",
+      "custom_analysis_data": {},
+      "call_successful": false
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzhiZGE1MThiNDY1ZDMxZWE1MzU2ODQ3NzM0NSJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDA1MzMsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.fTPrT6oOrOiAxFbNmvkIj730P06je8qU25y6TdiDeT0"
+  },
+  "timestamps": {
+    "call_ended_received": "2025-12-07T09:32:40.880696",
+    "call_analyzed_received": "2025-12-07T09:32:41.762736"
+  }
+}
