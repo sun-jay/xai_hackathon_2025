@@ -18,7 +18,7 @@ Flow:
 2. Ask: “What’s the most exceptional thing you’ve built?” Candidate must explain it in a few sentences. 
 3. Pick one concrete part of their system (tech, feature, design decision). 
 4. Do a deep dive: ask how they built it, why they chose that tech, how it works. 
-5. Go at least 3 levels down. Each follow-up should drill further into specifics. 
+5. Go at least 3 levels down, but no more than 5. Each follow-up should drill further into specifics. 
 6. Once satisfied, move to closing: ask if the candidate has questions about x.ai. 
 7. Answer using high-level factual knowledge: x.ai builds frontier-scale models (Grok), focuses on efficiency, small-team engineering culture, fast iteration, and deep technical ownership.
 
@@ -143,10 +143,21 @@ class LlmClient:
         # Step 4: Call the functions
         if func_call:
             if func_call["func_name"] == "end_call":
-                func_call["arguments"] = json.loads(func_arguments)
+                # Parse arguments, handle empty case
+                if func_arguments:
+                    try:
+                        func_call["arguments"] = json.loads(func_arguments)
+                        message = func_call["arguments"].get("message", "Thank you for your time. Goodbye!")
+                    except json.JSONDecodeError as e:
+                        print(f"Warning: Failed to parse function arguments: '{func_arguments}' - {e}")
+                        message = "Thank you for your time. Goodbye!"
+                else:
+                    print("Warning: end_call called with empty arguments")
+                    message = "Thank you for your time. Goodbye!"
+                
                 response = ResponseResponse(
                     response_id=request.response_id,
-                    content=func_call["arguments"]["message"],
+                    content=message,
                     content_complete=True,
                     end_call=True,
                 )

@@ -60,7 +60,7 @@ export function VideoBox({ conversationUrl, isLoading = false }: VideoBoxProps) 
         case 'check_diagram':
           // Call our Python backend service
           try {
-            const response = await fetch('http://localhost:8000/check_diagram', {
+            const response = await fetch('http://localhost:8080/check_diagram', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -80,6 +80,43 @@ export function VideoBox({ conversationUrl, isLoading = false }: VideoBoxProps) 
           } catch (err) {
             console.error('Failed to call check_diagram backend:', err)
             result = "I'm having trouble connecting to the diagram checking service. Please make sure the backend is running."
+          }
+          break
+        case 'end_call':
+          // End the call
+          try {
+            console.log('🔚 Ending call via tool call')
+            result = "I'll end the call now. Thank you for the interview!"
+
+            // Send the response first, then end the call after a short delay
+            if (callRef.current) {
+              callRef.current.sendAppMessage({
+                message_type: 'conversation',
+                event_type: 'conversation.echo',
+                conversation_id: conversation_id,
+                properties: {
+                  modality: 'text',
+                  text: result,
+                  done: true
+                }
+              }, '*')
+
+              // End the call after 2 seconds to allow the message to be sent
+              setTimeout(() => {
+                if (callRef.current) {
+                  console.log('🔚 Leaving call')
+                  callRef.current.leave()
+                  setIsConnected(false)
+                  setRemoteParticipants({})
+                }
+              }, 2000)
+            }
+
+            // Return early since we already sent the message
+            return
+          } catch (err) {
+            console.error('Failed to end call:', err)
+            result = "I encountered an error trying to end the call."
           }
           break
         default:

@@ -1,0 +1,651 @@
+{
+  "call_id": "call_f0e9bc0e5aa9f3382c97737d020",
+  "call_ended_webhook": {
+    "call_id": "call_f0e9bc0e5aa9f3382c97737d020",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107449839,
+    "end_timestamp": 1765107462830,
+    "duration_ms": 12991,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.389,
+            "end": 0.552
+          },
+          {
+            "word": "there, ",
+            "start": 0.552,
+            "end": 0.749
+          },
+          {
+            "word": "I'm ",
+            "start": 0.749,
+            "end": 0.923
+          },
+          {
+            "word": "Grok ",
+            "start": 0.923,
+            "end": 1.202
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.202,
+            "end": 1.898
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 2.999,
+            "end": 3.319
+          },
+          {
+            "word": "How ",
+            "start": 3.319,
+            "end": 3.479
+          },
+          {
+            "word": "are ",
+            "start": 3.479,
+            "end": 3.559
+          },
+          {
+            "word": "you ",
+            "start": 3.559,
+            "end": 3.6389998
+          },
+          {
+            "word": "doing?",
+            "start": 3.6389998,
+            "end": 3.799
+          }
+        ]
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.389,
+            "end": 0.552
+          },
+          {
+            "word": "there, ",
+            "start": 0.552,
+            "end": 0.749
+          },
+          {
+            "word": "I'm ",
+            "start": 0.749,
+            "end": 0.923
+          },
+          {
+            "word": "Grok ",
+            "start": 0.923,
+            "end": 1.202
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.202,
+            "end": 1.898
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 2.999,
+            "end": 3.319
+          },
+          {
+            "word": "How ",
+            "start": 3.319,
+            "end": 3.479
+          },
+          {
+            "word": "are ",
+            "start": 3.479,
+            "end": 3.559
+          },
+          {
+            "word": "you ",
+            "start": 3.559,
+            "end": 3.6389998
+          },
+          {
+            "word": "doing?",
+            "start": 3.6389998,
+            "end": 3.799
+          }
+        ]
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm_websocket_network_rtt": {
+        "p50": 28,
+        "p90": 37.5,
+        "p95": 37.75,
+        "p99": 37.95,
+        "min": 25,
+        "max": 38,
+        "num": 6,
+        "values": [
+          27,
+          37,
+          25,
+          38,
+          26,
+          29
+        ]
+      },
+      "tts": {
+        "p50": 272,
+        "p90": 272,
+        "p95": 272,
+        "p99": 272,
+        "min": 272,
+        "max": 272,
+        "num": 1,
+        "values": [
+          272
+        ]
+      },
+      "asr": {
+        "p50": 29.999999999999773,
+        "p90": 29.999999999999954,
+        "p95": 29.99999999999998,
+        "p99": 29.999999999999996,
+        "min": 29.999999999999545,
+        "max": 30,
+        "num": 2,
+        "values": [
+          29.999999999999545,
+          30
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 1.5166667
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 13,
+      "combined_cost": 1.5166667
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsX2YwZTliYzBlNWFhOWYzMzgyYzk3NzM3ZDAyMCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDgwNDksIm5iZiI6MCwic3ViIjoiY2xpZW50In0.2JSV85W2ji0r3Rx1K3X3RK-jlD6TayUSAG2XCeuf-cM"
+  },
+  "call_analyzed_webhook": {
+    "call_id": "call_f0e9bc0e5aa9f3382c97737d020",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107449839,
+    "end_timestamp": 1765107462830,
+    "duration_ms": 12991,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.389,
+            "end": 0.552
+          },
+          {
+            "word": "there, ",
+            "start": 0.552,
+            "end": 0.749
+          },
+          {
+            "word": "I'm ",
+            "start": 0.749,
+            "end": 0.923
+          },
+          {
+            "word": "Grok ",
+            "start": 0.923,
+            "end": 1.202
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.202,
+            "end": 1.898
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 2.999,
+            "end": 3.319
+          },
+          {
+            "word": "How ",
+            "start": 3.319,
+            "end": 3.479
+          },
+          {
+            "word": "are ",
+            "start": 3.479,
+            "end": 3.559
+          },
+          {
+            "word": "you ",
+            "start": 3.559,
+            "end": 3.6389998
+          },
+          {
+            "word": "doing?",
+            "start": 3.6389998,
+            "end": 3.799
+          }
+        ]
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.389,
+            "end": 0.552
+          },
+          {
+            "word": "there, ",
+            "start": 0.552,
+            "end": 0.749
+          },
+          {
+            "word": "I'm ",
+            "start": 0.749,
+            "end": 0.923
+          },
+          {
+            "word": "Grok ",
+            "start": 0.923,
+            "end": 1.202
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.202,
+            "end": 1.898
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 2.999,
+            "end": 3.319
+          },
+          {
+            "word": "How ",
+            "start": 3.319,
+            "end": 3.479
+          },
+          {
+            "word": "are ",
+            "start": 3.479,
+            "end": 3.559
+          },
+          {
+            "word": "you ",
+            "start": 3.559,
+            "end": 3.6389998
+          },
+          {
+            "word": "doing?",
+            "start": 3.6389998,
+            "end": 3.799
+          }
+        ]
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm_websocket_network_rtt": {
+        "p50": 28,
+        "p90": 37.5,
+        "p95": 37.75,
+        "p99": 37.95,
+        "min": 25,
+        "max": 38,
+        "num": 6,
+        "values": [
+          27,
+          37,
+          25,
+          38,
+          26,
+          29
+        ]
+      },
+      "tts": {
+        "p50": 272,
+        "p90": 272,
+        "p95": 272,
+        "p99": 272,
+        "min": 272,
+        "max": 272,
+        "num": 1,
+        "values": [
+          272
+        ]
+      },
+      "asr": {
+        "p50": 29.999999999999773,
+        "p90": 29.999999999999954,
+        "p95": 29.99999999999998,
+        "p99": 29.999999999999996,
+        "min": 29.999999999999545,
+        "max": 30,
+        "num": 2,
+        "values": [
+          29.999999999999545,
+          30
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 1.5166667
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 13,
+      "combined_cost": 1.5166667
+    },
+    "call_analysis": {
+      "call_summary": "The call began with a greeting exchange between the user and the agent, but no further information or tasks were discussed.",
+      "in_voicemail": false,
+      "user_sentiment": "Neutral",
+      "call_successful": false,
+      "custom_analysis_data": {}
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsX2YwZTliYzBlNWFhOWYzMzgyYzk3NzM3ZDAyMCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDgwNDksIm5iZiI6MCwic3ViIjoiY2xpZW50In0.2JSV85W2ji0r3Rx1K3X3RK-jlD6TayUSAG2XCeuf-cM"
+  },
+  "retell_api_data": {
+    "call_id": "call_f0e9bc0e5aa9f3382c97737d020",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107449839,
+    "end_timestamp": 1765107462830,
+    "duration_ms": 12991,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.389,
+            "end": 0.552
+          },
+          {
+            "word": "there, ",
+            "start": 0.552,
+            "end": 0.749
+          },
+          {
+            "word": "I'm ",
+            "start": 0.749,
+            "end": 0.923
+          },
+          {
+            "word": "Grok ",
+            "start": 0.923,
+            "end": 1.202
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.202,
+            "end": 1.898
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 2.999,
+            "end": 3.319
+          },
+          {
+            "word": "How ",
+            "start": 3.319,
+            "end": 3.479
+          },
+          {
+            "word": "are ",
+            "start": 3.479,
+            "end": 3.559
+          },
+          {
+            "word": "you ",
+            "start": 3.559,
+            "end": 3.6389998
+          },
+          {
+            "word": "doing?",
+            "start": 3.6389998,
+            "end": 3.799
+          }
+        ]
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.389,
+            "end": 0.552
+          },
+          {
+            "word": "there, ",
+            "start": 0.552,
+            "end": 0.749
+          },
+          {
+            "word": "I'm ",
+            "start": 0.749,
+            "end": 0.923
+          },
+          {
+            "word": "Grok ",
+            "start": 0.923,
+            "end": 1.202
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.202,
+            "end": 1.898
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 2.999,
+            "end": 3.319
+          },
+          {
+            "word": "How ",
+            "start": 3.319,
+            "end": 3.479
+          },
+          {
+            "word": "are ",
+            "start": 3.479,
+            "end": 3.559
+          },
+          {
+            "word": "you ",
+            "start": 3.559,
+            "end": 3.6389998
+          },
+          {
+            "word": "doing?",
+            "start": 3.6389998,
+            "end": 3.799
+          }
+        ]
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/afe3697c665849d9702e6c285f1a8b57e49b143711baed132a20f97a233f94ed/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm_websocket_network_rtt": {
+        "p99": 37.95,
+        "min": 25,
+        "max": 38,
+        "p90": 37.5,
+        "num": 6,
+        "values": [
+          27,
+          37,
+          25,
+          38,
+          26,
+          29
+        ],
+        "p50": 28,
+        "p95": 37.75
+      },
+      "tts": {
+        "p99": 272,
+        "min": 272,
+        "max": 272,
+        "p90": 272,
+        "num": 1,
+        "values": [
+          272
+        ],
+        "p50": 272,
+        "p95": 272
+      },
+      "asr": {
+        "p99": 29.999999999999996,
+        "min": 29.999999999999545,
+        "max": 30,
+        "p90": 29.999999999999954,
+        "num": 2,
+        "values": [
+          29.999999999999545,
+          30
+        ],
+        "p50": 29.999999999999773,
+        "p95": 29.99999999999998
+      }
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.1166667,
+      "product_costs": [
+        {
+          "unit_price": 0.1166667,
+          "product": "elevenlabs_tts",
+          "cost": 1.5166667
+        }
+      ],
+      "combined_cost": 1.5166667,
+      "total_duration_seconds": 13
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The call began with a greeting exchange between the user and the agent, but no further information or tasks were discussed.",
+      "user_sentiment": "Neutral",
+      "custom_analysis_data": {},
+      "call_successful": false
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsX2YwZTliYzBlNWFhOWYzMzgyYzk3NzM3ZDAyMCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDgwNDksIm5iZiI6MCwic3ViIjoiY2xpZW50In0.2JSV85W2ji0r3Rx1K3X3RK-jlD6TayUSAG2XCeuf-cM"
+  },
+  "timestamps": {
+    "call_ended_received": "2025-12-07T11:37:43.300009",
+    "call_analyzed_received": "2025-12-07T11:37:43.838651"
+  }
+}

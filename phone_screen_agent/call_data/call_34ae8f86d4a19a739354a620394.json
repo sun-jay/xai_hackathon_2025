@@ -1,0 +1,3231 @@
+{
+  "call_id": "call_34ae8f86d4a19a739354a620394",
+  "call_ended_webhook": {
+    "call_id": "call_34ae8f86d4a19a739354a620394",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107739697,
+    "end_timestamp": 1765107771458,
+    "duration_ms": 31761,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey.\nUser: are you doing?\nAgent: Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?\nUser: I build a system that I'm with. Behavior of a thousand people.\nAgent: Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.\nUser: There's a research paper from Stanford about it. Can you look it up and visit?\nAgent: Thank you for your time. Goodbye!\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.421,
+            "end": 0.618
+          },
+          {
+            "word": "there, ",
+            "start": 0.618,
+            "end": 0.978
+          },
+          {
+            "word": "I'm ",
+            "start": 0.978,
+            "end": 1.141
+          },
+          {
+            "word": "Grok ",
+            "start": 1.141,
+            "end": 1.396
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.396,
+            "end": 2.163
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey.",
+        "words": [
+          {
+            "word": "Hey.",
+            "start": 3.1980000000000004,
+            "end": 3.5180000000000002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "are you doing?",
+        "words": [
+          {
+            "word": "are ",
+            "start": 3.8379999000000002,
+            "end": 3.918
+          },
+          {
+            "word": "you ",
+            "start": 3.918,
+            "end": 3.998
+          },
+          {
+            "word": "doing?",
+            "start": 3.998,
+            "end": 4.2379997000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Hey, ",
+            "start": 6.25,
+            "end": 6.575
+          },
+          {
+            "word": "doing ",
+            "start": 6.575,
+            "end": 6.831
+          },
+          {
+            "word": "great\u2014thanks!",
+            "start": 6.831,
+            "end": 7.852
+          },
+          {
+            "word": " This ",
+            "start": 7.898291748046875,
+            "end": 8.119291748046875
+          },
+          {
+            "word": "is ",
+            "start": 8.119291748046875,
+            "end": 8.235291748046874
+          },
+          {
+            "word": "our ",
+            "start": 8.235291748046874,
+            "end": 8.386291748046874
+          },
+          {
+            "word": "quick ",
+            "start": 8.386291748046874,
+            "end": 8.653291748046875
+          },
+          {
+            "word": "AI ",
+            "start": 8.653291748046875,
+            "end": 8.920291748046875
+          },
+          {
+            "word": "technical ",
+            "start": 8.920291748046875,
+            "end": 9.361291748046876
+          },
+          {
+            "word": "screen ",
+            "start": 9.361291748046876,
+            "end": 9.652291748046874
+          },
+          {
+            "word": "for ",
+            "start": 9.652291748046874,
+            "end": 9.837291748046875
+          },
+          {
+            "word": "x.ai.",
+            "start": 9.837291748046875,
+            "end": 10.011291748046874
+          },
+          {
+            "word": " What's ",
+            "start": 10.813,
+            "end": 11.08
+          },
+          {
+            "word": "the ",
+            "start": 11.08,
+            "end": 11.196
+          },
+          {
+            "word": "most ",
+            "start": 11.196,
+            "end": 11.417
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.417,
+            "end": 11.951
+          },
+          {
+            "word": "thing ",
+            "start": 11.951,
+            "end": 12.125
+          },
+          {
+            "word": "you've ",
+            "start": 12.125,
+            "end": 12.345
+          },
+          {
+            "word": "built?",
+            "start": 12.345,
+            "end": 12.821
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I build a system that I'm with. Behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 13.248,
+            "end": 13.488
+          },
+          {
+            "word": "build ",
+            "start": 13.488,
+            "end": 13.727999500000001
+          },
+          {
+            "word": "a ",
+            "start": 13.727999500000001,
+            "end": 13.887999
+          },
+          {
+            "word": "system ",
+            "start": 13.887999,
+            "end": 14.128
+          },
+          {
+            "word": "that ",
+            "start": 14.128,
+            "end": 14.288
+          },
+          {
+            "word": "I'm ",
+            "start": 14.288,
+            "end": 14.528
+          },
+          {
+            "word": "with. ",
+            "start": 14.528,
+            "end": 14.688
+          },
+          {
+            "word": "Behavior ",
+            "start": 14.818,
+            "end": 15.378
+          },
+          {
+            "word": "of ",
+            "start": 15.378,
+            "end": 15.538
+          },
+          {
+            "word": "a ",
+            "start": 15.538,
+            "end": 15.618
+          },
+          {
+            "word": "thousand ",
+            "start": 15.618,
+            "end": 15.858
+          },
+          {
+            "word": "people.",
+            "start": 15.858,
+            "end": 16.177999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.",
+        "words": [
+          {
+            "word": "Sounds ",
+            "start": 17.747,
+            "end": 18.165
+          },
+          {
+            "word": "cool\u2014what ",
+            "start": 18.165,
+            "end": 18.595
+          },
+          {
+            "word": "do ",
+            "start": 18.595,
+            "end": 18.688
+          },
+          {
+            "word": "you ",
+            "start": 18.688,
+            "end": 18.792
+          },
+          {
+            "word": "mean ",
+            "start": 18.792,
+            "end": 18.966
+          },
+          {
+            "word": "by ",
+            "start": 18.966,
+            "end": 19.094
+          },
+          {
+            "word": "\"behavior ",
+            "start": 19.094,
+            "end": 19.593
+          },
+          {
+            "word": "of ",
+            "start": 19.593,
+            "end": 19.698
+          },
+          {
+            "word": "a ",
+            "start": 19.698,
+            "end": 19.779
+          },
+          {
+            "word": "thousand ",
+            "start": 19.779,
+            "end": 20.139
+          },
+          {
+            "word": "people\"?",
+            "start": 20.139,
+            "end": 20.777
+          },
+          {
+            "word": " Tell ",
+            "start": 20.823375,
+            "end": 21.090375
+          },
+          {
+            "word": "me ",
+            "start": 21.090375,
+            "end": 21.195375
+          },
+          {
+            "word": "more ",
+            "start": 21.195375,
+            "end": 21.381375
+          },
+          {
+            "word": "in ",
+            "start": 21.381375,
+            "end": 21.474375
+          },
+          {
+            "word": "a ",
+            "start": 21.474375,
+            "end": 21.555375
+          },
+          {
+            "word": "few ",
+            "start": 21.555375,
+            "end": 21.741375
+          },
+          {
+            "word": "sentences.",
+            "start": 21.741375,
+            "end": 22.681375
+          }
+        ],
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "content": "There's a research paper from Stanford about it. Can you look it up and visit?",
+        "words": [
+          {
+            "word": "There's ",
+            "start": 23.157999999999998,
+            "end": 23.637999999999998
+          },
+          {
+            "word": "a ",
+            "start": 23.637999999999998,
+            "end": 23.798
+          },
+          {
+            "word": "research ",
+            "start": 23.798,
+            "end": 24.278
+          },
+          {
+            "word": "paper ",
+            "start": 24.278,
+            "end": 24.677999999999997
+          },
+          {
+            "word": "from ",
+            "start": 24.677999999999997,
+            "end": 24.997999999999998
+          },
+          {
+            "word": "Stanford ",
+            "start": 24.997999999999998,
+            "end": 25.398
+          },
+          {
+            "word": "about ",
+            "start": 25.398,
+            "end": 25.718
+          },
+          {
+            "word": "it. ",
+            "start": 25.718,
+            "end": 25.878
+          },
+          {
+            "word": "Can ",
+            "start": 26.058,
+            "end": 26.298
+          },
+          {
+            "word": "you ",
+            "start": 26.298,
+            "end": 26.618
+          },
+          {
+            "word": "look ",
+            "start": 26.618,
+            "end": 26.857999999999997
+          },
+          {
+            "word": "it ",
+            "start": 26.857999999999997,
+            "end": 27.017999999999997
+          },
+          {
+            "word": "up ",
+            "start": 27.017999999999997,
+            "end": 27.098
+          },
+          {
+            "word": "and ",
+            "start": 27.098,
+            "end": 27.338001
+          },
+          {
+            "word": "visit?",
+            "start": 27.338001,
+            "end": 27.657999999999998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for your time. Goodbye!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 29.778,
+            "end": 30.034
+          },
+          {
+            "word": "you ",
+            "start": 30.034,
+            "end": 30.161
+          },
+          {
+            "word": "for ",
+            "start": 30.161,
+            "end": 30.312
+          },
+          {
+            "word": "your ",
+            "start": 30.312,
+            "end": 30.475
+          },
+          {
+            "word": "time. ",
+            "start": 30.475,
+            "end": 31.009
+          },
+          {
+            "word": "Goodbye!",
+            "start": 31.03175,
+            "end": 31.70575
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.421,
+            "end": 0.618
+          },
+          {
+            "word": "there, ",
+            "start": 0.618,
+            "end": 0.978
+          },
+          {
+            "word": "I'm ",
+            "start": 0.978,
+            "end": 1.141
+          },
+          {
+            "word": "Grok ",
+            "start": 1.141,
+            "end": 1.396
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.396,
+            "end": 2.163
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey.",
+        "words": [
+          {
+            "word": "Hey.",
+            "start": 3.1980000000000004,
+            "end": 3.5180000000000002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "are you doing?",
+        "words": [
+          {
+            "word": "are ",
+            "start": 3.8379999000000002,
+            "end": 3.918
+          },
+          {
+            "word": "you ",
+            "start": 3.918,
+            "end": 3.998
+          },
+          {
+            "word": "doing?",
+            "start": 3.998,
+            "end": 4.2379997000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Hey, ",
+            "start": 6.25,
+            "end": 6.575
+          },
+          {
+            "word": "doing ",
+            "start": 6.575,
+            "end": 6.831
+          },
+          {
+            "word": "great\u2014thanks!",
+            "start": 6.831,
+            "end": 7.852
+          },
+          {
+            "word": " This ",
+            "start": 7.898291748046875,
+            "end": 8.119291748046875
+          },
+          {
+            "word": "is ",
+            "start": 8.119291748046875,
+            "end": 8.235291748046874
+          },
+          {
+            "word": "our ",
+            "start": 8.235291748046874,
+            "end": 8.386291748046874
+          },
+          {
+            "word": "quick ",
+            "start": 8.386291748046874,
+            "end": 8.653291748046875
+          },
+          {
+            "word": "AI ",
+            "start": 8.653291748046875,
+            "end": 8.920291748046875
+          },
+          {
+            "word": "technical ",
+            "start": 8.920291748046875,
+            "end": 9.361291748046876
+          },
+          {
+            "word": "screen ",
+            "start": 9.361291748046876,
+            "end": 9.652291748046874
+          },
+          {
+            "word": "for ",
+            "start": 9.652291748046874,
+            "end": 9.837291748046875
+          },
+          {
+            "word": "x.ai.",
+            "start": 9.837291748046875,
+            "end": 10.011291748046874
+          },
+          {
+            "word": " What's ",
+            "start": 10.813,
+            "end": 11.08
+          },
+          {
+            "word": "the ",
+            "start": 11.08,
+            "end": 11.196
+          },
+          {
+            "word": "most ",
+            "start": 11.196,
+            "end": 11.417
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.417,
+            "end": 11.951
+          },
+          {
+            "word": "thing ",
+            "start": 11.951,
+            "end": 12.125
+          },
+          {
+            "word": "you've ",
+            "start": 12.125,
+            "end": 12.345
+          },
+          {
+            "word": "built?",
+            "start": 12.345,
+            "end": 12.821
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I build a system that I'm with. Behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 13.248,
+            "end": 13.488
+          },
+          {
+            "word": "build ",
+            "start": 13.488,
+            "end": 13.727999500000001
+          },
+          {
+            "word": "a ",
+            "start": 13.727999500000001,
+            "end": 13.887999
+          },
+          {
+            "word": "system ",
+            "start": 13.887999,
+            "end": 14.128
+          },
+          {
+            "word": "that ",
+            "start": 14.128,
+            "end": 14.288
+          },
+          {
+            "word": "I'm ",
+            "start": 14.288,
+            "end": 14.528
+          },
+          {
+            "word": "with. ",
+            "start": 14.528,
+            "end": 14.688
+          },
+          {
+            "word": "Behavior ",
+            "start": 14.818,
+            "end": 15.378
+          },
+          {
+            "word": "of ",
+            "start": 15.378,
+            "end": 15.538
+          },
+          {
+            "word": "a ",
+            "start": 15.538,
+            "end": 15.618
+          },
+          {
+            "word": "thousand ",
+            "start": 15.618,
+            "end": 15.858
+          },
+          {
+            "word": "people.",
+            "start": 15.858,
+            "end": 16.177999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.",
+        "words": [
+          {
+            "word": "Sounds ",
+            "start": 17.747,
+            "end": 18.165
+          },
+          {
+            "word": "cool\u2014what ",
+            "start": 18.165,
+            "end": 18.595
+          },
+          {
+            "word": "do ",
+            "start": 18.595,
+            "end": 18.688
+          },
+          {
+            "word": "you ",
+            "start": 18.688,
+            "end": 18.792
+          },
+          {
+            "word": "mean ",
+            "start": 18.792,
+            "end": 18.966
+          },
+          {
+            "word": "by ",
+            "start": 18.966,
+            "end": 19.094
+          },
+          {
+            "word": "\"behavior ",
+            "start": 19.094,
+            "end": 19.593
+          },
+          {
+            "word": "of ",
+            "start": 19.593,
+            "end": 19.698
+          },
+          {
+            "word": "a ",
+            "start": 19.698,
+            "end": 19.779
+          },
+          {
+            "word": "thousand ",
+            "start": 19.779,
+            "end": 20.139
+          },
+          {
+            "word": "people\"?",
+            "start": 20.139,
+            "end": 20.777
+          },
+          {
+            "word": " Tell ",
+            "start": 20.823375,
+            "end": 21.090375
+          },
+          {
+            "word": "me ",
+            "start": 21.090375,
+            "end": 21.195375
+          },
+          {
+            "word": "more ",
+            "start": 21.195375,
+            "end": 21.381375
+          },
+          {
+            "word": "in ",
+            "start": 21.381375,
+            "end": 21.474375
+          },
+          {
+            "word": "a ",
+            "start": 21.474375,
+            "end": 21.555375
+          },
+          {
+            "word": "few ",
+            "start": 21.555375,
+            "end": 21.741375
+          },
+          {
+            "word": "sentences.",
+            "start": 21.741375,
+            "end": 22.681375
+          }
+        ],
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "content": "There's a research paper from Stanford about it. Can you look it up and visit?",
+        "words": [
+          {
+            "word": "There's ",
+            "start": 23.157999999999998,
+            "end": 23.637999999999998
+          },
+          {
+            "word": "a ",
+            "start": 23.637999999999998,
+            "end": 23.798
+          },
+          {
+            "word": "research ",
+            "start": 23.798,
+            "end": 24.278
+          },
+          {
+            "word": "paper ",
+            "start": 24.278,
+            "end": 24.677999999999997
+          },
+          {
+            "word": "from ",
+            "start": 24.677999999999997,
+            "end": 24.997999999999998
+          },
+          {
+            "word": "Stanford ",
+            "start": 24.997999999999998,
+            "end": 25.398
+          },
+          {
+            "word": "about ",
+            "start": 25.398,
+            "end": 25.718
+          },
+          {
+            "word": "it. ",
+            "start": 25.718,
+            "end": 25.878
+          },
+          {
+            "word": "Can ",
+            "start": 26.058,
+            "end": 26.298
+          },
+          {
+            "word": "you ",
+            "start": 26.298,
+            "end": 26.618
+          },
+          {
+            "word": "look ",
+            "start": 26.618,
+            "end": 26.857999999999997
+          },
+          {
+            "word": "it ",
+            "start": 26.857999999999997,
+            "end": 27.017999999999997
+          },
+          {
+            "word": "up ",
+            "start": 27.017999999999997,
+            "end": 27.098
+          },
+          {
+            "word": "and ",
+            "start": 27.098,
+            "end": 27.338001
+          },
+          {
+            "word": "visit?",
+            "start": 27.338001,
+            "end": 27.657999999999998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for your time. Goodbye!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 29.778,
+            "end": 30.034
+          },
+          {
+            "word": "you ",
+            "start": 30.034,
+            "end": 30.161
+          },
+          {
+            "word": "for ",
+            "start": 30.161,
+            "end": 30.312
+          },
+          {
+            "word": "your ",
+            "start": 30.312,
+            "end": 30.475
+          },
+          {
+            "word": "time. ",
+            "start": 30.475,
+            "end": 31.009
+          },
+          {
+            "word": "Goodbye!",
+            "start": 31.03175,
+            "end": 31.70575
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "tool_call_4541c7",
+        "name": "end_call",
+        "arguments": "{}",
+        "time_sec": 31.754
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p50": 1404,
+        "p90": 1493.6,
+        "p95": 1504.8,
+        "p99": 1513.76,
+        "min": 777,
+        "max": 1516,
+        "num": 3,
+        "values": [
+          1404,
+          777,
+          1516
+        ]
+      },
+      "llm_websocket_network_rtt": {
+        "p50": 27,
+        "p90": 36.599999999999994,
+        "p95": 39.3,
+        "p99": 39.86,
+        "min": 24,
+        "max": 40,
+        "num": 15,
+        "values": [
+          26,
+          26,
+          27,
+          40,
+          27,
+          29,
+          28,
+          33,
+          26,
+          24,
+          26,
+          27,
+          33,
+          39,
+          28
+        ]
+      },
+      "e2e": {
+        "p50": 1896.000244140625,
+        "p90": 1982.400048828125,
+        "p95": 1993.2000244140625,
+        "p99": 2001.8400048828125,
+        "min": 1395.0009765625,
+        "max": 2004,
+        "num": 3,
+        "values": [
+          1896.000244140625,
+          1395.0009765625,
+          2004
+        ]
+      },
+      "tts": {
+        "p50": 326,
+        "p90": 349.4,
+        "p95": 349.7,
+        "p99": 349.94,
+        "min": 261,
+        "max": 350,
+        "num": 4,
+        "values": [
+          304,
+          350,
+          348,
+          261
+        ]
+      },
+      "asr": {
+        "p50": 29.999500000001717,
+        "p90": 60.00000000000142,
+        "p95": 435.9999999999988,
+        "p99": 832.7997120000018,
+        "min": 9.998999999999796,
+        "max": 899.9996000000028,
+        "num": 29,
+        "values": [
+          20.000000000000455,
+          20,
+          10.000100000000202,
+          20.000100000000202,
+          40,
+          20,
+          39.99949999999808,
+          19.999299999999494,
+          20,
+          19.999399999998786,
+          660,
+          39.99990000000071,
+          29.999700000000303,
+          29.999500000001717,
+          50.00000000000182,
+          30,
+          30.00039999999717,
+          9.998999999999796,
+          29.99960000000283,
+          10.001000000000204,
+          9.99949999999808,
+          100,
+          20.00100000000384,
+          19.999500000001717,
+          899.9996000000028,
+          30.00039999999717,
+          10.001099999997678,
+          29.999799999997776,
+          40.000999999996566
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 3.7333333
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 32,
+      "combined_cost": 3.7333333
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [
+      {
+        "tool_call_id": "tool_call_4541c7",
+        "name": "end_call",
+        "start_time_sec": 31.754
+      }
+    ],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzM0YWU4Zjg2ZDRhMTlhNzM5MzU0YTYyMDM5NCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDgzMzksIm5iZiI6MCwic3ViIjoiY2xpZW50In0.87bu4Z9nWhS8eoLf9eqwUKDd-Ot3g2ckvs_klkf6Uag"
+  },
+  "call_analyzed_webhook": {
+    "call_id": "call_34ae8f86d4a19a739354a620394",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107739697,
+    "end_timestamp": 1765107771458,
+    "duration_ms": 31761,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey.\nUser: are you doing?\nAgent: Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?\nUser: I build a system that I'm with. Behavior of a thousand people.\nAgent: Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.\nUser: There's a research paper from Stanford about it. Can you look it up and visit?\nAgent: Thank you for your time. Goodbye!\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.421,
+            "end": 0.618
+          },
+          {
+            "word": "there, ",
+            "start": 0.618,
+            "end": 0.978
+          },
+          {
+            "word": "I'm ",
+            "start": 0.978,
+            "end": 1.141
+          },
+          {
+            "word": "Grok ",
+            "start": 1.141,
+            "end": 1.396
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.396,
+            "end": 2.163
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey.",
+        "words": [
+          {
+            "word": "Hey.",
+            "start": 3.1980000000000004,
+            "end": 3.5180000000000002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "are you doing?",
+        "words": [
+          {
+            "word": "are ",
+            "start": 3.8379999000000002,
+            "end": 3.918
+          },
+          {
+            "word": "you ",
+            "start": 3.918,
+            "end": 3.998
+          },
+          {
+            "word": "doing?",
+            "start": 3.998,
+            "end": 4.2379997000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Hey, ",
+            "start": 6.25,
+            "end": 6.575
+          },
+          {
+            "word": "doing ",
+            "start": 6.575,
+            "end": 6.831
+          },
+          {
+            "word": "great\u2014thanks!",
+            "start": 6.831,
+            "end": 7.852
+          },
+          {
+            "word": " This ",
+            "start": 7.898291748046875,
+            "end": 8.119291748046875
+          },
+          {
+            "word": "is ",
+            "start": 8.119291748046875,
+            "end": 8.235291748046874
+          },
+          {
+            "word": "our ",
+            "start": 8.235291748046874,
+            "end": 8.386291748046874
+          },
+          {
+            "word": "quick ",
+            "start": 8.386291748046874,
+            "end": 8.653291748046875
+          },
+          {
+            "word": "AI ",
+            "start": 8.653291748046875,
+            "end": 8.920291748046875
+          },
+          {
+            "word": "technical ",
+            "start": 8.920291748046875,
+            "end": 9.361291748046876
+          },
+          {
+            "word": "screen ",
+            "start": 9.361291748046876,
+            "end": 9.652291748046874
+          },
+          {
+            "word": "for ",
+            "start": 9.652291748046874,
+            "end": 9.837291748046875
+          },
+          {
+            "word": "x.ai.",
+            "start": 9.837291748046875,
+            "end": 10.011291748046874
+          },
+          {
+            "word": " What's ",
+            "start": 10.813,
+            "end": 11.08
+          },
+          {
+            "word": "the ",
+            "start": 11.08,
+            "end": 11.196
+          },
+          {
+            "word": "most ",
+            "start": 11.196,
+            "end": 11.417
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.417,
+            "end": 11.951
+          },
+          {
+            "word": "thing ",
+            "start": 11.951,
+            "end": 12.125
+          },
+          {
+            "word": "you've ",
+            "start": 12.125,
+            "end": 12.345
+          },
+          {
+            "word": "built?",
+            "start": 12.345,
+            "end": 12.821
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I build a system that I'm with. Behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 13.248,
+            "end": 13.488
+          },
+          {
+            "word": "build ",
+            "start": 13.488,
+            "end": 13.727999500000001
+          },
+          {
+            "word": "a ",
+            "start": 13.727999500000001,
+            "end": 13.887999
+          },
+          {
+            "word": "system ",
+            "start": 13.887999,
+            "end": 14.128
+          },
+          {
+            "word": "that ",
+            "start": 14.128,
+            "end": 14.288
+          },
+          {
+            "word": "I'm ",
+            "start": 14.288,
+            "end": 14.528
+          },
+          {
+            "word": "with. ",
+            "start": 14.528,
+            "end": 14.688
+          },
+          {
+            "word": "Behavior ",
+            "start": 14.818,
+            "end": 15.378
+          },
+          {
+            "word": "of ",
+            "start": 15.378,
+            "end": 15.538
+          },
+          {
+            "word": "a ",
+            "start": 15.538,
+            "end": 15.618
+          },
+          {
+            "word": "thousand ",
+            "start": 15.618,
+            "end": 15.858
+          },
+          {
+            "word": "people.",
+            "start": 15.858,
+            "end": 16.177999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.",
+        "words": [
+          {
+            "word": "Sounds ",
+            "start": 17.747,
+            "end": 18.165
+          },
+          {
+            "word": "cool\u2014what ",
+            "start": 18.165,
+            "end": 18.595
+          },
+          {
+            "word": "do ",
+            "start": 18.595,
+            "end": 18.688
+          },
+          {
+            "word": "you ",
+            "start": 18.688,
+            "end": 18.792
+          },
+          {
+            "word": "mean ",
+            "start": 18.792,
+            "end": 18.966
+          },
+          {
+            "word": "by ",
+            "start": 18.966,
+            "end": 19.094
+          },
+          {
+            "word": "\"behavior ",
+            "start": 19.094,
+            "end": 19.593
+          },
+          {
+            "word": "of ",
+            "start": 19.593,
+            "end": 19.698
+          },
+          {
+            "word": "a ",
+            "start": 19.698,
+            "end": 19.779
+          },
+          {
+            "word": "thousand ",
+            "start": 19.779,
+            "end": 20.139
+          },
+          {
+            "word": "people\"?",
+            "start": 20.139,
+            "end": 20.777
+          },
+          {
+            "word": " Tell ",
+            "start": 20.823375,
+            "end": 21.090375
+          },
+          {
+            "word": "me ",
+            "start": 21.090375,
+            "end": 21.195375
+          },
+          {
+            "word": "more ",
+            "start": 21.195375,
+            "end": 21.381375
+          },
+          {
+            "word": "in ",
+            "start": 21.381375,
+            "end": 21.474375
+          },
+          {
+            "word": "a ",
+            "start": 21.474375,
+            "end": 21.555375
+          },
+          {
+            "word": "few ",
+            "start": 21.555375,
+            "end": 21.741375
+          },
+          {
+            "word": "sentences.",
+            "start": 21.741375,
+            "end": 22.681375
+          }
+        ],
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "content": "There's a research paper from Stanford about it. Can you look it up and visit?",
+        "words": [
+          {
+            "word": "There's ",
+            "start": 23.157999999999998,
+            "end": 23.637999999999998
+          },
+          {
+            "word": "a ",
+            "start": 23.637999999999998,
+            "end": 23.798
+          },
+          {
+            "word": "research ",
+            "start": 23.798,
+            "end": 24.278
+          },
+          {
+            "word": "paper ",
+            "start": 24.278,
+            "end": 24.677999999999997
+          },
+          {
+            "word": "from ",
+            "start": 24.677999999999997,
+            "end": 24.997999999999998
+          },
+          {
+            "word": "Stanford ",
+            "start": 24.997999999999998,
+            "end": 25.398
+          },
+          {
+            "word": "about ",
+            "start": 25.398,
+            "end": 25.718
+          },
+          {
+            "word": "it. ",
+            "start": 25.718,
+            "end": 25.878
+          },
+          {
+            "word": "Can ",
+            "start": 26.058,
+            "end": 26.298
+          },
+          {
+            "word": "you ",
+            "start": 26.298,
+            "end": 26.618
+          },
+          {
+            "word": "look ",
+            "start": 26.618,
+            "end": 26.857999999999997
+          },
+          {
+            "word": "it ",
+            "start": 26.857999999999997,
+            "end": 27.017999999999997
+          },
+          {
+            "word": "up ",
+            "start": 27.017999999999997,
+            "end": 27.098
+          },
+          {
+            "word": "and ",
+            "start": 27.098,
+            "end": 27.338001
+          },
+          {
+            "word": "visit?",
+            "start": 27.338001,
+            "end": 27.657999999999998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for your time. Goodbye!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 29.778,
+            "end": 30.034
+          },
+          {
+            "word": "you ",
+            "start": 30.034,
+            "end": 30.161
+          },
+          {
+            "word": "for ",
+            "start": 30.161,
+            "end": 30.312
+          },
+          {
+            "word": "your ",
+            "start": 30.312,
+            "end": 30.475
+          },
+          {
+            "word": "time. ",
+            "start": 30.475,
+            "end": 31.009
+          },
+          {
+            "word": "Goodbye!",
+            "start": 31.03175,
+            "end": 31.70575
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.421,
+            "end": 0.618
+          },
+          {
+            "word": "there, ",
+            "start": 0.618,
+            "end": 0.978
+          },
+          {
+            "word": "I'm ",
+            "start": 0.978,
+            "end": 1.141
+          },
+          {
+            "word": "Grok ",
+            "start": 1.141,
+            "end": 1.396
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.396,
+            "end": 2.163
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey.",
+        "words": [
+          {
+            "word": "Hey.",
+            "start": 3.1980000000000004,
+            "end": 3.5180000000000002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "are you doing?",
+        "words": [
+          {
+            "word": "are ",
+            "start": 3.8379999000000002,
+            "end": 3.918
+          },
+          {
+            "word": "you ",
+            "start": 3.918,
+            "end": 3.998
+          },
+          {
+            "word": "doing?",
+            "start": 3.998,
+            "end": 4.2379997000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Hey, ",
+            "start": 6.25,
+            "end": 6.575
+          },
+          {
+            "word": "doing ",
+            "start": 6.575,
+            "end": 6.831
+          },
+          {
+            "word": "great\u2014thanks!",
+            "start": 6.831,
+            "end": 7.852
+          },
+          {
+            "word": " This ",
+            "start": 7.898291748046875,
+            "end": 8.119291748046875
+          },
+          {
+            "word": "is ",
+            "start": 8.119291748046875,
+            "end": 8.235291748046874
+          },
+          {
+            "word": "our ",
+            "start": 8.235291748046874,
+            "end": 8.386291748046874
+          },
+          {
+            "word": "quick ",
+            "start": 8.386291748046874,
+            "end": 8.653291748046875
+          },
+          {
+            "word": "AI ",
+            "start": 8.653291748046875,
+            "end": 8.920291748046875
+          },
+          {
+            "word": "technical ",
+            "start": 8.920291748046875,
+            "end": 9.361291748046876
+          },
+          {
+            "word": "screen ",
+            "start": 9.361291748046876,
+            "end": 9.652291748046874
+          },
+          {
+            "word": "for ",
+            "start": 9.652291748046874,
+            "end": 9.837291748046875
+          },
+          {
+            "word": "x.ai.",
+            "start": 9.837291748046875,
+            "end": 10.011291748046874
+          },
+          {
+            "word": " What's ",
+            "start": 10.813,
+            "end": 11.08
+          },
+          {
+            "word": "the ",
+            "start": 11.08,
+            "end": 11.196
+          },
+          {
+            "word": "most ",
+            "start": 11.196,
+            "end": 11.417
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.417,
+            "end": 11.951
+          },
+          {
+            "word": "thing ",
+            "start": 11.951,
+            "end": 12.125
+          },
+          {
+            "word": "you've ",
+            "start": 12.125,
+            "end": 12.345
+          },
+          {
+            "word": "built?",
+            "start": 12.345,
+            "end": 12.821
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I build a system that I'm with. Behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 13.248,
+            "end": 13.488
+          },
+          {
+            "word": "build ",
+            "start": 13.488,
+            "end": 13.727999500000001
+          },
+          {
+            "word": "a ",
+            "start": 13.727999500000001,
+            "end": 13.887999
+          },
+          {
+            "word": "system ",
+            "start": 13.887999,
+            "end": 14.128
+          },
+          {
+            "word": "that ",
+            "start": 14.128,
+            "end": 14.288
+          },
+          {
+            "word": "I'm ",
+            "start": 14.288,
+            "end": 14.528
+          },
+          {
+            "word": "with. ",
+            "start": 14.528,
+            "end": 14.688
+          },
+          {
+            "word": "Behavior ",
+            "start": 14.818,
+            "end": 15.378
+          },
+          {
+            "word": "of ",
+            "start": 15.378,
+            "end": 15.538
+          },
+          {
+            "word": "a ",
+            "start": 15.538,
+            "end": 15.618
+          },
+          {
+            "word": "thousand ",
+            "start": 15.618,
+            "end": 15.858
+          },
+          {
+            "word": "people.",
+            "start": 15.858,
+            "end": 16.177999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.",
+        "words": [
+          {
+            "word": "Sounds ",
+            "start": 17.747,
+            "end": 18.165
+          },
+          {
+            "word": "cool\u2014what ",
+            "start": 18.165,
+            "end": 18.595
+          },
+          {
+            "word": "do ",
+            "start": 18.595,
+            "end": 18.688
+          },
+          {
+            "word": "you ",
+            "start": 18.688,
+            "end": 18.792
+          },
+          {
+            "word": "mean ",
+            "start": 18.792,
+            "end": 18.966
+          },
+          {
+            "word": "by ",
+            "start": 18.966,
+            "end": 19.094
+          },
+          {
+            "word": "\"behavior ",
+            "start": 19.094,
+            "end": 19.593
+          },
+          {
+            "word": "of ",
+            "start": 19.593,
+            "end": 19.698
+          },
+          {
+            "word": "a ",
+            "start": 19.698,
+            "end": 19.779
+          },
+          {
+            "word": "thousand ",
+            "start": 19.779,
+            "end": 20.139
+          },
+          {
+            "word": "people\"?",
+            "start": 20.139,
+            "end": 20.777
+          },
+          {
+            "word": " Tell ",
+            "start": 20.823375,
+            "end": 21.090375
+          },
+          {
+            "word": "me ",
+            "start": 21.090375,
+            "end": 21.195375
+          },
+          {
+            "word": "more ",
+            "start": 21.195375,
+            "end": 21.381375
+          },
+          {
+            "word": "in ",
+            "start": 21.381375,
+            "end": 21.474375
+          },
+          {
+            "word": "a ",
+            "start": 21.474375,
+            "end": 21.555375
+          },
+          {
+            "word": "few ",
+            "start": 21.555375,
+            "end": 21.741375
+          },
+          {
+            "word": "sentences.",
+            "start": 21.741375,
+            "end": 22.681375
+          }
+        ],
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "content": "There's a research paper from Stanford about it. Can you look it up and visit?",
+        "words": [
+          {
+            "word": "There's ",
+            "start": 23.157999999999998,
+            "end": 23.637999999999998
+          },
+          {
+            "word": "a ",
+            "start": 23.637999999999998,
+            "end": 23.798
+          },
+          {
+            "word": "research ",
+            "start": 23.798,
+            "end": 24.278
+          },
+          {
+            "word": "paper ",
+            "start": 24.278,
+            "end": 24.677999999999997
+          },
+          {
+            "word": "from ",
+            "start": 24.677999999999997,
+            "end": 24.997999999999998
+          },
+          {
+            "word": "Stanford ",
+            "start": 24.997999999999998,
+            "end": 25.398
+          },
+          {
+            "word": "about ",
+            "start": 25.398,
+            "end": 25.718
+          },
+          {
+            "word": "it. ",
+            "start": 25.718,
+            "end": 25.878
+          },
+          {
+            "word": "Can ",
+            "start": 26.058,
+            "end": 26.298
+          },
+          {
+            "word": "you ",
+            "start": 26.298,
+            "end": 26.618
+          },
+          {
+            "word": "look ",
+            "start": 26.618,
+            "end": 26.857999999999997
+          },
+          {
+            "word": "it ",
+            "start": 26.857999999999997,
+            "end": 27.017999999999997
+          },
+          {
+            "word": "up ",
+            "start": 27.017999999999997,
+            "end": 27.098
+          },
+          {
+            "word": "and ",
+            "start": 27.098,
+            "end": 27.338001
+          },
+          {
+            "word": "visit?",
+            "start": 27.338001,
+            "end": 27.657999999999998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for your time. Goodbye!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 29.778,
+            "end": 30.034
+          },
+          {
+            "word": "you ",
+            "start": 30.034,
+            "end": 30.161
+          },
+          {
+            "word": "for ",
+            "start": 30.161,
+            "end": 30.312
+          },
+          {
+            "word": "your ",
+            "start": 30.312,
+            "end": 30.475
+          },
+          {
+            "word": "time. ",
+            "start": 30.475,
+            "end": 31.009
+          },
+          {
+            "word": "Goodbye!",
+            "start": 31.03175,
+            "end": 31.70575
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "tool_call_4541c7",
+        "name": "end_call",
+        "arguments": "{}",
+        "time_sec": 31.754
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p50": 1404,
+        "p90": 1493.6,
+        "p95": 1504.8,
+        "p99": 1513.76,
+        "min": 777,
+        "max": 1516,
+        "num": 3,
+        "values": [
+          1404,
+          777,
+          1516
+        ]
+      },
+      "llm_websocket_network_rtt": {
+        "p50": 27,
+        "p90": 36.599999999999994,
+        "p95": 39.3,
+        "p99": 39.86,
+        "min": 24,
+        "max": 40,
+        "num": 15,
+        "values": [
+          26,
+          26,
+          27,
+          40,
+          27,
+          29,
+          28,
+          33,
+          26,
+          24,
+          26,
+          27,
+          33,
+          39,
+          28
+        ]
+      },
+      "e2e": {
+        "p50": 1896.000244140625,
+        "p90": 1982.400048828125,
+        "p95": 1993.2000244140625,
+        "p99": 2001.8400048828125,
+        "min": 1395.0009765625,
+        "max": 2004,
+        "num": 3,
+        "values": [
+          1896.000244140625,
+          1395.0009765625,
+          2004
+        ]
+      },
+      "tts": {
+        "p50": 326,
+        "p90": 349.4,
+        "p95": 349.7,
+        "p99": 349.94,
+        "min": 261,
+        "max": 350,
+        "num": 4,
+        "values": [
+          304,
+          350,
+          348,
+          261
+        ]
+      },
+      "asr": {
+        "p50": 29.999500000001717,
+        "p90": 60.00000000000142,
+        "p95": 435.9999999999988,
+        "p99": 832.7997120000018,
+        "min": 9.998999999999796,
+        "max": 899.9996000000028,
+        "num": 29,
+        "values": [
+          20.000000000000455,
+          20,
+          10.000100000000202,
+          20.000100000000202,
+          40,
+          20,
+          39.99949999999808,
+          19.999299999999494,
+          20,
+          19.999399999998786,
+          660,
+          39.99990000000071,
+          29.999700000000303,
+          29.999500000001717,
+          50.00000000000182,
+          30,
+          30.00039999999717,
+          9.998999999999796,
+          29.99960000000283,
+          10.001000000000204,
+          9.99949999999808,
+          100,
+          20.00100000000384,
+          19.999500000001717,
+          899.9996000000028,
+          30.00039999999717,
+          10.001099999997678,
+          29.999799999997776,
+          40.000999999996566
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 3.7333333
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 32,
+      "combined_cost": 3.7333333
+    },
+    "call_analysis": {
+      "call_summary": "The user was asked about the most exceptional thing they have built and mentioned a system related to the behavior of a thousand people, referencing a Stanford research paper. The agent asked for more details, but the user requested the agent to look up the paper, after which the agent ended the call.",
+      "in_voicemail": false,
+      "user_sentiment": "Neutral",
+      "call_successful": false,
+      "custom_analysis_data": {}
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [
+      {
+        "tool_call_id": "tool_call_4541c7",
+        "name": "end_call",
+        "start_time_sec": 31.754
+      }
+    ],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzM0YWU4Zjg2ZDRhMTlhNzM5MzU0YTYyMDM5NCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDgzMzksIm5iZiI6MCwic3ViIjoiY2xpZW50In0.87bu4Z9nWhS8eoLf9eqwUKDd-Ot3g2ckvs_klkf6Uag"
+  },
+  "retell_api_data": {
+    "call_id": "call_34ae8f86d4a19a739354a620394",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107739697,
+    "end_timestamp": 1765107771458,
+    "duration_ms": 31761,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey.\nUser: are you doing?\nAgent: Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?\nUser: I build a system that I'm with. Behavior of a thousand people.\nAgent: Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.\nUser: There's a research paper from Stanford about it. Can you look it up and visit?\nAgent: Thank you for your time. Goodbye!\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.421,
+            "end": 0.618
+          },
+          {
+            "word": "there, ",
+            "start": 0.618,
+            "end": 0.978
+          },
+          {
+            "word": "I'm ",
+            "start": 0.978,
+            "end": 1.141
+          },
+          {
+            "word": "Grok ",
+            "start": 1.141,
+            "end": 1.396
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.396,
+            "end": 2.163
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey.",
+        "words": [
+          {
+            "word": "Hey.",
+            "start": 3.1980000000000004,
+            "end": 3.5180000000000002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "are you doing?",
+        "words": [
+          {
+            "word": "are ",
+            "start": 3.8379999000000002,
+            "end": 3.918
+          },
+          {
+            "word": "you ",
+            "start": 3.918,
+            "end": 3.998
+          },
+          {
+            "word": "doing?",
+            "start": 3.998,
+            "end": 4.2379997000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Hey, ",
+            "start": 6.25,
+            "end": 6.575
+          },
+          {
+            "word": "doing ",
+            "start": 6.575,
+            "end": 6.831
+          },
+          {
+            "word": "great\u2014thanks!",
+            "start": 6.831,
+            "end": 7.852
+          },
+          {
+            "word": " This ",
+            "start": 7.898291748046875,
+            "end": 8.119291748046875
+          },
+          {
+            "word": "is ",
+            "start": 8.119291748046875,
+            "end": 8.235291748046874
+          },
+          {
+            "word": "our ",
+            "start": 8.235291748046874,
+            "end": 8.386291748046874
+          },
+          {
+            "word": "quick ",
+            "start": 8.386291748046874,
+            "end": 8.653291748046875
+          },
+          {
+            "word": "AI ",
+            "start": 8.653291748046875,
+            "end": 8.920291748046875
+          },
+          {
+            "word": "technical ",
+            "start": 8.920291748046875,
+            "end": 9.361291748046876
+          },
+          {
+            "word": "screen ",
+            "start": 9.361291748046876,
+            "end": 9.652291748046874
+          },
+          {
+            "word": "for ",
+            "start": 9.652291748046874,
+            "end": 9.837291748046875
+          },
+          {
+            "word": "x.ai.",
+            "start": 9.837291748046875,
+            "end": 10.011291748046874
+          },
+          {
+            "word": " What's ",
+            "start": 10.813,
+            "end": 11.08
+          },
+          {
+            "word": "the ",
+            "start": 11.08,
+            "end": 11.196
+          },
+          {
+            "word": "most ",
+            "start": 11.196,
+            "end": 11.417
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.417,
+            "end": 11.951
+          },
+          {
+            "word": "thing ",
+            "start": 11.951,
+            "end": 12.125
+          },
+          {
+            "word": "you've ",
+            "start": 12.125,
+            "end": 12.345
+          },
+          {
+            "word": "built?",
+            "start": 12.345,
+            "end": 12.821
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I build a system that I'm with. Behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 13.248,
+            "end": 13.488
+          },
+          {
+            "word": "build ",
+            "start": 13.488,
+            "end": 13.727999500000001
+          },
+          {
+            "word": "a ",
+            "start": 13.727999500000001,
+            "end": 13.887999
+          },
+          {
+            "word": "system ",
+            "start": 13.887999,
+            "end": 14.128
+          },
+          {
+            "word": "that ",
+            "start": 14.128,
+            "end": 14.288
+          },
+          {
+            "word": "I'm ",
+            "start": 14.288,
+            "end": 14.528
+          },
+          {
+            "word": "with. ",
+            "start": 14.528,
+            "end": 14.688
+          },
+          {
+            "word": "Behavior ",
+            "start": 14.818,
+            "end": 15.378
+          },
+          {
+            "word": "of ",
+            "start": 15.378,
+            "end": 15.538
+          },
+          {
+            "word": "a ",
+            "start": 15.538,
+            "end": 15.618
+          },
+          {
+            "word": "thousand ",
+            "start": 15.618,
+            "end": 15.858
+          },
+          {
+            "word": "people.",
+            "start": 15.858,
+            "end": 16.177999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.",
+        "words": [
+          {
+            "word": "Sounds ",
+            "start": 17.747,
+            "end": 18.165
+          },
+          {
+            "word": "cool\u2014what ",
+            "start": 18.165,
+            "end": 18.595
+          },
+          {
+            "word": "do ",
+            "start": 18.595,
+            "end": 18.688
+          },
+          {
+            "word": "you ",
+            "start": 18.688,
+            "end": 18.792
+          },
+          {
+            "word": "mean ",
+            "start": 18.792,
+            "end": 18.966
+          },
+          {
+            "word": "by ",
+            "start": 18.966,
+            "end": 19.094
+          },
+          {
+            "word": "\"behavior ",
+            "start": 19.094,
+            "end": 19.593
+          },
+          {
+            "word": "of ",
+            "start": 19.593,
+            "end": 19.698
+          },
+          {
+            "word": "a ",
+            "start": 19.698,
+            "end": 19.779
+          },
+          {
+            "word": "thousand ",
+            "start": 19.779,
+            "end": 20.139
+          },
+          {
+            "word": "people\"?",
+            "start": 20.139,
+            "end": 20.777
+          },
+          {
+            "word": " Tell ",
+            "start": 20.823375,
+            "end": 21.090375
+          },
+          {
+            "word": "me ",
+            "start": 21.090375,
+            "end": 21.195375
+          },
+          {
+            "word": "more ",
+            "start": 21.195375,
+            "end": 21.381375
+          },
+          {
+            "word": "in ",
+            "start": 21.381375,
+            "end": 21.474375
+          },
+          {
+            "word": "a ",
+            "start": 21.474375,
+            "end": 21.555375
+          },
+          {
+            "word": "few ",
+            "start": 21.555375,
+            "end": 21.741375
+          },
+          {
+            "word": "sentences.",
+            "start": 21.741375,
+            "end": 22.681375
+          }
+        ],
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "content": "There's a research paper from Stanford about it. Can you look it up and visit?",
+        "words": [
+          {
+            "word": "There's ",
+            "start": 23.157999999999998,
+            "end": 23.637999999999998
+          },
+          {
+            "word": "a ",
+            "start": 23.637999999999998,
+            "end": 23.798
+          },
+          {
+            "word": "research ",
+            "start": 23.798,
+            "end": 24.278
+          },
+          {
+            "word": "paper ",
+            "start": 24.278,
+            "end": 24.677999999999997
+          },
+          {
+            "word": "from ",
+            "start": 24.677999999999997,
+            "end": 24.997999999999998
+          },
+          {
+            "word": "Stanford ",
+            "start": 24.997999999999998,
+            "end": 25.398
+          },
+          {
+            "word": "about ",
+            "start": 25.398,
+            "end": 25.718
+          },
+          {
+            "word": "it. ",
+            "start": 25.718,
+            "end": 25.878
+          },
+          {
+            "word": "Can ",
+            "start": 26.058,
+            "end": 26.298
+          },
+          {
+            "word": "you ",
+            "start": 26.298,
+            "end": 26.618
+          },
+          {
+            "word": "look ",
+            "start": 26.618,
+            "end": 26.857999999999997
+          },
+          {
+            "word": "it ",
+            "start": 26.857999999999997,
+            "end": 27.017999999999997
+          },
+          {
+            "word": "up ",
+            "start": 27.017999999999997,
+            "end": 27.098
+          },
+          {
+            "word": "and ",
+            "start": 27.098,
+            "end": 27.338001
+          },
+          {
+            "word": "visit?",
+            "start": 27.338001,
+            "end": 27.657999999999998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for your time. Goodbye!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 29.778,
+            "end": 30.034
+          },
+          {
+            "word": "you ",
+            "start": 30.034,
+            "end": 30.161
+          },
+          {
+            "word": "for ",
+            "start": 30.161,
+            "end": 30.312
+          },
+          {
+            "word": "your ",
+            "start": 30.312,
+            "end": 30.475
+          },
+          {
+            "word": "time. ",
+            "start": 30.475,
+            "end": 31.009
+          },
+          {
+            "word": "Goodbye!",
+            "start": 31.03175,
+            "end": 31.70575
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.421,
+            "end": 0.618
+          },
+          {
+            "word": "there, ",
+            "start": 0.618,
+            "end": 0.978
+          },
+          {
+            "word": "I'm ",
+            "start": 0.978,
+            "end": 1.141
+          },
+          {
+            "word": "Grok ",
+            "start": 1.141,
+            "end": 1.396
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.396,
+            "end": 2.163
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey.",
+        "words": [
+          {
+            "word": "Hey.",
+            "start": 3.1980000000000004,
+            "end": 3.5180000000000002
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "are you doing?",
+        "words": [
+          {
+            "word": "are ",
+            "start": 3.8379999000000002,
+            "end": 3.918
+          },
+          {
+            "word": "you ",
+            "start": 3.918,
+            "end": 3.998
+          },
+          {
+            "word": "doing?",
+            "start": 3.998,
+            "end": 4.2379997000000005
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Hey, doing great\u2014thanks! This is our quick AI technical screen for x.ai. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Hey, ",
+            "start": 6.25,
+            "end": 6.575
+          },
+          {
+            "word": "doing ",
+            "start": 6.575,
+            "end": 6.831
+          },
+          {
+            "word": "great\u2014thanks!",
+            "start": 6.831,
+            "end": 7.852
+          },
+          {
+            "word": " This ",
+            "start": 7.898291748046875,
+            "end": 8.119291748046875
+          },
+          {
+            "word": "is ",
+            "start": 8.119291748046875,
+            "end": 8.235291748046874
+          },
+          {
+            "word": "our ",
+            "start": 8.235291748046874,
+            "end": 8.386291748046874
+          },
+          {
+            "word": "quick ",
+            "start": 8.386291748046874,
+            "end": 8.653291748046875
+          },
+          {
+            "word": "AI ",
+            "start": 8.653291748046875,
+            "end": 8.920291748046875
+          },
+          {
+            "word": "technical ",
+            "start": 8.920291748046875,
+            "end": 9.361291748046876
+          },
+          {
+            "word": "screen ",
+            "start": 9.361291748046876,
+            "end": 9.652291748046874
+          },
+          {
+            "word": "for ",
+            "start": 9.652291748046874,
+            "end": 9.837291748046875
+          },
+          {
+            "word": "x.ai.",
+            "start": 9.837291748046875,
+            "end": 10.011291748046874
+          },
+          {
+            "word": " What's ",
+            "start": 10.813,
+            "end": 11.08
+          },
+          {
+            "word": "the ",
+            "start": 11.08,
+            "end": 11.196
+          },
+          {
+            "word": "most ",
+            "start": 11.196,
+            "end": 11.417
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.417,
+            "end": 11.951
+          },
+          {
+            "word": "thing ",
+            "start": 11.951,
+            "end": 12.125
+          },
+          {
+            "word": "you've ",
+            "start": 12.125,
+            "end": 12.345
+          },
+          {
+            "word": "built?",
+            "start": 12.345,
+            "end": 12.821
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I build a system that I'm with. Behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I ",
+            "start": 13.248,
+            "end": 13.488
+          },
+          {
+            "word": "build ",
+            "start": 13.488,
+            "end": 13.727999500000001
+          },
+          {
+            "word": "a ",
+            "start": 13.727999500000001,
+            "end": 13.887999
+          },
+          {
+            "word": "system ",
+            "start": 13.887999,
+            "end": 14.128
+          },
+          {
+            "word": "that ",
+            "start": 14.128,
+            "end": 14.288
+          },
+          {
+            "word": "I'm ",
+            "start": 14.288,
+            "end": 14.528
+          },
+          {
+            "word": "with. ",
+            "start": 14.528,
+            "end": 14.688
+          },
+          {
+            "word": "Behavior ",
+            "start": 14.818,
+            "end": 15.378
+          },
+          {
+            "word": "of ",
+            "start": 15.378,
+            "end": 15.538
+          },
+          {
+            "word": "a ",
+            "start": 15.538,
+            "end": 15.618
+          },
+          {
+            "word": "thousand ",
+            "start": 15.618,
+            "end": 15.858
+          },
+          {
+            "word": "people.",
+            "start": 15.858,
+            "end": 16.177999
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sounds cool\u2014what do you mean by \"behavior of a thousand people\"? Tell me more in a few sentences.",
+        "words": [
+          {
+            "word": "Sounds ",
+            "start": 17.747,
+            "end": 18.165
+          },
+          {
+            "word": "cool\u2014what ",
+            "start": 18.165,
+            "end": 18.595
+          },
+          {
+            "word": "do ",
+            "start": 18.595,
+            "end": 18.688
+          },
+          {
+            "word": "you ",
+            "start": 18.688,
+            "end": 18.792
+          },
+          {
+            "word": "mean ",
+            "start": 18.792,
+            "end": 18.966
+          },
+          {
+            "word": "by ",
+            "start": 18.966,
+            "end": 19.094
+          },
+          {
+            "word": "\"behavior ",
+            "start": 19.094,
+            "end": 19.593
+          },
+          {
+            "word": "of ",
+            "start": 19.593,
+            "end": 19.698
+          },
+          {
+            "word": "a ",
+            "start": 19.698,
+            "end": 19.779
+          },
+          {
+            "word": "thousand ",
+            "start": 19.779,
+            "end": 20.139
+          },
+          {
+            "word": "people\"?",
+            "start": 20.139,
+            "end": 20.777
+          },
+          {
+            "word": " Tell ",
+            "start": 20.823375,
+            "end": 21.090375
+          },
+          {
+            "word": "me ",
+            "start": 21.090375,
+            "end": 21.195375
+          },
+          {
+            "word": "more ",
+            "start": 21.195375,
+            "end": 21.381375
+          },
+          {
+            "word": "in ",
+            "start": 21.381375,
+            "end": 21.474375
+          },
+          {
+            "word": "a ",
+            "start": 21.474375,
+            "end": 21.555375
+          },
+          {
+            "word": "few ",
+            "start": 21.555375,
+            "end": 21.741375
+          },
+          {
+            "word": "sentences.",
+            "start": 21.741375,
+            "end": 22.681375
+          }
+        ],
+        "metadata": {
+          "response_id": 4
+        }
+      },
+      {
+        "role": "user",
+        "content": "There's a research paper from Stanford about it. Can you look it up and visit?",
+        "words": [
+          {
+            "word": "There's ",
+            "start": 23.157999999999998,
+            "end": 23.637999999999998
+          },
+          {
+            "word": "a ",
+            "start": 23.637999999999998,
+            "end": 23.798
+          },
+          {
+            "word": "research ",
+            "start": 23.798,
+            "end": 24.278
+          },
+          {
+            "word": "paper ",
+            "start": 24.278,
+            "end": 24.677999999999997
+          },
+          {
+            "word": "from ",
+            "start": 24.677999999999997,
+            "end": 24.997999999999998
+          },
+          {
+            "word": "Stanford ",
+            "start": 24.997999999999998,
+            "end": 25.398
+          },
+          {
+            "word": "about ",
+            "start": 25.398,
+            "end": 25.718
+          },
+          {
+            "word": "it. ",
+            "start": 25.718,
+            "end": 25.878
+          },
+          {
+            "word": "Can ",
+            "start": 26.058,
+            "end": 26.298
+          },
+          {
+            "word": "you ",
+            "start": 26.298,
+            "end": 26.618
+          },
+          {
+            "word": "look ",
+            "start": 26.618,
+            "end": 26.857999999999997
+          },
+          {
+            "word": "it ",
+            "start": 26.857999999999997,
+            "end": 27.017999999999997
+          },
+          {
+            "word": "up ",
+            "start": 27.017999999999997,
+            "end": 27.098
+          },
+          {
+            "word": "and ",
+            "start": 27.098,
+            "end": 27.338001
+          },
+          {
+            "word": "visit?",
+            "start": 27.338001,
+            "end": 27.657999999999998
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Thank you for your time. Goodbye!",
+        "words": [
+          {
+            "word": "Thank ",
+            "start": 29.778,
+            "end": 30.034
+          },
+          {
+            "word": "you ",
+            "start": 30.034,
+            "end": 30.161
+          },
+          {
+            "word": "for ",
+            "start": 30.161,
+            "end": 30.312
+          },
+          {
+            "word": "your ",
+            "start": 30.312,
+            "end": 30.475
+          },
+          {
+            "word": "time. ",
+            "start": 30.475,
+            "end": 31.009
+          },
+          {
+            "word": "Goodbye!",
+            "start": 31.03175,
+            "end": 31.70575
+          }
+        ],
+        "metadata": {
+          "response_id": 6
+        }
+      },
+      {
+        "role": "tool_call_invocation",
+        "tool_call_id": "tool_call_4541c7",
+        "name": "end_call",
+        "arguments": "{}",
+        "time_sec": 31.754
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/247269822394a7bb64efac1e30d0f0d41e86bcafb8bbddcdb37fec0d4237be48/public.log",
+    "disconnection_reason": "agent_hangup",
+    "latency": {
+      "llm": {
+        "p99": 1513.76,
+        "min": 777,
+        "max": 1516,
+        "p90": 1493.6,
+        "num": 3,
+        "values": [
+          1404,
+          777,
+          1516
+        ],
+        "p50": 1404,
+        "p95": 1504.8
+      },
+      "llm_websocket_network_rtt": {
+        "p99": 39.86,
+        "min": 24,
+        "max": 40,
+        "p90": 36.599999999999994,
+        "num": 15,
+        "values": [
+          26,
+          26,
+          27,
+          40,
+          27,
+          29,
+          28,
+          33,
+          26,
+          24,
+          26,
+          27,
+          33,
+          39,
+          28
+        ],
+        "p50": 27,
+        "p95": 39.3
+      },
+      "e2e": {
+        "p99": 2001.8400048828125,
+        "min": 1395.0009765625,
+        "max": 2004,
+        "p90": 1982.400048828125,
+        "num": 3,
+        "values": [
+          1896.000244140625,
+          1395.0009765625,
+          2004
+        ],
+        "p50": 1896.000244140625,
+        "p95": 1993.2000244140625
+      },
+      "tts": {
+        "p99": 349.94,
+        "min": 261,
+        "max": 350,
+        "p90": 349.4,
+        "num": 4,
+        "values": [
+          304,
+          350,
+          348,
+          261
+        ],
+        "p50": 326,
+        "p95": 349.7
+      },
+      "asr": {
+        "p99": 832.7997120000018,
+        "min": 9.998999999999796,
+        "max": 899.9996000000028,
+        "p90": 60.00000000000142,
+        "num": 29,
+        "values": [
+          20.000000000000455,
+          20,
+          10.000100000000202,
+          20.000100000000202,
+          40,
+          20,
+          39.99949999999808,
+          19.999299999999494,
+          20,
+          19.999399999998786,
+          660,
+          39.99990000000071,
+          29.999700000000303,
+          29.999500000001717,
+          50.00000000000182,
+          30,
+          30.00039999999717,
+          9.998999999999796,
+          29.99960000000283,
+          10.001000000000204,
+          9.99949999999808,
+          100,
+          20.00100000000384,
+          19.999500000001717,
+          899.9996000000028,
+          30.00039999999717,
+          10.001099999997678,
+          29.999799999997776,
+          40.000999999996566
+        ],
+        "p50": 29.999500000001717,
+        "p95": 435.9999999999988
+      }
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.1166667,
+      "product_costs": [
+        {
+          "unit_price": 0.1166667,
+          "product": "elevenlabs_tts",
+          "cost": 3.7333333
+        }
+      ],
+      "combined_cost": 3.7333333,
+      "total_duration_seconds": 32
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The user was asked about the most exceptional thing they have built and mentioned a system related to the behavior of a thousand people, referencing a Stanford research paper. The agent asked for more details, but the user requested the agent to look up the paper, after which the agent ended the call.",
+      "user_sentiment": "Neutral",
+      "custom_analysis_data": {},
+      "call_successful": false
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [
+      {
+        "tool_call_id": "tool_call_4541c7",
+        "name": "end_call",
+        "start_time_sec": 31.754
+      }
+    ],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzM0YWU4Zjg2ZDRhMTlhNzM5MzU0YTYyMDM5NCJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDgzMzksIm5iZiI6MCwic3ViIjoiY2xpZW50In0.87bu4Z9nWhS8eoLf9eqwUKDd-Ot3g2ckvs_klkf6Uag"
+  },
+  "timestamps": {
+    "call_ended_received": "2025-12-07T11:42:52.179874",
+    "call_analyzed_received": "2025-12-07T11:42:53.462063"
+  }
+}

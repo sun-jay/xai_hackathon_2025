@@ -1,0 +1,5100 @@
+{
+  "call_id": "call_4b2137f53290365e91e98dad936",
+  "call_ended_webhook": {
+    "call_id": "call_4b2137f53290365e91e98dad936",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107885400,
+    "end_timestamp": 1765107937502,
+    "duration_ms": 52102,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\nAgent: Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?\nUser: And build the system that I know it's we should\nAgent: Sorry, caught a bit of static there\u2014what'd you say you built?\nUser: I've built a system that annoys behavior of a thousand people.\nAgent: Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data \nUser: The\nAgent: pipeline or the analysis algo?\nUser: paper that was released about it.\nAgent: Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?\nUser: It's in the paper.\nUser: you look it up?\nUser: read it?\nAgent: Nah, let's hear it from you\u2014walk me through the pipeline setup.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.388,
+            "end": 0.551
+          },
+          {
+            "word": "there, ",
+            "start": 0.551,
+            "end": 0.806
+          },
+          {
+            "word": "I'm ",
+            "start": 0.806,
+            "end": 1.05
+          },
+          {
+            "word": "Grok ",
+            "start": 1.05,
+            "end": 1.317
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.317,
+            "end": 2.037
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.1029999999999998,
+            "end": 3.4229998999999998
+          },
+          {
+            "word": "How ",
+            "start": 3.4229998999999998,
+            "end": 3.5829999999999997
+          },
+          {
+            "word": "are ",
+            "start": 3.5829999999999997,
+            "end": 3.743
+          },
+          {
+            "word": "you ",
+            "start": 3.743,
+            "end": 3.823
+          },
+          {
+            "word": "doing?",
+            "start": 3.823,
+            "end": 3.983
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.823,
+            "end": 6.125
+          },
+          {
+            "word": "great, ",
+            "start": 6.125,
+            "end": 6.392
+          },
+          {
+            "word": "thanks!",
+            "start": 6.392,
+            "end": 7.042
+          },
+          {
+            "word": " This ",
+            "start": 7.088208251953125,
+            "end": 7.309208251953125
+          },
+          {
+            "word": "is ",
+            "start": 7.309208251953125,
+            "end": 7.425208251953125
+          },
+          {
+            "word": "our ",
+            "start": 7.425208251953125,
+            "end": 7.588208251953125
+          },
+          {
+            "word": "AI-first ",
+            "start": 7.588208251953125,
+            "end": 8.238208251953125
+          },
+          {
+            "word": "technical ",
+            "start": 8.238208251953125,
+            "end": 8.667208251953125
+          },
+          {
+            "word": "screen ",
+            "start": 8.667208251953125,
+            "end": 8.981208251953126
+          },
+          {
+            "word": "for ",
+            "start": 8.981208251953126,
+            "end": 9.201208251953124
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 9.201208251953124,
+            "end": 10.014208251953125
+          },
+          {
+            "word": "about ",
+            "start": 10.014208251953125,
+            "end": 10.246208251953124
+          },
+          {
+            "word": "15 ",
+            "start": 10.246208251953124,
+            "end": 10.641208251953126
+          },
+          {
+            "word": "minutes.",
+            "start": 10.641208251953126,
+            "end": 11.222208251953125
+          },
+          {
+            "word": " What's ",
+            "start": 11.256791748046876,
+            "end": 11.523791748046875
+          },
+          {
+            "word": "the ",
+            "start": 11.523791748046875,
+            "end": 11.627791748046874
+          },
+          {
+            "word": "most ",
+            "start": 11.627791748046874,
+            "end": 11.801791748046876
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.801791748046876,
+            "end": 12.278791748046874
+          },
+          {
+            "word": "thing ",
+            "start": 12.278791748046874,
+            "end": 12.463791748046875
+          },
+          {
+            "word": "you've ",
+            "start": 12.463791748046875,
+            "end": 12.661791748046875
+          },
+          {
+            "word": "built?",
+            "start": 12.661791748046875,
+            "end": 13.264791748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "And build the system that I know it's we should",
+        "words": [
+          {
+            "word": "And ",
+            "start": 13.863,
+            "end": 14.183
+          },
+          {
+            "word": "build ",
+            "start": 14.183,
+            "end": 14.422998999999999
+          },
+          {
+            "word": "the ",
+            "start": 14.422998999999999,
+            "end": 14.663
+          },
+          {
+            "word": "system ",
+            "start": 14.913,
+            "end": 15.232999999999999
+          },
+          {
+            "word": "that ",
+            "start": 15.232999999999999,
+            "end": 15.392999999999999
+          },
+          {
+            "word": "I ",
+            "start": 15.392999999999999,
+            "end": 15.552999999999999
+          },
+          {
+            "word": "know ",
+            "start": 15.552999999999999,
+            "end": 15.713
+          },
+          {
+            "word": "it's ",
+            "start": 15.713,
+            "end": 15.953
+          },
+          {
+            "word": "we ",
+            "start": 15.953,
+            "end": 16.033
+          },
+          {
+            "word": "should",
+            "start": 16.033,
+            "end": 16.193
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sorry, caught a bit of static there\u2014what'd you say you built?",
+        "words": [
+          {
+            "word": "Sorry, ",
+            "start": 20.296,
+            "end": 20.609
+          },
+          {
+            "word": "caught ",
+            "start": 20.609,
+            "end": 20.784
+          },
+          {
+            "word": "a ",
+            "start": 20.784,
+            "end": 20.842
+          },
+          {
+            "word": "bit ",
+            "start": 20.842,
+            "end": 20.969
+          },
+          {
+            "word": "of ",
+            "start": 20.969,
+            "end": 21.039
+          },
+          {
+            "word": "static ",
+            "start": 21.039,
+            "end": 21.376
+          },
+          {
+            "word": "there\u2014what'd ",
+            "start": 21.376,
+            "end": 21.886
+          },
+          {
+            "word": "you ",
+            "start": 21.886,
+            "end": 22.003
+          },
+          {
+            "word": "say ",
+            "start": 22.003,
+            "end": 22.154
+          },
+          {
+            "word": "you ",
+            "start": 22.154,
+            "end": 22.281
+          },
+          {
+            "word": "built?",
+            "start": 22.281,
+            "end": 22.885
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I've built a system that annoys behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I've ",
+            "start": 23.223000000000003,
+            "end": 23.623
+          },
+          {
+            "word": "built ",
+            "start": 23.623,
+            "end": 23.783
+          },
+          {
+            "word": "a ",
+            "start": 23.783,
+            "end": 24.023002
+          },
+          {
+            "word": "system ",
+            "start": 24.023002,
+            "end": 24.263001000000003
+          },
+          {
+            "word": "that ",
+            "start": 24.263001000000003,
+            "end": 24.503001
+          },
+          {
+            "word": "annoys ",
+            "start": 24.503001,
+            "end": 24.983
+          },
+          {
+            "word": "behavior ",
+            "start": 24.983,
+            "end": 25.463
+          },
+          {
+            "word": "of ",
+            "start": 25.463,
+            "end": 25.623
+          },
+          {
+            "word": "a ",
+            "start": 25.623,
+            "end": 25.703002
+          },
+          {
+            "word": "thousand ",
+            "start": 25.793000000000003,
+            "end": 26.113
+          },
+          {
+            "word": "people.",
+            "start": 26.113,
+            "end": 26.433
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data ",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 27.865,
+            "end": 28.155
+          },
+          {
+            "word": "a ",
+            "start": 28.155,
+            "end": 28.248
+          },
+          {
+            "word": "system ",
+            "start": 28.248,
+            "end": 28.631
+          },
+          {
+            "word": "analyzing ",
+            "start": 28.631,
+            "end": 29.096
+          },
+          {
+            "word": "behavior ",
+            "start": 29.096,
+            "end": 29.479
+          },
+          {
+            "word": "of ",
+            "start": 29.479,
+            "end": 29.56
+          },
+          {
+            "word": "a ",
+            "start": 29.56,
+            "end": 29.63
+          },
+          {
+            "word": "thousand ",
+            "start": 29.63,
+            "end": 30.048
+          },
+          {
+            "word": "people.",
+            "start": 30.048,
+            "end": 30.768
+          },
+          {
+            "word": " Which ",
+            "start": 30.813583251953126,
+            "end": 31.080583251953126
+          },
+          {
+            "word": "part ",
+            "start": 31.080583251953126,
+            "end": 31.289583251953125
+          },
+          {
+            "word": "are ",
+            "start": 31.289583251953125,
+            "end": 31.382583251953125
+          },
+          {
+            "word": "you ",
+            "start": 31.382583251953125,
+            "end": 31.510583251953125
+          },
+          {
+            "word": "most ",
+            "start": 31.510583251953125,
+            "end": 31.696583251953125
+          },
+          {
+            "word": "proud ",
+            "start": 31.696583251953125,
+            "end": 31.998583251953125
+          },
+          {
+            "word": "of\u2014like ",
+            "start": 31.998583251953125,
+            "end": 32.45058325195313
+          },
+          {
+            "word": "the ",
+            "start": 32.45058325195313,
+            "end": 32.57858325195313
+          },
+          {
+            "word": "data ",
+            "start": 32.57858325195313,
+            "end": 32.83458325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The",
+        "words": [
+          {
+            "word": "The",
+            "start": 33.183,
+            "end": 33.663000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "pipeline or the analysis algo?",
+        "words": [
+          {
+            "word": "pipeline ",
+            "start": 32.83458325195313,
+            "end": 33.402583251953125
+          },
+          {
+            "word": "or ",
+            "start": 33.402583251953125,
+            "end": 33.542583251953126
+          },
+          {
+            "word": "the ",
+            "start": 33.542583251953126,
+            "end": 33.646583251953125
+          },
+          {
+            "word": "analysis ",
+            "start": 33.646583251953125,
+            "end": 34.134583251953124
+          },
+          {
+            "word": "algo?",
+            "start": 34.134583251953124,
+            "end": 34.76158325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "paper that was released about it.",
+        "words": [
+          {
+            "word": "paper ",
+            "start": 36.303000000000004,
+            "end": 36.703002
+          },
+          {
+            "word": "that ",
+            "start": 36.703002,
+            "end": 36.943004
+          },
+          {
+            "word": "was ",
+            "start": 36.943004,
+            "end": 37.183
+          },
+          {
+            "word": "released ",
+            "start": 37.183,
+            "end": 37.423003
+          },
+          {
+            "word": "about ",
+            "start": 37.503,
+            "end": 37.823
+          },
+          {
+            "word": "it.",
+            "start": 37.823,
+            "end": 38.063003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?",
+        "words": [
+          {
+            "word": "Nice, ",
+            "start": 39.328,
+            "end": 39.734
+          },
+          {
+            "word": "the ",
+            "start": 39.734,
+            "end": 39.885
+          },
+          {
+            "word": "paper ",
+            "start": 39.885,
+            "end": 40.199
+          },
+          {
+            "word": "release ",
+            "start": 40.199,
+            "end": 40.582
+          },
+          {
+            "word": "on ",
+            "start": 40.582,
+            "end": 40.756
+          },
+          {
+            "word": "it.",
+            "start": 40.756,
+            "end": 41.127
+          },
+          {
+            "word": " How'd ",
+            "start": 41.1735,
+            "end": 41.4175
+          },
+          {
+            "word": "you ",
+            "start": 41.4175,
+            "end": 41.5225
+          },
+          {
+            "word": "structure ",
+            "start": 41.5225,
+            "end": 41.9285
+          },
+          {
+            "word": "the ",
+            "start": 41.9285,
+            "end": 42.0445
+          },
+          {
+            "word": "data ",
+            "start": 42.0445,
+            "end": 42.3115
+          },
+          {
+            "word": "pipeline ",
+            "start": 42.3115,
+            "end": 42.7295
+          },
+          {
+            "word": "feeding ",
+            "start": 42.7295,
+            "end": 43.0195
+          },
+          {
+            "word": "into ",
+            "start": 43.0195,
+            "end": 43.2055
+          },
+          {
+            "word": "that ",
+            "start": 43.2055,
+            "end": 43.3915
+          },
+          {
+            "word": "analysis?",
+            "start": 43.3915,
+            "end": 44.3315
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "It's in the paper.",
+        "words": [
+          {
+            "word": "It's ",
+            "start": 44.443,
+            "end": 44.843
+          },
+          {
+            "word": "in ",
+            "start": 44.843,
+            "end": 45.003
+          },
+          {
+            "word": "the ",
+            "start": 45.003,
+            "end": 45.083
+          },
+          {
+            "word": "paper.",
+            "start": 45.083,
+            "end": 45.323
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "you look it up?",
+        "words": [
+          {
+            "word": "you ",
+            "start": 45.643,
+            "end": 45.803000000000004
+          },
+          {
+            "word": "look ",
+            "start": 45.803000000000004,
+            "end": 45.963
+          },
+          {
+            "word": "it ",
+            "start": 45.963,
+            "end": 46.123000000000005
+          },
+          {
+            "word": "up?",
+            "start": 46.123000000000005,
+            "end": 46.203
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "read it?",
+        "words": [
+          {
+            "word": "read ",
+            "start": 46.603,
+            "end": 46.843
+          },
+          {
+            "word": "it?",
+            "start": 46.843,
+            "end": 47.003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nah, let's hear it from you\u2014walk me through the pipeline setup.",
+        "words": [
+          {
+            "word": "Nah, ",
+            "start": 48.645,
+            "end": 48.9
+          },
+          {
+            "word": "let's ",
+            "start": 48.9,
+            "end": 49.075
+          },
+          {
+            "word": "hear ",
+            "start": 49.075,
+            "end": 49.225
+          },
+          {
+            "word": "it ",
+            "start": 49.225,
+            "end": 49.318
+          },
+          {
+            "word": "from ",
+            "start": 49.318,
+            "end": 49.493
+          },
+          {
+            "word": "you\u2014walk ",
+            "start": 49.493,
+            "end": 50.085
+          },
+          {
+            "word": "me ",
+            "start": 50.085,
+            "end": 50.154
+          },
+          {
+            "word": "through ",
+            "start": 50.154,
+            "end": 50.363
+          },
+          {
+            "word": "the ",
+            "start": 50.363,
+            "end": 50.456
+          },
+          {
+            "word": "pipeline ",
+            "start": 50.456,
+            "end": 50.897
+          },
+          {
+            "word": "setup.",
+            "start": 50.897,
+            "end": 51.501
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.388,
+            "end": 0.551
+          },
+          {
+            "word": "there, ",
+            "start": 0.551,
+            "end": 0.806
+          },
+          {
+            "word": "I'm ",
+            "start": 0.806,
+            "end": 1.05
+          },
+          {
+            "word": "Grok ",
+            "start": 1.05,
+            "end": 1.317
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.317,
+            "end": 2.037
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.1029999999999998,
+            "end": 3.4229998999999998
+          },
+          {
+            "word": "How ",
+            "start": 3.4229998999999998,
+            "end": 3.5829999999999997
+          },
+          {
+            "word": "are ",
+            "start": 3.5829999999999997,
+            "end": 3.743
+          },
+          {
+            "word": "you ",
+            "start": 3.743,
+            "end": 3.823
+          },
+          {
+            "word": "doing?",
+            "start": 3.823,
+            "end": 3.983
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.823,
+            "end": 6.125
+          },
+          {
+            "word": "great, ",
+            "start": 6.125,
+            "end": 6.392
+          },
+          {
+            "word": "thanks!",
+            "start": 6.392,
+            "end": 7.042
+          },
+          {
+            "word": " This ",
+            "start": 7.088208251953125,
+            "end": 7.309208251953125
+          },
+          {
+            "word": "is ",
+            "start": 7.309208251953125,
+            "end": 7.425208251953125
+          },
+          {
+            "word": "our ",
+            "start": 7.425208251953125,
+            "end": 7.588208251953125
+          },
+          {
+            "word": "AI-first ",
+            "start": 7.588208251953125,
+            "end": 8.238208251953125
+          },
+          {
+            "word": "technical ",
+            "start": 8.238208251953125,
+            "end": 8.667208251953125
+          },
+          {
+            "word": "screen ",
+            "start": 8.667208251953125,
+            "end": 8.981208251953126
+          },
+          {
+            "word": "for ",
+            "start": 8.981208251953126,
+            "end": 9.201208251953124
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 9.201208251953124,
+            "end": 10.014208251953125
+          },
+          {
+            "word": "about ",
+            "start": 10.014208251953125,
+            "end": 10.246208251953124
+          },
+          {
+            "word": "15 ",
+            "start": 10.246208251953124,
+            "end": 10.641208251953126
+          },
+          {
+            "word": "minutes.",
+            "start": 10.641208251953126,
+            "end": 11.222208251953125
+          },
+          {
+            "word": " What's ",
+            "start": 11.256791748046876,
+            "end": 11.523791748046875
+          },
+          {
+            "word": "the ",
+            "start": 11.523791748046875,
+            "end": 11.627791748046874
+          },
+          {
+            "word": "most ",
+            "start": 11.627791748046874,
+            "end": 11.801791748046876
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.801791748046876,
+            "end": 12.278791748046874
+          },
+          {
+            "word": "thing ",
+            "start": 12.278791748046874,
+            "end": 12.463791748046875
+          },
+          {
+            "word": "you've ",
+            "start": 12.463791748046875,
+            "end": 12.661791748046875
+          },
+          {
+            "word": "built?",
+            "start": 12.661791748046875,
+            "end": 13.264791748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "And build the system that I know it's we should",
+        "words": [
+          {
+            "word": "And ",
+            "start": 13.863,
+            "end": 14.183
+          },
+          {
+            "word": "build ",
+            "start": 14.183,
+            "end": 14.422998999999999
+          },
+          {
+            "word": "the ",
+            "start": 14.422998999999999,
+            "end": 14.663
+          },
+          {
+            "word": "system ",
+            "start": 14.913,
+            "end": 15.232999999999999
+          },
+          {
+            "word": "that ",
+            "start": 15.232999999999999,
+            "end": 15.392999999999999
+          },
+          {
+            "word": "I ",
+            "start": 15.392999999999999,
+            "end": 15.552999999999999
+          },
+          {
+            "word": "know ",
+            "start": 15.552999999999999,
+            "end": 15.713
+          },
+          {
+            "word": "it's ",
+            "start": 15.713,
+            "end": 15.953
+          },
+          {
+            "word": "we ",
+            "start": 15.953,
+            "end": 16.033
+          },
+          {
+            "word": "should",
+            "start": 16.033,
+            "end": 16.193
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sorry, caught a bit of static there\u2014what'd you say you built?",
+        "words": [
+          {
+            "word": "Sorry, ",
+            "start": 20.296,
+            "end": 20.609
+          },
+          {
+            "word": "caught ",
+            "start": 20.609,
+            "end": 20.784
+          },
+          {
+            "word": "a ",
+            "start": 20.784,
+            "end": 20.842
+          },
+          {
+            "word": "bit ",
+            "start": 20.842,
+            "end": 20.969
+          },
+          {
+            "word": "of ",
+            "start": 20.969,
+            "end": 21.039
+          },
+          {
+            "word": "static ",
+            "start": 21.039,
+            "end": 21.376
+          },
+          {
+            "word": "there\u2014what'd ",
+            "start": 21.376,
+            "end": 21.886
+          },
+          {
+            "word": "you ",
+            "start": 21.886,
+            "end": 22.003
+          },
+          {
+            "word": "say ",
+            "start": 22.003,
+            "end": 22.154
+          },
+          {
+            "word": "you ",
+            "start": 22.154,
+            "end": 22.281
+          },
+          {
+            "word": "built?",
+            "start": 22.281,
+            "end": 22.885
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I've built a system that annoys behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I've ",
+            "start": 23.223000000000003,
+            "end": 23.623
+          },
+          {
+            "word": "built ",
+            "start": 23.623,
+            "end": 23.783
+          },
+          {
+            "word": "a ",
+            "start": 23.783,
+            "end": 24.023002
+          },
+          {
+            "word": "system ",
+            "start": 24.023002,
+            "end": 24.263001000000003
+          },
+          {
+            "word": "that ",
+            "start": 24.263001000000003,
+            "end": 24.503001
+          },
+          {
+            "word": "annoys ",
+            "start": 24.503001,
+            "end": 24.983
+          },
+          {
+            "word": "behavior ",
+            "start": 24.983,
+            "end": 25.463
+          },
+          {
+            "word": "of ",
+            "start": 25.463,
+            "end": 25.623
+          },
+          {
+            "word": "a ",
+            "start": 25.623,
+            "end": 25.703002
+          },
+          {
+            "word": "thousand ",
+            "start": 25.793000000000003,
+            "end": 26.113
+          },
+          {
+            "word": "people.",
+            "start": 26.113,
+            "end": 26.433
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data ",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 27.865,
+            "end": 28.155
+          },
+          {
+            "word": "a ",
+            "start": 28.155,
+            "end": 28.248
+          },
+          {
+            "word": "system ",
+            "start": 28.248,
+            "end": 28.631
+          },
+          {
+            "word": "analyzing ",
+            "start": 28.631,
+            "end": 29.096
+          },
+          {
+            "word": "behavior ",
+            "start": 29.096,
+            "end": 29.479
+          },
+          {
+            "word": "of ",
+            "start": 29.479,
+            "end": 29.56
+          },
+          {
+            "word": "a ",
+            "start": 29.56,
+            "end": 29.63
+          },
+          {
+            "word": "thousand ",
+            "start": 29.63,
+            "end": 30.048
+          },
+          {
+            "word": "people.",
+            "start": 30.048,
+            "end": 30.768
+          },
+          {
+            "word": " Which ",
+            "start": 30.813583251953126,
+            "end": 31.080583251953126
+          },
+          {
+            "word": "part ",
+            "start": 31.080583251953126,
+            "end": 31.289583251953125
+          },
+          {
+            "word": "are ",
+            "start": 31.289583251953125,
+            "end": 31.382583251953125
+          },
+          {
+            "word": "you ",
+            "start": 31.382583251953125,
+            "end": 31.510583251953125
+          },
+          {
+            "word": "most ",
+            "start": 31.510583251953125,
+            "end": 31.696583251953125
+          },
+          {
+            "word": "proud ",
+            "start": 31.696583251953125,
+            "end": 31.998583251953125
+          },
+          {
+            "word": "of\u2014like ",
+            "start": 31.998583251953125,
+            "end": 32.45058325195313
+          },
+          {
+            "word": "the ",
+            "start": 32.45058325195313,
+            "end": 32.57858325195313
+          },
+          {
+            "word": "data ",
+            "start": 32.57858325195313,
+            "end": 32.83458325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The",
+        "words": [
+          {
+            "word": "The",
+            "start": 33.183,
+            "end": 33.663000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "pipeline or the analysis algo?",
+        "words": [
+          {
+            "word": "pipeline ",
+            "start": 32.83458325195313,
+            "end": 33.402583251953125
+          },
+          {
+            "word": "or ",
+            "start": 33.402583251953125,
+            "end": 33.542583251953126
+          },
+          {
+            "word": "the ",
+            "start": 33.542583251953126,
+            "end": 33.646583251953125
+          },
+          {
+            "word": "analysis ",
+            "start": 33.646583251953125,
+            "end": 34.134583251953124
+          },
+          {
+            "word": "algo?",
+            "start": 34.134583251953124,
+            "end": 34.76158325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "paper that was released about it.",
+        "words": [
+          {
+            "word": "paper ",
+            "start": 36.303000000000004,
+            "end": 36.703002
+          },
+          {
+            "word": "that ",
+            "start": 36.703002,
+            "end": 36.943004
+          },
+          {
+            "word": "was ",
+            "start": 36.943004,
+            "end": 37.183
+          },
+          {
+            "word": "released ",
+            "start": 37.183,
+            "end": 37.423003
+          },
+          {
+            "word": "about ",
+            "start": 37.503,
+            "end": 37.823
+          },
+          {
+            "word": "it.",
+            "start": 37.823,
+            "end": 38.063003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?",
+        "words": [
+          {
+            "word": "Nice, ",
+            "start": 39.328,
+            "end": 39.734
+          },
+          {
+            "word": "the ",
+            "start": 39.734,
+            "end": 39.885
+          },
+          {
+            "word": "paper ",
+            "start": 39.885,
+            "end": 40.199
+          },
+          {
+            "word": "release ",
+            "start": 40.199,
+            "end": 40.582
+          },
+          {
+            "word": "on ",
+            "start": 40.582,
+            "end": 40.756
+          },
+          {
+            "word": "it.",
+            "start": 40.756,
+            "end": 41.127
+          },
+          {
+            "word": " How'd ",
+            "start": 41.1735,
+            "end": 41.4175
+          },
+          {
+            "word": "you ",
+            "start": 41.4175,
+            "end": 41.5225
+          },
+          {
+            "word": "structure ",
+            "start": 41.5225,
+            "end": 41.9285
+          },
+          {
+            "word": "the ",
+            "start": 41.9285,
+            "end": 42.0445
+          },
+          {
+            "word": "data ",
+            "start": 42.0445,
+            "end": 42.3115
+          },
+          {
+            "word": "pipeline ",
+            "start": 42.3115,
+            "end": 42.7295
+          },
+          {
+            "word": "feeding ",
+            "start": 42.7295,
+            "end": 43.0195
+          },
+          {
+            "word": "into ",
+            "start": 43.0195,
+            "end": 43.2055
+          },
+          {
+            "word": "that ",
+            "start": 43.2055,
+            "end": 43.3915
+          },
+          {
+            "word": "analysis?",
+            "start": 43.3915,
+            "end": 44.3315
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "It's in the paper.",
+        "words": [
+          {
+            "word": "It's ",
+            "start": 44.443,
+            "end": 44.843
+          },
+          {
+            "word": "in ",
+            "start": 44.843,
+            "end": 45.003
+          },
+          {
+            "word": "the ",
+            "start": 45.003,
+            "end": 45.083
+          },
+          {
+            "word": "paper.",
+            "start": 45.083,
+            "end": 45.323
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "you look it up?",
+        "words": [
+          {
+            "word": "you ",
+            "start": 45.643,
+            "end": 45.803000000000004
+          },
+          {
+            "word": "look ",
+            "start": 45.803000000000004,
+            "end": 45.963
+          },
+          {
+            "word": "it ",
+            "start": 45.963,
+            "end": 46.123000000000005
+          },
+          {
+            "word": "up?",
+            "start": 46.123000000000005,
+            "end": 46.203
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "read it?",
+        "words": [
+          {
+            "word": "read ",
+            "start": 46.603,
+            "end": 46.843
+          },
+          {
+            "word": "it?",
+            "start": 46.843,
+            "end": 47.003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nah, let's hear it from you\u2014walk me through the pipeline setup.",
+        "words": [
+          {
+            "word": "Nah, ",
+            "start": 48.645,
+            "end": 48.9
+          },
+          {
+            "word": "let's ",
+            "start": 48.9,
+            "end": 49.075
+          },
+          {
+            "word": "hear ",
+            "start": 49.075,
+            "end": 49.225
+          },
+          {
+            "word": "it ",
+            "start": 49.225,
+            "end": 49.318
+          },
+          {
+            "word": "from ",
+            "start": 49.318,
+            "end": 49.493
+          },
+          {
+            "word": "you\u2014walk ",
+            "start": 49.493,
+            "end": 50.085
+          },
+          {
+            "word": "me ",
+            "start": 50.085,
+            "end": 50.154
+          },
+          {
+            "word": "through ",
+            "start": 50.154,
+            "end": 50.363
+          },
+          {
+            "word": "the ",
+            "start": 50.363,
+            "end": 50.456
+          },
+          {
+            "word": "pipeline ",
+            "start": 50.456,
+            "end": 50.897
+          },
+          {
+            "word": "setup.",
+            "start": 50.897,
+            "end": 51.501
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm": {
+        "p50": 883,
+        "p90": 1468.2,
+        "p95": 1508.1,
+        "p99": 1540.02,
+        "min": 578,
+        "max": 1548,
+        "num": 7,
+        "values": [
+          1415,
+          1548,
+          687,
+          883,
+          682,
+          578,
+          1042
+        ]
+      },
+      "llm_websocket_network_rtt": {
+        "p50": 28,
+        "p90": 41,
+        "p95": 59.5,
+        "p99": 69,
+        "min": 25,
+        "max": 71,
+        "num": 26,
+        "values": [
+          26,
+          26,
+          28,
+          71,
+          25,
+          63,
+          28,
+          49,
+          27,
+          29,
+          26,
+          28,
+          26,
+          27,
+          26,
+          27,
+          33,
+          33,
+          26,
+          28,
+          26,
+          26,
+          28,
+          28,
+          31,
+          29
+        ]
+      },
+      "e2e": {
+        "p50": 1433,
+        "p90": 3037.5999999999995,
+        "p95": 3494.7999999999993,
+        "p99": 3860.56,
+        "min": 1113.9970703125,
+        "max": 3952,
+        "num": 5,
+        "values": [
+          1666,
+          3952,
+          1316,
+          1113.9970703125,
+          1433
+        ]
+      },
+      "tts": {
+        "p50": 305,
+        "p90": 370.1,
+        "p95": 372.55,
+        "p99": 374.51,
+        "min": 271,
+        "max": 375,
+        "num": 8,
+        "values": [
+          271,
+          282,
+          368,
+          321,
+          375,
+          278,
+          289,
+          345
+        ]
+      },
+      "asr": {
+        "p50": 20.000224999999773,
+        "p90": 39.00025599999992,
+        "p95": 44.501580000001915,
+        "p99": 719.3002170000037,
+        "min": 10,
+        "max": 1020.0000000000018,
+        "num": 32,
+        "values": [
+          20.000099999999748,
+          19.999899999999798,
+          10.000000000001819,
+          20,
+          20.000300000001516,
+          10.000000000001819,
+          19.999400000000605,
+          1020.0000000000018,
+          40.000200000000405,
+          29.999799999999595,
+          20.00050000000192,
+          20.001000000000204,
+          10.001799999998184,
+          10.00050000000192,
+          20.001000000000204,
+          20.001800000001822,
+          30.00040000000081,
+          50.000700000004144,
+          30.000759999995353,
+          20.00014999999985,
+          10.001000000003842,
+          10.002000000000407,
+          20.002700000004552,
+          20.001400000001013,
+          10,
+          19.999400000000605,
+          40.002300000000105,
+          20.000899999999092,
+          19.99949999999808,
+          20.000299999999697,
+          19.999000000003434,
+          20
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 6.1833333
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 53,
+      "combined_cost": 6.1833333
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzRiMjEzN2Y1MzI5MDM2NWU5MWU5OGRhZDkzNiJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDg0ODQsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.G6J2IiQBhPLhCai-mR8Kcfu6NA1Hk8U7B0ySvVsi0Kk"
+  },
+  "call_analyzed_webhook": {
+    "call_id": "call_4b2137f53290365e91e98dad936",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107885400,
+    "end_timestamp": 1765107937502,
+    "duration_ms": 52102,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\nAgent: Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?\nUser: And build the system that I know it's we should\nAgent: Sorry, caught a bit of static there\u2014what'd you say you built?\nUser: I've built a system that annoys behavior of a thousand people.\nAgent: Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data \nUser: The\nAgent: pipeline or the analysis algo?\nUser: paper that was released about it.\nAgent: Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?\nUser: It's in the paper.\nUser: you look it up?\nUser: read it?\nAgent: Nah, let's hear it from you\u2014walk me through the pipeline setup.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.388,
+            "end": 0.551
+          },
+          {
+            "word": "there, ",
+            "start": 0.551,
+            "end": 0.806
+          },
+          {
+            "word": "I'm ",
+            "start": 0.806,
+            "end": 1.05
+          },
+          {
+            "word": "Grok ",
+            "start": 1.05,
+            "end": 1.317
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.317,
+            "end": 2.037
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.1029999999999998,
+            "end": 3.4229998999999998
+          },
+          {
+            "word": "How ",
+            "start": 3.4229998999999998,
+            "end": 3.5829999999999997
+          },
+          {
+            "word": "are ",
+            "start": 3.5829999999999997,
+            "end": 3.743
+          },
+          {
+            "word": "you ",
+            "start": 3.743,
+            "end": 3.823
+          },
+          {
+            "word": "doing?",
+            "start": 3.823,
+            "end": 3.983
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.823,
+            "end": 6.125
+          },
+          {
+            "word": "great, ",
+            "start": 6.125,
+            "end": 6.392
+          },
+          {
+            "word": "thanks!",
+            "start": 6.392,
+            "end": 7.042
+          },
+          {
+            "word": " This ",
+            "start": 7.088208251953125,
+            "end": 7.309208251953125
+          },
+          {
+            "word": "is ",
+            "start": 7.309208251953125,
+            "end": 7.425208251953125
+          },
+          {
+            "word": "our ",
+            "start": 7.425208251953125,
+            "end": 7.588208251953125
+          },
+          {
+            "word": "AI-first ",
+            "start": 7.588208251953125,
+            "end": 8.238208251953125
+          },
+          {
+            "word": "technical ",
+            "start": 8.238208251953125,
+            "end": 8.667208251953125
+          },
+          {
+            "word": "screen ",
+            "start": 8.667208251953125,
+            "end": 8.981208251953126
+          },
+          {
+            "word": "for ",
+            "start": 8.981208251953126,
+            "end": 9.201208251953124
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 9.201208251953124,
+            "end": 10.014208251953125
+          },
+          {
+            "word": "about ",
+            "start": 10.014208251953125,
+            "end": 10.246208251953124
+          },
+          {
+            "word": "15 ",
+            "start": 10.246208251953124,
+            "end": 10.641208251953126
+          },
+          {
+            "word": "minutes.",
+            "start": 10.641208251953126,
+            "end": 11.222208251953125
+          },
+          {
+            "word": " What's ",
+            "start": 11.256791748046876,
+            "end": 11.523791748046875
+          },
+          {
+            "word": "the ",
+            "start": 11.523791748046875,
+            "end": 11.627791748046874
+          },
+          {
+            "word": "most ",
+            "start": 11.627791748046874,
+            "end": 11.801791748046876
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.801791748046876,
+            "end": 12.278791748046874
+          },
+          {
+            "word": "thing ",
+            "start": 12.278791748046874,
+            "end": 12.463791748046875
+          },
+          {
+            "word": "you've ",
+            "start": 12.463791748046875,
+            "end": 12.661791748046875
+          },
+          {
+            "word": "built?",
+            "start": 12.661791748046875,
+            "end": 13.264791748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "And build the system that I know it's we should",
+        "words": [
+          {
+            "word": "And ",
+            "start": 13.863,
+            "end": 14.183
+          },
+          {
+            "word": "build ",
+            "start": 14.183,
+            "end": 14.422998999999999
+          },
+          {
+            "word": "the ",
+            "start": 14.422998999999999,
+            "end": 14.663
+          },
+          {
+            "word": "system ",
+            "start": 14.913,
+            "end": 15.232999999999999
+          },
+          {
+            "word": "that ",
+            "start": 15.232999999999999,
+            "end": 15.392999999999999
+          },
+          {
+            "word": "I ",
+            "start": 15.392999999999999,
+            "end": 15.552999999999999
+          },
+          {
+            "word": "know ",
+            "start": 15.552999999999999,
+            "end": 15.713
+          },
+          {
+            "word": "it's ",
+            "start": 15.713,
+            "end": 15.953
+          },
+          {
+            "word": "we ",
+            "start": 15.953,
+            "end": 16.033
+          },
+          {
+            "word": "should",
+            "start": 16.033,
+            "end": 16.193
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sorry, caught a bit of static there\u2014what'd you say you built?",
+        "words": [
+          {
+            "word": "Sorry, ",
+            "start": 20.296,
+            "end": 20.609
+          },
+          {
+            "word": "caught ",
+            "start": 20.609,
+            "end": 20.784
+          },
+          {
+            "word": "a ",
+            "start": 20.784,
+            "end": 20.842
+          },
+          {
+            "word": "bit ",
+            "start": 20.842,
+            "end": 20.969
+          },
+          {
+            "word": "of ",
+            "start": 20.969,
+            "end": 21.039
+          },
+          {
+            "word": "static ",
+            "start": 21.039,
+            "end": 21.376
+          },
+          {
+            "word": "there\u2014what'd ",
+            "start": 21.376,
+            "end": 21.886
+          },
+          {
+            "word": "you ",
+            "start": 21.886,
+            "end": 22.003
+          },
+          {
+            "word": "say ",
+            "start": 22.003,
+            "end": 22.154
+          },
+          {
+            "word": "you ",
+            "start": 22.154,
+            "end": 22.281
+          },
+          {
+            "word": "built?",
+            "start": 22.281,
+            "end": 22.885
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I've built a system that annoys behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I've ",
+            "start": 23.223000000000003,
+            "end": 23.623
+          },
+          {
+            "word": "built ",
+            "start": 23.623,
+            "end": 23.783
+          },
+          {
+            "word": "a ",
+            "start": 23.783,
+            "end": 24.023002
+          },
+          {
+            "word": "system ",
+            "start": 24.023002,
+            "end": 24.263001000000003
+          },
+          {
+            "word": "that ",
+            "start": 24.263001000000003,
+            "end": 24.503001
+          },
+          {
+            "word": "annoys ",
+            "start": 24.503001,
+            "end": 24.983
+          },
+          {
+            "word": "behavior ",
+            "start": 24.983,
+            "end": 25.463
+          },
+          {
+            "word": "of ",
+            "start": 25.463,
+            "end": 25.623
+          },
+          {
+            "word": "a ",
+            "start": 25.623,
+            "end": 25.703002
+          },
+          {
+            "word": "thousand ",
+            "start": 25.793000000000003,
+            "end": 26.113
+          },
+          {
+            "word": "people.",
+            "start": 26.113,
+            "end": 26.433
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data ",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 27.865,
+            "end": 28.155
+          },
+          {
+            "word": "a ",
+            "start": 28.155,
+            "end": 28.248
+          },
+          {
+            "word": "system ",
+            "start": 28.248,
+            "end": 28.631
+          },
+          {
+            "word": "analyzing ",
+            "start": 28.631,
+            "end": 29.096
+          },
+          {
+            "word": "behavior ",
+            "start": 29.096,
+            "end": 29.479
+          },
+          {
+            "word": "of ",
+            "start": 29.479,
+            "end": 29.56
+          },
+          {
+            "word": "a ",
+            "start": 29.56,
+            "end": 29.63
+          },
+          {
+            "word": "thousand ",
+            "start": 29.63,
+            "end": 30.048
+          },
+          {
+            "word": "people.",
+            "start": 30.048,
+            "end": 30.768
+          },
+          {
+            "word": " Which ",
+            "start": 30.813583251953126,
+            "end": 31.080583251953126
+          },
+          {
+            "word": "part ",
+            "start": 31.080583251953126,
+            "end": 31.289583251953125
+          },
+          {
+            "word": "are ",
+            "start": 31.289583251953125,
+            "end": 31.382583251953125
+          },
+          {
+            "word": "you ",
+            "start": 31.382583251953125,
+            "end": 31.510583251953125
+          },
+          {
+            "word": "most ",
+            "start": 31.510583251953125,
+            "end": 31.696583251953125
+          },
+          {
+            "word": "proud ",
+            "start": 31.696583251953125,
+            "end": 31.998583251953125
+          },
+          {
+            "word": "of\u2014like ",
+            "start": 31.998583251953125,
+            "end": 32.45058325195313
+          },
+          {
+            "word": "the ",
+            "start": 32.45058325195313,
+            "end": 32.57858325195313
+          },
+          {
+            "word": "data ",
+            "start": 32.57858325195313,
+            "end": 32.83458325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The",
+        "words": [
+          {
+            "word": "The",
+            "start": 33.183,
+            "end": 33.663000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "pipeline or the analysis algo?",
+        "words": [
+          {
+            "word": "pipeline ",
+            "start": 32.83458325195313,
+            "end": 33.402583251953125
+          },
+          {
+            "word": "or ",
+            "start": 33.402583251953125,
+            "end": 33.542583251953126
+          },
+          {
+            "word": "the ",
+            "start": 33.542583251953126,
+            "end": 33.646583251953125
+          },
+          {
+            "word": "analysis ",
+            "start": 33.646583251953125,
+            "end": 34.134583251953124
+          },
+          {
+            "word": "algo?",
+            "start": 34.134583251953124,
+            "end": 34.76158325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "paper that was released about it.",
+        "words": [
+          {
+            "word": "paper ",
+            "start": 36.303000000000004,
+            "end": 36.703002
+          },
+          {
+            "word": "that ",
+            "start": 36.703002,
+            "end": 36.943004
+          },
+          {
+            "word": "was ",
+            "start": 36.943004,
+            "end": 37.183
+          },
+          {
+            "word": "released ",
+            "start": 37.183,
+            "end": 37.423003
+          },
+          {
+            "word": "about ",
+            "start": 37.503,
+            "end": 37.823
+          },
+          {
+            "word": "it.",
+            "start": 37.823,
+            "end": 38.063003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?",
+        "words": [
+          {
+            "word": "Nice, ",
+            "start": 39.328,
+            "end": 39.734
+          },
+          {
+            "word": "the ",
+            "start": 39.734,
+            "end": 39.885
+          },
+          {
+            "word": "paper ",
+            "start": 39.885,
+            "end": 40.199
+          },
+          {
+            "word": "release ",
+            "start": 40.199,
+            "end": 40.582
+          },
+          {
+            "word": "on ",
+            "start": 40.582,
+            "end": 40.756
+          },
+          {
+            "word": "it.",
+            "start": 40.756,
+            "end": 41.127
+          },
+          {
+            "word": " How'd ",
+            "start": 41.1735,
+            "end": 41.4175
+          },
+          {
+            "word": "you ",
+            "start": 41.4175,
+            "end": 41.5225
+          },
+          {
+            "word": "structure ",
+            "start": 41.5225,
+            "end": 41.9285
+          },
+          {
+            "word": "the ",
+            "start": 41.9285,
+            "end": 42.0445
+          },
+          {
+            "word": "data ",
+            "start": 42.0445,
+            "end": 42.3115
+          },
+          {
+            "word": "pipeline ",
+            "start": 42.3115,
+            "end": 42.7295
+          },
+          {
+            "word": "feeding ",
+            "start": 42.7295,
+            "end": 43.0195
+          },
+          {
+            "word": "into ",
+            "start": 43.0195,
+            "end": 43.2055
+          },
+          {
+            "word": "that ",
+            "start": 43.2055,
+            "end": 43.3915
+          },
+          {
+            "word": "analysis?",
+            "start": 43.3915,
+            "end": 44.3315
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "It's in the paper.",
+        "words": [
+          {
+            "word": "It's ",
+            "start": 44.443,
+            "end": 44.843
+          },
+          {
+            "word": "in ",
+            "start": 44.843,
+            "end": 45.003
+          },
+          {
+            "word": "the ",
+            "start": 45.003,
+            "end": 45.083
+          },
+          {
+            "word": "paper.",
+            "start": 45.083,
+            "end": 45.323
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "you look it up?",
+        "words": [
+          {
+            "word": "you ",
+            "start": 45.643,
+            "end": 45.803000000000004
+          },
+          {
+            "word": "look ",
+            "start": 45.803000000000004,
+            "end": 45.963
+          },
+          {
+            "word": "it ",
+            "start": 45.963,
+            "end": 46.123000000000005
+          },
+          {
+            "word": "up?",
+            "start": 46.123000000000005,
+            "end": 46.203
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "read it?",
+        "words": [
+          {
+            "word": "read ",
+            "start": 46.603,
+            "end": 46.843
+          },
+          {
+            "word": "it?",
+            "start": 46.843,
+            "end": 47.003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nah, let's hear it from you\u2014walk me through the pipeline setup.",
+        "words": [
+          {
+            "word": "Nah, ",
+            "start": 48.645,
+            "end": 48.9
+          },
+          {
+            "word": "let's ",
+            "start": 48.9,
+            "end": 49.075
+          },
+          {
+            "word": "hear ",
+            "start": 49.075,
+            "end": 49.225
+          },
+          {
+            "word": "it ",
+            "start": 49.225,
+            "end": 49.318
+          },
+          {
+            "word": "from ",
+            "start": 49.318,
+            "end": 49.493
+          },
+          {
+            "word": "you\u2014walk ",
+            "start": 49.493,
+            "end": 50.085
+          },
+          {
+            "word": "me ",
+            "start": 50.085,
+            "end": 50.154
+          },
+          {
+            "word": "through ",
+            "start": 50.154,
+            "end": 50.363
+          },
+          {
+            "word": "the ",
+            "start": 50.363,
+            "end": 50.456
+          },
+          {
+            "word": "pipeline ",
+            "start": 50.456,
+            "end": 50.897
+          },
+          {
+            "word": "setup.",
+            "start": 50.897,
+            "end": 51.501
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.388,
+            "end": 0.551
+          },
+          {
+            "word": "there, ",
+            "start": 0.551,
+            "end": 0.806
+          },
+          {
+            "word": "I'm ",
+            "start": 0.806,
+            "end": 1.05
+          },
+          {
+            "word": "Grok ",
+            "start": 1.05,
+            "end": 1.317
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.317,
+            "end": 2.037
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.1029999999999998,
+            "end": 3.4229998999999998
+          },
+          {
+            "word": "How ",
+            "start": 3.4229998999999998,
+            "end": 3.5829999999999997
+          },
+          {
+            "word": "are ",
+            "start": 3.5829999999999997,
+            "end": 3.743
+          },
+          {
+            "word": "you ",
+            "start": 3.743,
+            "end": 3.823
+          },
+          {
+            "word": "doing?",
+            "start": 3.823,
+            "end": 3.983
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.823,
+            "end": 6.125
+          },
+          {
+            "word": "great, ",
+            "start": 6.125,
+            "end": 6.392
+          },
+          {
+            "word": "thanks!",
+            "start": 6.392,
+            "end": 7.042
+          },
+          {
+            "word": " This ",
+            "start": 7.088208251953125,
+            "end": 7.309208251953125
+          },
+          {
+            "word": "is ",
+            "start": 7.309208251953125,
+            "end": 7.425208251953125
+          },
+          {
+            "word": "our ",
+            "start": 7.425208251953125,
+            "end": 7.588208251953125
+          },
+          {
+            "word": "AI-first ",
+            "start": 7.588208251953125,
+            "end": 8.238208251953125
+          },
+          {
+            "word": "technical ",
+            "start": 8.238208251953125,
+            "end": 8.667208251953125
+          },
+          {
+            "word": "screen ",
+            "start": 8.667208251953125,
+            "end": 8.981208251953126
+          },
+          {
+            "word": "for ",
+            "start": 8.981208251953126,
+            "end": 9.201208251953124
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 9.201208251953124,
+            "end": 10.014208251953125
+          },
+          {
+            "word": "about ",
+            "start": 10.014208251953125,
+            "end": 10.246208251953124
+          },
+          {
+            "word": "15 ",
+            "start": 10.246208251953124,
+            "end": 10.641208251953126
+          },
+          {
+            "word": "minutes.",
+            "start": 10.641208251953126,
+            "end": 11.222208251953125
+          },
+          {
+            "word": " What's ",
+            "start": 11.256791748046876,
+            "end": 11.523791748046875
+          },
+          {
+            "word": "the ",
+            "start": 11.523791748046875,
+            "end": 11.627791748046874
+          },
+          {
+            "word": "most ",
+            "start": 11.627791748046874,
+            "end": 11.801791748046876
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.801791748046876,
+            "end": 12.278791748046874
+          },
+          {
+            "word": "thing ",
+            "start": 12.278791748046874,
+            "end": 12.463791748046875
+          },
+          {
+            "word": "you've ",
+            "start": 12.463791748046875,
+            "end": 12.661791748046875
+          },
+          {
+            "word": "built?",
+            "start": 12.661791748046875,
+            "end": 13.264791748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "And build the system that I know it's we should",
+        "words": [
+          {
+            "word": "And ",
+            "start": 13.863,
+            "end": 14.183
+          },
+          {
+            "word": "build ",
+            "start": 14.183,
+            "end": 14.422998999999999
+          },
+          {
+            "word": "the ",
+            "start": 14.422998999999999,
+            "end": 14.663
+          },
+          {
+            "word": "system ",
+            "start": 14.913,
+            "end": 15.232999999999999
+          },
+          {
+            "word": "that ",
+            "start": 15.232999999999999,
+            "end": 15.392999999999999
+          },
+          {
+            "word": "I ",
+            "start": 15.392999999999999,
+            "end": 15.552999999999999
+          },
+          {
+            "word": "know ",
+            "start": 15.552999999999999,
+            "end": 15.713
+          },
+          {
+            "word": "it's ",
+            "start": 15.713,
+            "end": 15.953
+          },
+          {
+            "word": "we ",
+            "start": 15.953,
+            "end": 16.033
+          },
+          {
+            "word": "should",
+            "start": 16.033,
+            "end": 16.193
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sorry, caught a bit of static there\u2014what'd you say you built?",
+        "words": [
+          {
+            "word": "Sorry, ",
+            "start": 20.296,
+            "end": 20.609
+          },
+          {
+            "word": "caught ",
+            "start": 20.609,
+            "end": 20.784
+          },
+          {
+            "word": "a ",
+            "start": 20.784,
+            "end": 20.842
+          },
+          {
+            "word": "bit ",
+            "start": 20.842,
+            "end": 20.969
+          },
+          {
+            "word": "of ",
+            "start": 20.969,
+            "end": 21.039
+          },
+          {
+            "word": "static ",
+            "start": 21.039,
+            "end": 21.376
+          },
+          {
+            "word": "there\u2014what'd ",
+            "start": 21.376,
+            "end": 21.886
+          },
+          {
+            "word": "you ",
+            "start": 21.886,
+            "end": 22.003
+          },
+          {
+            "word": "say ",
+            "start": 22.003,
+            "end": 22.154
+          },
+          {
+            "word": "you ",
+            "start": 22.154,
+            "end": 22.281
+          },
+          {
+            "word": "built?",
+            "start": 22.281,
+            "end": 22.885
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I've built a system that annoys behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I've ",
+            "start": 23.223000000000003,
+            "end": 23.623
+          },
+          {
+            "word": "built ",
+            "start": 23.623,
+            "end": 23.783
+          },
+          {
+            "word": "a ",
+            "start": 23.783,
+            "end": 24.023002
+          },
+          {
+            "word": "system ",
+            "start": 24.023002,
+            "end": 24.263001000000003
+          },
+          {
+            "word": "that ",
+            "start": 24.263001000000003,
+            "end": 24.503001
+          },
+          {
+            "word": "annoys ",
+            "start": 24.503001,
+            "end": 24.983
+          },
+          {
+            "word": "behavior ",
+            "start": 24.983,
+            "end": 25.463
+          },
+          {
+            "word": "of ",
+            "start": 25.463,
+            "end": 25.623
+          },
+          {
+            "word": "a ",
+            "start": 25.623,
+            "end": 25.703002
+          },
+          {
+            "word": "thousand ",
+            "start": 25.793000000000003,
+            "end": 26.113
+          },
+          {
+            "word": "people.",
+            "start": 26.113,
+            "end": 26.433
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data ",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 27.865,
+            "end": 28.155
+          },
+          {
+            "word": "a ",
+            "start": 28.155,
+            "end": 28.248
+          },
+          {
+            "word": "system ",
+            "start": 28.248,
+            "end": 28.631
+          },
+          {
+            "word": "analyzing ",
+            "start": 28.631,
+            "end": 29.096
+          },
+          {
+            "word": "behavior ",
+            "start": 29.096,
+            "end": 29.479
+          },
+          {
+            "word": "of ",
+            "start": 29.479,
+            "end": 29.56
+          },
+          {
+            "word": "a ",
+            "start": 29.56,
+            "end": 29.63
+          },
+          {
+            "word": "thousand ",
+            "start": 29.63,
+            "end": 30.048
+          },
+          {
+            "word": "people.",
+            "start": 30.048,
+            "end": 30.768
+          },
+          {
+            "word": " Which ",
+            "start": 30.813583251953126,
+            "end": 31.080583251953126
+          },
+          {
+            "word": "part ",
+            "start": 31.080583251953126,
+            "end": 31.289583251953125
+          },
+          {
+            "word": "are ",
+            "start": 31.289583251953125,
+            "end": 31.382583251953125
+          },
+          {
+            "word": "you ",
+            "start": 31.382583251953125,
+            "end": 31.510583251953125
+          },
+          {
+            "word": "most ",
+            "start": 31.510583251953125,
+            "end": 31.696583251953125
+          },
+          {
+            "word": "proud ",
+            "start": 31.696583251953125,
+            "end": 31.998583251953125
+          },
+          {
+            "word": "of\u2014like ",
+            "start": 31.998583251953125,
+            "end": 32.45058325195313
+          },
+          {
+            "word": "the ",
+            "start": 32.45058325195313,
+            "end": 32.57858325195313
+          },
+          {
+            "word": "data ",
+            "start": 32.57858325195313,
+            "end": 32.83458325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The",
+        "words": [
+          {
+            "word": "The",
+            "start": 33.183,
+            "end": 33.663000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "pipeline or the analysis algo?",
+        "words": [
+          {
+            "word": "pipeline ",
+            "start": 32.83458325195313,
+            "end": 33.402583251953125
+          },
+          {
+            "word": "or ",
+            "start": 33.402583251953125,
+            "end": 33.542583251953126
+          },
+          {
+            "word": "the ",
+            "start": 33.542583251953126,
+            "end": 33.646583251953125
+          },
+          {
+            "word": "analysis ",
+            "start": 33.646583251953125,
+            "end": 34.134583251953124
+          },
+          {
+            "word": "algo?",
+            "start": 34.134583251953124,
+            "end": 34.76158325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "paper that was released about it.",
+        "words": [
+          {
+            "word": "paper ",
+            "start": 36.303000000000004,
+            "end": 36.703002
+          },
+          {
+            "word": "that ",
+            "start": 36.703002,
+            "end": 36.943004
+          },
+          {
+            "word": "was ",
+            "start": 36.943004,
+            "end": 37.183
+          },
+          {
+            "word": "released ",
+            "start": 37.183,
+            "end": 37.423003
+          },
+          {
+            "word": "about ",
+            "start": 37.503,
+            "end": 37.823
+          },
+          {
+            "word": "it.",
+            "start": 37.823,
+            "end": 38.063003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?",
+        "words": [
+          {
+            "word": "Nice, ",
+            "start": 39.328,
+            "end": 39.734
+          },
+          {
+            "word": "the ",
+            "start": 39.734,
+            "end": 39.885
+          },
+          {
+            "word": "paper ",
+            "start": 39.885,
+            "end": 40.199
+          },
+          {
+            "word": "release ",
+            "start": 40.199,
+            "end": 40.582
+          },
+          {
+            "word": "on ",
+            "start": 40.582,
+            "end": 40.756
+          },
+          {
+            "word": "it.",
+            "start": 40.756,
+            "end": 41.127
+          },
+          {
+            "word": " How'd ",
+            "start": 41.1735,
+            "end": 41.4175
+          },
+          {
+            "word": "you ",
+            "start": 41.4175,
+            "end": 41.5225
+          },
+          {
+            "word": "structure ",
+            "start": 41.5225,
+            "end": 41.9285
+          },
+          {
+            "word": "the ",
+            "start": 41.9285,
+            "end": 42.0445
+          },
+          {
+            "word": "data ",
+            "start": 42.0445,
+            "end": 42.3115
+          },
+          {
+            "word": "pipeline ",
+            "start": 42.3115,
+            "end": 42.7295
+          },
+          {
+            "word": "feeding ",
+            "start": 42.7295,
+            "end": 43.0195
+          },
+          {
+            "word": "into ",
+            "start": 43.0195,
+            "end": 43.2055
+          },
+          {
+            "word": "that ",
+            "start": 43.2055,
+            "end": 43.3915
+          },
+          {
+            "word": "analysis?",
+            "start": 43.3915,
+            "end": 44.3315
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "It's in the paper.",
+        "words": [
+          {
+            "word": "It's ",
+            "start": 44.443,
+            "end": 44.843
+          },
+          {
+            "word": "in ",
+            "start": 44.843,
+            "end": 45.003
+          },
+          {
+            "word": "the ",
+            "start": 45.003,
+            "end": 45.083
+          },
+          {
+            "word": "paper.",
+            "start": 45.083,
+            "end": 45.323
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "you look it up?",
+        "words": [
+          {
+            "word": "you ",
+            "start": 45.643,
+            "end": 45.803000000000004
+          },
+          {
+            "word": "look ",
+            "start": 45.803000000000004,
+            "end": 45.963
+          },
+          {
+            "word": "it ",
+            "start": 45.963,
+            "end": 46.123000000000005
+          },
+          {
+            "word": "up?",
+            "start": 46.123000000000005,
+            "end": 46.203
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "read it?",
+        "words": [
+          {
+            "word": "read ",
+            "start": 46.603,
+            "end": 46.843
+          },
+          {
+            "word": "it?",
+            "start": 46.843,
+            "end": 47.003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nah, let's hear it from you\u2014walk me through the pipeline setup.",
+        "words": [
+          {
+            "word": "Nah, ",
+            "start": 48.645,
+            "end": 48.9
+          },
+          {
+            "word": "let's ",
+            "start": 48.9,
+            "end": 49.075
+          },
+          {
+            "word": "hear ",
+            "start": 49.075,
+            "end": 49.225
+          },
+          {
+            "word": "it ",
+            "start": 49.225,
+            "end": 49.318
+          },
+          {
+            "word": "from ",
+            "start": 49.318,
+            "end": 49.493
+          },
+          {
+            "word": "you\u2014walk ",
+            "start": 49.493,
+            "end": 50.085
+          },
+          {
+            "word": "me ",
+            "start": 50.085,
+            "end": 50.154
+          },
+          {
+            "word": "through ",
+            "start": 50.154,
+            "end": 50.363
+          },
+          {
+            "word": "the ",
+            "start": 50.363,
+            "end": 50.456
+          },
+          {
+            "word": "pipeline ",
+            "start": 50.456,
+            "end": 50.897
+          },
+          {
+            "word": "setup.",
+            "start": 50.897,
+            "end": 51.501
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm": {
+        "p50": 883,
+        "p90": 1468.2,
+        "p95": 1508.1,
+        "p99": 1540.02,
+        "min": 578,
+        "max": 1548,
+        "num": 7,
+        "values": [
+          1415,
+          1548,
+          687,
+          883,
+          682,
+          578,
+          1042
+        ]
+      },
+      "llm_websocket_network_rtt": {
+        "p50": 28,
+        "p90": 41,
+        "p95": 59.5,
+        "p99": 69,
+        "min": 25,
+        "max": 71,
+        "num": 26,
+        "values": [
+          26,
+          26,
+          28,
+          71,
+          25,
+          63,
+          28,
+          49,
+          27,
+          29,
+          26,
+          28,
+          26,
+          27,
+          26,
+          27,
+          33,
+          33,
+          26,
+          28,
+          26,
+          26,
+          28,
+          28,
+          31,
+          29
+        ]
+      },
+      "e2e": {
+        "p50": 1433,
+        "p90": 3037.5999999999995,
+        "p95": 3494.7999999999993,
+        "p99": 3860.56,
+        "min": 1113.9970703125,
+        "max": 3952,
+        "num": 5,
+        "values": [
+          1666,
+          3952,
+          1316,
+          1113.9970703125,
+          1433
+        ]
+      },
+      "tts": {
+        "p50": 305,
+        "p90": 370.1,
+        "p95": 372.55,
+        "p99": 374.51,
+        "min": 271,
+        "max": 375,
+        "num": 8,
+        "values": [
+          271,
+          282,
+          368,
+          321,
+          375,
+          278,
+          289,
+          345
+        ]
+      },
+      "asr": {
+        "p50": 20.000224999999773,
+        "p90": 39.00025599999992,
+        "p95": 44.501580000001915,
+        "p99": 719.3002170000037,
+        "min": 10,
+        "max": 1020.0000000000018,
+        "num": 32,
+        "values": [
+          20.000099999999748,
+          19.999899999999798,
+          10.000000000001819,
+          20,
+          20.000300000001516,
+          10.000000000001819,
+          19.999400000000605,
+          1020.0000000000018,
+          40.000200000000405,
+          29.999799999999595,
+          20.00050000000192,
+          20.001000000000204,
+          10.001799999998184,
+          10.00050000000192,
+          20.001000000000204,
+          20.001800000001822,
+          30.00040000000081,
+          50.000700000004144,
+          30.000759999995353,
+          20.00014999999985,
+          10.001000000003842,
+          10.002000000000407,
+          20.002700000004552,
+          20.001400000001013,
+          10,
+          19.999400000000605,
+          40.002300000000105,
+          20.000899999999092,
+          19.99949999999808,
+          20.000299999999697,
+          19.999000000003434,
+          20
+        ]
+      }
+    },
+    "call_cost": {
+      "product_costs": [
+        {
+          "product": "elevenlabs_tts",
+          "unit_price": 0.1166667,
+          "cost": 6.1833333
+        }
+      ],
+      "total_duration_unit_price": 0.1166667,
+      "total_duration_seconds": 53,
+      "combined_cost": 6.1833333
+    },
+    "call_analysis": {
+      "call_summary": "The user and the AI agent engaged in a technical screening conversation where the user described building a system analyzing the behavior of a thousand people and mentioned a paper released about it. The agent asked for more details about the data pipeline, but the user referred to the paper instead of explaining. The call ended without the user providing detailed technical information.",
+      "in_voicemail": false,
+      "user_sentiment": "Neutral",
+      "call_successful": false,
+      "custom_analysis_data": {}
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzRiMjEzN2Y1MzI5MDM2NWU5MWU5OGRhZDkzNiJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDg0ODQsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.G6J2IiQBhPLhCai-mR8Kcfu6NA1Hk8U7B0ySvVsi0Kk"
+  },
+  "retell_api_data": {
+    "call_id": "call_4b2137f53290365e91e98dad936",
+    "call_type": "web_call",
+    "agent_id": "agent_f71555f96ccbf289e8184a13e9",
+    "agent_version": 2,
+    "agent_name": "phone screen - grok",
+    "call_status": "ended",
+    "start_timestamp": 1765107885400,
+    "end_timestamp": 1765107937502,
+    "duration_ms": 52102,
+    "transcript": "Agent: Hey there, I'm Grok Recruiter\nUser: Hey. How are you doing?\nAgent: Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?\nUser: And build the system that I know it's we should\nAgent: Sorry, caught a bit of static there\u2014what'd you say you built?\nUser: I've built a system that annoys behavior of a thousand people.\nAgent: Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data \nUser: The\nAgent: pipeline or the analysis algo?\nUser: paper that was released about it.\nAgent: Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?\nUser: It's in the paper.\nUser: you look it up?\nUser: read it?\nAgent: Nah, let's hear it from you\u2014walk me through the pipeline setup.\n",
+    "transcript_object": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.388,
+            "end": 0.551
+          },
+          {
+            "word": "there, ",
+            "start": 0.551,
+            "end": 0.806
+          },
+          {
+            "word": "I'm ",
+            "start": 0.806,
+            "end": 1.05
+          },
+          {
+            "word": "Grok ",
+            "start": 1.05,
+            "end": 1.317
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.317,
+            "end": 2.037
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.1029999999999998,
+            "end": 3.4229998999999998
+          },
+          {
+            "word": "How ",
+            "start": 3.4229998999999998,
+            "end": 3.5829999999999997
+          },
+          {
+            "word": "are ",
+            "start": 3.5829999999999997,
+            "end": 3.743
+          },
+          {
+            "word": "you ",
+            "start": 3.743,
+            "end": 3.823
+          },
+          {
+            "word": "doing?",
+            "start": 3.823,
+            "end": 3.983
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.823,
+            "end": 6.125
+          },
+          {
+            "word": "great, ",
+            "start": 6.125,
+            "end": 6.392
+          },
+          {
+            "word": "thanks!",
+            "start": 6.392,
+            "end": 7.042
+          },
+          {
+            "word": " This ",
+            "start": 7.088208251953125,
+            "end": 7.309208251953125
+          },
+          {
+            "word": "is ",
+            "start": 7.309208251953125,
+            "end": 7.425208251953125
+          },
+          {
+            "word": "our ",
+            "start": 7.425208251953125,
+            "end": 7.588208251953125
+          },
+          {
+            "word": "AI-first ",
+            "start": 7.588208251953125,
+            "end": 8.238208251953125
+          },
+          {
+            "word": "technical ",
+            "start": 8.238208251953125,
+            "end": 8.667208251953125
+          },
+          {
+            "word": "screen ",
+            "start": 8.667208251953125,
+            "end": 8.981208251953126
+          },
+          {
+            "word": "for ",
+            "start": 8.981208251953126,
+            "end": 9.201208251953124
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 9.201208251953124,
+            "end": 10.014208251953125
+          },
+          {
+            "word": "about ",
+            "start": 10.014208251953125,
+            "end": 10.246208251953124
+          },
+          {
+            "word": "15 ",
+            "start": 10.246208251953124,
+            "end": 10.641208251953126
+          },
+          {
+            "word": "minutes.",
+            "start": 10.641208251953126,
+            "end": 11.222208251953125
+          },
+          {
+            "word": " What's ",
+            "start": 11.256791748046876,
+            "end": 11.523791748046875
+          },
+          {
+            "word": "the ",
+            "start": 11.523791748046875,
+            "end": 11.627791748046874
+          },
+          {
+            "word": "most ",
+            "start": 11.627791748046874,
+            "end": 11.801791748046876
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.801791748046876,
+            "end": 12.278791748046874
+          },
+          {
+            "word": "thing ",
+            "start": 12.278791748046874,
+            "end": 12.463791748046875
+          },
+          {
+            "word": "you've ",
+            "start": 12.463791748046875,
+            "end": 12.661791748046875
+          },
+          {
+            "word": "built?",
+            "start": 12.661791748046875,
+            "end": 13.264791748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "And build the system that I know it's we should",
+        "words": [
+          {
+            "word": "And ",
+            "start": 13.863,
+            "end": 14.183
+          },
+          {
+            "word": "build ",
+            "start": 14.183,
+            "end": 14.422998999999999
+          },
+          {
+            "word": "the ",
+            "start": 14.422998999999999,
+            "end": 14.663
+          },
+          {
+            "word": "system ",
+            "start": 14.913,
+            "end": 15.232999999999999
+          },
+          {
+            "word": "that ",
+            "start": 15.232999999999999,
+            "end": 15.392999999999999
+          },
+          {
+            "word": "I ",
+            "start": 15.392999999999999,
+            "end": 15.552999999999999
+          },
+          {
+            "word": "know ",
+            "start": 15.552999999999999,
+            "end": 15.713
+          },
+          {
+            "word": "it's ",
+            "start": 15.713,
+            "end": 15.953
+          },
+          {
+            "word": "we ",
+            "start": 15.953,
+            "end": 16.033
+          },
+          {
+            "word": "should",
+            "start": 16.033,
+            "end": 16.193
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sorry, caught a bit of static there\u2014what'd you say you built?",
+        "words": [
+          {
+            "word": "Sorry, ",
+            "start": 20.296,
+            "end": 20.609
+          },
+          {
+            "word": "caught ",
+            "start": 20.609,
+            "end": 20.784
+          },
+          {
+            "word": "a ",
+            "start": 20.784,
+            "end": 20.842
+          },
+          {
+            "word": "bit ",
+            "start": 20.842,
+            "end": 20.969
+          },
+          {
+            "word": "of ",
+            "start": 20.969,
+            "end": 21.039
+          },
+          {
+            "word": "static ",
+            "start": 21.039,
+            "end": 21.376
+          },
+          {
+            "word": "there\u2014what'd ",
+            "start": 21.376,
+            "end": 21.886
+          },
+          {
+            "word": "you ",
+            "start": 21.886,
+            "end": 22.003
+          },
+          {
+            "word": "say ",
+            "start": 22.003,
+            "end": 22.154
+          },
+          {
+            "word": "you ",
+            "start": 22.154,
+            "end": 22.281
+          },
+          {
+            "word": "built?",
+            "start": 22.281,
+            "end": 22.885
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I've built a system that annoys behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I've ",
+            "start": 23.223000000000003,
+            "end": 23.623
+          },
+          {
+            "word": "built ",
+            "start": 23.623,
+            "end": 23.783
+          },
+          {
+            "word": "a ",
+            "start": 23.783,
+            "end": 24.023002
+          },
+          {
+            "word": "system ",
+            "start": 24.023002,
+            "end": 24.263001000000003
+          },
+          {
+            "word": "that ",
+            "start": 24.263001000000003,
+            "end": 24.503001
+          },
+          {
+            "word": "annoys ",
+            "start": 24.503001,
+            "end": 24.983
+          },
+          {
+            "word": "behavior ",
+            "start": 24.983,
+            "end": 25.463
+          },
+          {
+            "word": "of ",
+            "start": 25.463,
+            "end": 25.623
+          },
+          {
+            "word": "a ",
+            "start": 25.623,
+            "end": 25.703002
+          },
+          {
+            "word": "thousand ",
+            "start": 25.793000000000003,
+            "end": 26.113
+          },
+          {
+            "word": "people.",
+            "start": 26.113,
+            "end": 26.433
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data ",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 27.865,
+            "end": 28.155
+          },
+          {
+            "word": "a ",
+            "start": 28.155,
+            "end": 28.248
+          },
+          {
+            "word": "system ",
+            "start": 28.248,
+            "end": 28.631
+          },
+          {
+            "word": "analyzing ",
+            "start": 28.631,
+            "end": 29.096
+          },
+          {
+            "word": "behavior ",
+            "start": 29.096,
+            "end": 29.479
+          },
+          {
+            "word": "of ",
+            "start": 29.479,
+            "end": 29.56
+          },
+          {
+            "word": "a ",
+            "start": 29.56,
+            "end": 29.63
+          },
+          {
+            "word": "thousand ",
+            "start": 29.63,
+            "end": 30.048
+          },
+          {
+            "word": "people.",
+            "start": 30.048,
+            "end": 30.768
+          },
+          {
+            "word": " Which ",
+            "start": 30.813583251953126,
+            "end": 31.080583251953126
+          },
+          {
+            "word": "part ",
+            "start": 31.080583251953126,
+            "end": 31.289583251953125
+          },
+          {
+            "word": "are ",
+            "start": 31.289583251953125,
+            "end": 31.382583251953125
+          },
+          {
+            "word": "you ",
+            "start": 31.382583251953125,
+            "end": 31.510583251953125
+          },
+          {
+            "word": "most ",
+            "start": 31.510583251953125,
+            "end": 31.696583251953125
+          },
+          {
+            "word": "proud ",
+            "start": 31.696583251953125,
+            "end": 31.998583251953125
+          },
+          {
+            "word": "of\u2014like ",
+            "start": 31.998583251953125,
+            "end": 32.45058325195313
+          },
+          {
+            "word": "the ",
+            "start": 32.45058325195313,
+            "end": 32.57858325195313
+          },
+          {
+            "word": "data ",
+            "start": 32.57858325195313,
+            "end": 32.83458325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The",
+        "words": [
+          {
+            "word": "The",
+            "start": 33.183,
+            "end": 33.663000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "pipeline or the analysis algo?",
+        "words": [
+          {
+            "word": "pipeline ",
+            "start": 32.83458325195313,
+            "end": 33.402583251953125
+          },
+          {
+            "word": "or ",
+            "start": 33.402583251953125,
+            "end": 33.542583251953126
+          },
+          {
+            "word": "the ",
+            "start": 33.542583251953126,
+            "end": 33.646583251953125
+          },
+          {
+            "word": "analysis ",
+            "start": 33.646583251953125,
+            "end": 34.134583251953124
+          },
+          {
+            "word": "algo?",
+            "start": 34.134583251953124,
+            "end": 34.76158325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "paper that was released about it.",
+        "words": [
+          {
+            "word": "paper ",
+            "start": 36.303000000000004,
+            "end": 36.703002
+          },
+          {
+            "word": "that ",
+            "start": 36.703002,
+            "end": 36.943004
+          },
+          {
+            "word": "was ",
+            "start": 36.943004,
+            "end": 37.183
+          },
+          {
+            "word": "released ",
+            "start": 37.183,
+            "end": 37.423003
+          },
+          {
+            "word": "about ",
+            "start": 37.503,
+            "end": 37.823
+          },
+          {
+            "word": "it.",
+            "start": 37.823,
+            "end": 38.063003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?",
+        "words": [
+          {
+            "word": "Nice, ",
+            "start": 39.328,
+            "end": 39.734
+          },
+          {
+            "word": "the ",
+            "start": 39.734,
+            "end": 39.885
+          },
+          {
+            "word": "paper ",
+            "start": 39.885,
+            "end": 40.199
+          },
+          {
+            "word": "release ",
+            "start": 40.199,
+            "end": 40.582
+          },
+          {
+            "word": "on ",
+            "start": 40.582,
+            "end": 40.756
+          },
+          {
+            "word": "it.",
+            "start": 40.756,
+            "end": 41.127
+          },
+          {
+            "word": " How'd ",
+            "start": 41.1735,
+            "end": 41.4175
+          },
+          {
+            "word": "you ",
+            "start": 41.4175,
+            "end": 41.5225
+          },
+          {
+            "word": "structure ",
+            "start": 41.5225,
+            "end": 41.9285
+          },
+          {
+            "word": "the ",
+            "start": 41.9285,
+            "end": 42.0445
+          },
+          {
+            "word": "data ",
+            "start": 42.0445,
+            "end": 42.3115
+          },
+          {
+            "word": "pipeline ",
+            "start": 42.3115,
+            "end": 42.7295
+          },
+          {
+            "word": "feeding ",
+            "start": 42.7295,
+            "end": 43.0195
+          },
+          {
+            "word": "into ",
+            "start": 43.0195,
+            "end": 43.2055
+          },
+          {
+            "word": "that ",
+            "start": 43.2055,
+            "end": 43.3915
+          },
+          {
+            "word": "analysis?",
+            "start": 43.3915,
+            "end": 44.3315
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "It's in the paper.",
+        "words": [
+          {
+            "word": "It's ",
+            "start": 44.443,
+            "end": 44.843
+          },
+          {
+            "word": "in ",
+            "start": 44.843,
+            "end": 45.003
+          },
+          {
+            "word": "the ",
+            "start": 45.003,
+            "end": 45.083
+          },
+          {
+            "word": "paper.",
+            "start": 45.083,
+            "end": 45.323
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "you look it up?",
+        "words": [
+          {
+            "word": "you ",
+            "start": 45.643,
+            "end": 45.803000000000004
+          },
+          {
+            "word": "look ",
+            "start": 45.803000000000004,
+            "end": 45.963
+          },
+          {
+            "word": "it ",
+            "start": 45.963,
+            "end": 46.123000000000005
+          },
+          {
+            "word": "up?",
+            "start": 46.123000000000005,
+            "end": 46.203
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "read it?",
+        "words": [
+          {
+            "word": "read ",
+            "start": 46.603,
+            "end": 46.843
+          },
+          {
+            "word": "it?",
+            "start": 46.843,
+            "end": 47.003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nah, let's hear it from you\u2014walk me through the pipeline setup.",
+        "words": [
+          {
+            "word": "Nah, ",
+            "start": 48.645,
+            "end": 48.9
+          },
+          {
+            "word": "let's ",
+            "start": 48.9,
+            "end": 49.075
+          },
+          {
+            "word": "hear ",
+            "start": 49.075,
+            "end": 49.225
+          },
+          {
+            "word": "it ",
+            "start": 49.225,
+            "end": 49.318
+          },
+          {
+            "word": "from ",
+            "start": 49.318,
+            "end": 49.493
+          },
+          {
+            "word": "you\u2014walk ",
+            "start": 49.493,
+            "end": 50.085
+          },
+          {
+            "word": "me ",
+            "start": 50.085,
+            "end": 50.154
+          },
+          {
+            "word": "through ",
+            "start": 50.154,
+            "end": 50.363
+          },
+          {
+            "word": "the ",
+            "start": 50.363,
+            "end": 50.456
+          },
+          {
+            "word": "pipeline ",
+            "start": 50.456,
+            "end": 50.897
+          },
+          {
+            "word": "setup.",
+            "start": 50.897,
+            "end": 51.501
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "transcript_with_tool_calls": [
+      {
+        "role": "agent",
+        "content": "Hey there, I'm Grok Recruiter",
+        "words": [
+          {
+            "word": "Hey ",
+            "start": 0.388,
+            "end": 0.551
+          },
+          {
+            "word": "there, ",
+            "start": 0.551,
+            "end": 0.806
+          },
+          {
+            "word": "I'm ",
+            "start": 0.806,
+            "end": 1.05
+          },
+          {
+            "word": "Grok ",
+            "start": 1.05,
+            "end": 1.317
+          },
+          {
+            "word": "Recruiter",
+            "start": 1.317,
+            "end": 2.037
+          }
+        ],
+        "metadata": {
+          "response_id": 0
+        }
+      },
+      {
+        "role": "user",
+        "content": "Hey. How are you doing?",
+        "words": [
+          {
+            "word": "Hey. ",
+            "start": 3.1029999999999998,
+            "end": 3.4229998999999998
+          },
+          {
+            "word": "How ",
+            "start": 3.4229998999999998,
+            "end": 3.5829999999999997
+          },
+          {
+            "word": "are ",
+            "start": 3.5829999999999997,
+            "end": 3.743
+          },
+          {
+            "word": "you ",
+            "start": 3.743,
+            "end": 3.823
+          },
+          {
+            "word": "doing?",
+            "start": 3.823,
+            "end": 3.983
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Doing great, thanks! This is our AI-first technical screen for x.ai\u2014takes about 15 minutes. What's the most exceptional thing you've built?",
+        "words": [
+          {
+            "word": "Doing ",
+            "start": 5.823,
+            "end": 6.125
+          },
+          {
+            "word": "great, ",
+            "start": 6.125,
+            "end": 6.392
+          },
+          {
+            "word": "thanks!",
+            "start": 6.392,
+            "end": 7.042
+          },
+          {
+            "word": " This ",
+            "start": 7.088208251953125,
+            "end": 7.309208251953125
+          },
+          {
+            "word": "is ",
+            "start": 7.309208251953125,
+            "end": 7.425208251953125
+          },
+          {
+            "word": "our ",
+            "start": 7.425208251953125,
+            "end": 7.588208251953125
+          },
+          {
+            "word": "AI-first ",
+            "start": 7.588208251953125,
+            "end": 8.238208251953125
+          },
+          {
+            "word": "technical ",
+            "start": 8.238208251953125,
+            "end": 8.667208251953125
+          },
+          {
+            "word": "screen ",
+            "start": 8.667208251953125,
+            "end": 8.981208251953126
+          },
+          {
+            "word": "for ",
+            "start": 8.981208251953126,
+            "end": 9.201208251953124
+          },
+          {
+            "word": "x.ai\u2014takes ",
+            "start": 9.201208251953124,
+            "end": 10.014208251953125
+          },
+          {
+            "word": "about ",
+            "start": 10.014208251953125,
+            "end": 10.246208251953124
+          },
+          {
+            "word": "15 ",
+            "start": 10.246208251953124,
+            "end": 10.641208251953126
+          },
+          {
+            "word": "minutes.",
+            "start": 10.641208251953126,
+            "end": 11.222208251953125
+          },
+          {
+            "word": " What's ",
+            "start": 11.256791748046876,
+            "end": 11.523791748046875
+          },
+          {
+            "word": "the ",
+            "start": 11.523791748046875,
+            "end": 11.627791748046874
+          },
+          {
+            "word": "most ",
+            "start": 11.627791748046874,
+            "end": 11.801791748046876
+          },
+          {
+            "word": "exceptional ",
+            "start": 11.801791748046876,
+            "end": 12.278791748046874
+          },
+          {
+            "word": "thing ",
+            "start": 12.278791748046874,
+            "end": 12.463791748046875
+          },
+          {
+            "word": "you've ",
+            "start": 12.463791748046875,
+            "end": 12.661791748046875
+          },
+          {
+            "word": "built?",
+            "start": 12.661791748046875,
+            "end": 13.264791748046875
+          }
+        ],
+        "metadata": {
+          "response_id": 1
+        }
+      },
+      {
+        "role": "user",
+        "content": "And build the system that I know it's we should",
+        "words": [
+          {
+            "word": "And ",
+            "start": 13.863,
+            "end": 14.183
+          },
+          {
+            "word": "build ",
+            "start": 14.183,
+            "end": 14.422998999999999
+          },
+          {
+            "word": "the ",
+            "start": 14.422998999999999,
+            "end": 14.663
+          },
+          {
+            "word": "system ",
+            "start": 14.913,
+            "end": 15.232999999999999
+          },
+          {
+            "word": "that ",
+            "start": 15.232999999999999,
+            "end": 15.392999999999999
+          },
+          {
+            "word": "I ",
+            "start": 15.392999999999999,
+            "end": 15.552999999999999
+          },
+          {
+            "word": "know ",
+            "start": 15.552999999999999,
+            "end": 15.713
+          },
+          {
+            "word": "it's ",
+            "start": 15.713,
+            "end": 15.953
+          },
+          {
+            "word": "we ",
+            "start": 15.953,
+            "end": 16.033
+          },
+          {
+            "word": "should",
+            "start": 16.033,
+            "end": 16.193
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Sorry, caught a bit of static there\u2014what'd you say you built?",
+        "words": [
+          {
+            "word": "Sorry, ",
+            "start": 20.296,
+            "end": 20.609
+          },
+          {
+            "word": "caught ",
+            "start": 20.609,
+            "end": 20.784
+          },
+          {
+            "word": "a ",
+            "start": 20.784,
+            "end": 20.842
+          },
+          {
+            "word": "bit ",
+            "start": 20.842,
+            "end": 20.969
+          },
+          {
+            "word": "of ",
+            "start": 20.969,
+            "end": 21.039
+          },
+          {
+            "word": "static ",
+            "start": 21.039,
+            "end": 21.376
+          },
+          {
+            "word": "there\u2014what'd ",
+            "start": 21.376,
+            "end": 21.886
+          },
+          {
+            "word": "you ",
+            "start": 21.886,
+            "end": 22.003
+          },
+          {
+            "word": "say ",
+            "start": 22.003,
+            "end": 22.154
+          },
+          {
+            "word": "you ",
+            "start": 22.154,
+            "end": 22.281
+          },
+          {
+            "word": "built?",
+            "start": 22.281,
+            "end": 22.885
+          }
+        ],
+        "metadata": {
+          "response_id": 2
+        }
+      },
+      {
+        "role": "user",
+        "content": "I've built a system that annoys behavior of a thousand people.",
+        "words": [
+          {
+            "word": "I've ",
+            "start": 23.223000000000003,
+            "end": 23.623
+          },
+          {
+            "word": "built ",
+            "start": 23.623,
+            "end": 23.783
+          },
+          {
+            "word": "a ",
+            "start": 23.783,
+            "end": 24.023002
+          },
+          {
+            "word": "system ",
+            "start": 24.023002,
+            "end": 24.263001000000003
+          },
+          {
+            "word": "that ",
+            "start": 24.263001000000003,
+            "end": 24.503001
+          },
+          {
+            "word": "annoys ",
+            "start": 24.503001,
+            "end": 24.983
+          },
+          {
+            "word": "behavior ",
+            "start": 24.983,
+            "end": 25.463
+          },
+          {
+            "word": "of ",
+            "start": 25.463,
+            "end": 25.623
+          },
+          {
+            "word": "a ",
+            "start": 25.623,
+            "end": 25.703002
+          },
+          {
+            "word": "thousand ",
+            "start": 25.793000000000003,
+            "end": 26.113
+          },
+          {
+            "word": "people.",
+            "start": 26.113,
+            "end": 26.433
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Cool, a system analyzing behavior of a thousand people. Which part are you most proud of\u2014like the data ",
+        "words": [
+          {
+            "word": "Cool, ",
+            "start": 27.865,
+            "end": 28.155
+          },
+          {
+            "word": "a ",
+            "start": 28.155,
+            "end": 28.248
+          },
+          {
+            "word": "system ",
+            "start": 28.248,
+            "end": 28.631
+          },
+          {
+            "word": "analyzing ",
+            "start": 28.631,
+            "end": 29.096
+          },
+          {
+            "word": "behavior ",
+            "start": 29.096,
+            "end": 29.479
+          },
+          {
+            "word": "of ",
+            "start": 29.479,
+            "end": 29.56
+          },
+          {
+            "word": "a ",
+            "start": 29.56,
+            "end": 29.63
+          },
+          {
+            "word": "thousand ",
+            "start": 29.63,
+            "end": 30.048
+          },
+          {
+            "word": "people.",
+            "start": 30.048,
+            "end": 30.768
+          },
+          {
+            "word": " Which ",
+            "start": 30.813583251953126,
+            "end": 31.080583251953126
+          },
+          {
+            "word": "part ",
+            "start": 31.080583251953126,
+            "end": 31.289583251953125
+          },
+          {
+            "word": "are ",
+            "start": 31.289583251953125,
+            "end": 31.382583251953125
+          },
+          {
+            "word": "you ",
+            "start": 31.382583251953125,
+            "end": 31.510583251953125
+          },
+          {
+            "word": "most ",
+            "start": 31.510583251953125,
+            "end": 31.696583251953125
+          },
+          {
+            "word": "proud ",
+            "start": 31.696583251953125,
+            "end": 31.998583251953125
+          },
+          {
+            "word": "of\u2014like ",
+            "start": 31.998583251953125,
+            "end": 32.45058325195313
+          },
+          {
+            "word": "the ",
+            "start": 32.45058325195313,
+            "end": 32.57858325195313
+          },
+          {
+            "word": "data ",
+            "start": 32.57858325195313,
+            "end": 32.83458325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "The",
+        "words": [
+          {
+            "word": "The",
+            "start": 33.183,
+            "end": 33.663000000000004
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "pipeline or the analysis algo?",
+        "words": [
+          {
+            "word": "pipeline ",
+            "start": 32.83458325195313,
+            "end": 33.402583251953125
+          },
+          {
+            "word": "or ",
+            "start": 33.402583251953125,
+            "end": 33.542583251953126
+          },
+          {
+            "word": "the ",
+            "start": 33.542583251953126,
+            "end": 33.646583251953125
+          },
+          {
+            "word": "analysis ",
+            "start": 33.646583251953125,
+            "end": 34.134583251953124
+          },
+          {
+            "word": "algo?",
+            "start": 34.134583251953124,
+            "end": 34.76158325195313
+          }
+        ],
+        "metadata": {
+          "response_id": 3
+        }
+      },
+      {
+        "role": "user",
+        "content": "paper that was released about it.",
+        "words": [
+          {
+            "word": "paper ",
+            "start": 36.303000000000004,
+            "end": 36.703002
+          },
+          {
+            "word": "that ",
+            "start": 36.703002,
+            "end": 36.943004
+          },
+          {
+            "word": "was ",
+            "start": 36.943004,
+            "end": 37.183
+          },
+          {
+            "word": "released ",
+            "start": 37.183,
+            "end": 37.423003
+          },
+          {
+            "word": "about ",
+            "start": 37.503,
+            "end": 37.823
+          },
+          {
+            "word": "it.",
+            "start": 37.823,
+            "end": 38.063003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nice, the paper release on it. How'd you structure the data pipeline feeding into that analysis?",
+        "words": [
+          {
+            "word": "Nice, ",
+            "start": 39.328,
+            "end": 39.734
+          },
+          {
+            "word": "the ",
+            "start": 39.734,
+            "end": 39.885
+          },
+          {
+            "word": "paper ",
+            "start": 39.885,
+            "end": 40.199
+          },
+          {
+            "word": "release ",
+            "start": 40.199,
+            "end": 40.582
+          },
+          {
+            "word": "on ",
+            "start": 40.582,
+            "end": 40.756
+          },
+          {
+            "word": "it.",
+            "start": 40.756,
+            "end": 41.127
+          },
+          {
+            "word": " How'd ",
+            "start": 41.1735,
+            "end": 41.4175
+          },
+          {
+            "word": "you ",
+            "start": 41.4175,
+            "end": 41.5225
+          },
+          {
+            "word": "structure ",
+            "start": 41.5225,
+            "end": 41.9285
+          },
+          {
+            "word": "the ",
+            "start": 41.9285,
+            "end": 42.0445
+          },
+          {
+            "word": "data ",
+            "start": 42.0445,
+            "end": 42.3115
+          },
+          {
+            "word": "pipeline ",
+            "start": 42.3115,
+            "end": 42.7295
+          },
+          {
+            "word": "feeding ",
+            "start": 42.7295,
+            "end": 43.0195
+          },
+          {
+            "word": "into ",
+            "start": 43.0195,
+            "end": 43.2055
+          },
+          {
+            "word": "that ",
+            "start": 43.2055,
+            "end": 43.3915
+          },
+          {
+            "word": "analysis?",
+            "start": 43.3915,
+            "end": 44.3315
+          }
+        ],
+        "metadata": {
+          "response_id": 5
+        }
+      },
+      {
+        "role": "user",
+        "content": "It's in the paper.",
+        "words": [
+          {
+            "word": "It's ",
+            "start": 44.443,
+            "end": 44.843
+          },
+          {
+            "word": "in ",
+            "start": 44.843,
+            "end": 45.003
+          },
+          {
+            "word": "the ",
+            "start": 45.003,
+            "end": 45.083
+          },
+          {
+            "word": "paper.",
+            "start": 45.083,
+            "end": 45.323
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "you look it up?",
+        "words": [
+          {
+            "word": "you ",
+            "start": 45.643,
+            "end": 45.803000000000004
+          },
+          {
+            "word": "look ",
+            "start": 45.803000000000004,
+            "end": 45.963
+          },
+          {
+            "word": "it ",
+            "start": 45.963,
+            "end": 46.123000000000005
+          },
+          {
+            "word": "up?",
+            "start": 46.123000000000005,
+            "end": 46.203
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "read it?",
+        "words": [
+          {
+            "word": "read ",
+            "start": 46.603,
+            "end": 46.843
+          },
+          {
+            "word": "it?",
+            "start": 46.843,
+            "end": 47.003
+          }
+        ]
+      },
+      {
+        "role": "agent",
+        "content": "Nah, let's hear it from you\u2014walk me through the pipeline setup.",
+        "words": [
+          {
+            "word": "Nah, ",
+            "start": 48.645,
+            "end": 48.9
+          },
+          {
+            "word": "let's ",
+            "start": 48.9,
+            "end": 49.075
+          },
+          {
+            "word": "hear ",
+            "start": 49.075,
+            "end": 49.225
+          },
+          {
+            "word": "it ",
+            "start": 49.225,
+            "end": 49.318
+          },
+          {
+            "word": "from ",
+            "start": 49.318,
+            "end": 49.493
+          },
+          {
+            "word": "you\u2014walk ",
+            "start": 49.493,
+            "end": 50.085
+          },
+          {
+            "word": "me ",
+            "start": 50.085,
+            "end": 50.154
+          },
+          {
+            "word": "through ",
+            "start": 50.154,
+            "end": 50.363
+          },
+          {
+            "word": "the ",
+            "start": 50.363,
+            "end": 50.456
+          },
+          {
+            "word": "pipeline ",
+            "start": 50.456,
+            "end": 50.897
+          },
+          {
+            "word": "setup.",
+            "start": 50.897,
+            "end": 51.501
+          }
+        ],
+        "metadata": {
+          "response_id": 8
+        }
+      }
+    ],
+    "recording_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/recording.wav",
+    "recording_multi_channel_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/recording_multichannel.wav",
+    "public_log_url": "https://dxc03zgurdly9.cloudfront.net/45e18546d3b673e05815df9c51c1980b21f8429d0e45a5eb1c87fd532b68c46b/public.log",
+    "disconnection_reason": "user_hangup",
+    "latency": {
+      "llm": {
+        "p99": 1540.02,
+        "min": 578,
+        "max": 1548,
+        "p90": 1468.2,
+        "num": 7,
+        "values": [
+          1415,
+          1548,
+          687,
+          883,
+          682,
+          578,
+          1042
+        ],
+        "p50": 883,
+        "p95": 1508.1
+      },
+      "llm_websocket_network_rtt": {
+        "p99": 69,
+        "min": 25,
+        "max": 71,
+        "p90": 41,
+        "num": 26,
+        "values": [
+          26,
+          26,
+          28,
+          71,
+          25,
+          63,
+          28,
+          49,
+          27,
+          29,
+          26,
+          28,
+          26,
+          27,
+          26,
+          27,
+          33,
+          33,
+          26,
+          28,
+          26,
+          26,
+          28,
+          28,
+          31,
+          29
+        ],
+        "p50": 28,
+        "p95": 59.5
+      },
+      "e2e": {
+        "p99": 3860.56,
+        "min": 1113.9970703125,
+        "max": 3952,
+        "p90": 3037.5999999999995,
+        "num": 5,
+        "values": [
+          1666,
+          3952,
+          1316,
+          1113.9970703125,
+          1433
+        ],
+        "p50": 1433,
+        "p95": 3494.7999999999993
+      },
+      "tts": {
+        "p99": 374.51,
+        "min": 271,
+        "max": 375,
+        "p90": 370.1,
+        "num": 8,
+        "values": [
+          271,
+          282,
+          368,
+          321,
+          375,
+          278,
+          289,
+          345
+        ],
+        "p50": 305,
+        "p95": 372.55
+      },
+      "asr": {
+        "p99": 719.3002170000037,
+        "min": 10,
+        "max": 1020.0000000000018,
+        "p90": 39.00025599999992,
+        "num": 32,
+        "values": [
+          20.000099999999748,
+          19.999899999999798,
+          10.000000000001819,
+          20,
+          20.000300000001516,
+          10.000000000001819,
+          19.999400000000605,
+          1020.0000000000018,
+          40.000200000000405,
+          29.999799999999595,
+          20.00050000000192,
+          20.001000000000204,
+          10.001799999998184,
+          10.00050000000192,
+          20.001000000000204,
+          20.001800000001822,
+          30.00040000000081,
+          50.000700000004144,
+          30.000759999995353,
+          20.00014999999985,
+          10.001000000003842,
+          10.002000000000407,
+          20.002700000004552,
+          20.001400000001013,
+          10,
+          19.999400000000605,
+          40.002300000000105,
+          20.000899999999092,
+          19.99949999999808,
+          20.000299999999697,
+          19.999000000003434,
+          20
+        ],
+        "p50": 20.000224999999773,
+        "p95": 44.501580000001915
+      }
+    },
+    "call_cost": {
+      "total_duration_unit_price": 0.1166667,
+      "product_costs": [
+        {
+          "unit_price": 0.1166667,
+          "product": "elevenlabs_tts",
+          "cost": 6.1833333
+        }
+      ],
+      "combined_cost": 6.1833333,
+      "total_duration_seconds": 53
+    },
+    "call_analysis": {
+      "in_voicemail": false,
+      "call_summary": "The user and the AI agent engaged in a technical screening conversation where the user described building a system analyzing the behavior of a thousand people and mentioned a paper released about it. The agent asked for more details about the data pipeline, but the user referred to the paper instead of explaining. The call ended without the user providing detailed technical information.",
+      "user_sentiment": "Neutral",
+      "custom_analysis_data": {},
+      "call_successful": false
+    },
+    "data_storage_setting": "everything",
+    "opt_in_signed_url": false,
+    "tool_calls": [],
+    "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6IndlYl9jYWxsXzRiMjEzN2Y1MzI5MDM2NWU5MWU5OGRhZDkzNiJ9LCJpc3MiOiJBUEl3UkNGdVBCYXdtMmgiLCJleHAiOjE3NjUxMDg0ODQsIm5iZiI6MCwic3ViIjoiY2xpZW50In0.G6J2IiQBhPLhCai-mR8Kcfu6NA1Hk8U7B0ySvVsi0Kk"
+  },
+  "timestamps": {
+    "call_ended_received": "2025-12-07T11:45:38.304274",
+    "call_analyzed_received": "2025-12-07T11:45:39.578781"
+  }
+}

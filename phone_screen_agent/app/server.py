@@ -17,7 +17,7 @@ from .custom_types import (
     ConfigResponse,
     ResponseRequiredRequest,
 )
-from .llm import LlmClient  # or use .llm_with_func_calling
+from .llm_with_func_calling import LlmClient  # or use .llm
 
 load_dotenv(override=True)
 app = FastAPI()
@@ -36,7 +36,7 @@ app.add_middleware(
 EXCALIDRAW_BASE_URL = os.getenv("EXCALIDRAW_BASE_URL", "http://localhost:3010")
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+OPENAI_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
 
 openai_client = OpenAI(base_url=OPENAI_BASE_URL, api_key=OPENAI_API_KEY)
 
@@ -67,48 +67,74 @@ def get_scene_elements():
 
 
 def call_llm_for_db_highlight(elements):
-    """Ask LLM to find the DB SPOF and return patches."""
+    """Ask LLM to evaluate the architecture diagram and identify issues."""
     prompt = f"""
-You are an expert system design interviewer. You are looking at a candidate's Excalidraw diagram.
+You are an expert system design interviewer evaluating a candidate's architecture diagram for a web-based note-taking application (similar to Google Keep or Notion).
 
-You get a JSON array of elements (rectangles, arrows, text, etc.).
+You are given a JSON array of Excalidraw elements (rectangles, arrows, text, etc.).
 Each element has properties like id, type, x, y, width, height, text, strokeColor, backgroundColor, etc.
 
-The diagram represents a 3-tier web service:
-- load balancer
-- business logic / application
-- database
+Context - Note-Taking App Requirements:
+A web-based note-taking app typically needs:
+- User authentication and authorization
+- Real-time or near-real-time sync across devices
+- Data persistence (notes, attachments, metadata)
+- Search functionality
+- Potentially: rich text editing, file attachments, sharing/collaboration
+- High availability and data durability (users can't lose their notes)
 
-Treat the database as a single point of failure (SPOF).
+Your Task:
+Analyze the architecture diagram and identify issues specific to a note-taking application, such as:
 
-Task:
-1. Find the element that represents the database tier (based on its text, position, or other hints).
-2. Return JSON with:
-   - "elements_to_update": minimal patches to visually highlight the DB (bright red stroke, light red background).
-   - "elements_to_create": a list of new elements to add:
-     - A text element with text "SPOF" placed near the database.
-   - "feedback": A short, constructive feedback message to the candidate about the SPOF.
+Critical Issues (Red - #ff0000):
+- Single points of failure for data storage (no database replication/backup)
+- Missing authentication/authorization layer
+- No data persistence strategy
+- Single application server (no redundancy for a production app)
 
-Respond with **only** JSON of the form:
+Moderate Concerns (Orange - #ff8800):
+- Missing caching layer (for frequently accessed notes)
+- No CDN for static assets
+- Missing search infrastructure (for note search)
+- No message queue for async operations (email notifications, etc.)
+- Lack of monitoring/logging infrastructure
+
+Minor Improvements (Yellow - #ffcc00):
+- Could benefit from read replicas for scaling
+- Missing rate limiting
+- No mention of backup strategy
+
+Return JSON with:
+- "feedback": 2-3 sentences explaining the main issues. Be specific to note-taking app needs (e.g., "Your database is a single point of failure - if it goes down, users lose access to all their notes. Consider adding replication.")
+- "elements_to_update": Highlight problematic components with appropriate severity colors
+- "elements_to_create": Add brief labels (1-3 words) like "SPOF", "No Auth", "Missing Cache", "Add Replicas"
+
+Guidelines:
+- Focus on 1-3 most critical issues for a production note-taking app
+- Be constructive and specific
+- If well-designed, acknowledge strengths and suggest minor improvements
+- Position labels near (not overlapping) the components
+
+Respond with **only** valid JSON:
 
 {{
-  "feedback": "Your feedback message here...",
+  "feedback": "Your specific, actionable feedback here (2-3 sentences)",
   "elements_to_update": [
     {{"id": "<element-id>", "strokeColor": "#ff0000", "backgroundColor": "#ffe5e5"}}
   ],
   "elements_to_create": [
     {{
       "type": "text",
-      "x": <calculated-x>,
-      "y": <calculated-y>,
-      "text": "SPOF",
+      "x": <x-position>,
+      "y": <y-position>,
+      "text": "<brief-label>",
       "fontSize": 20,
-      "strokeColor": "#ff0000"
+      "strokeColor": "<color-matching-severity>"
     }}
   ]
 }}
 
-Here is the current elements array (pretty-printed JSON):
+Here is the current elements array:
 
 {json.dumps(elements, indent=2)}
     """
@@ -118,11 +144,11 @@ Here is the current elements array (pretty-printed JSON):
         messages=[
             {
                 "role": "system",
-                "content": "You return only valid JSON that can be parsed by Python json.loads.",
+                "content": "You are an expert system design interviewer specializing in web applications. You analyze architecture diagrams for note-taking apps and provide constructive, specific feedback. You return only valid JSON that can be parsed by Python json.loads.",
             },
             {"role": "user", "content": prompt},
         ],
-        temperature=0,
+        temperature=0.3,
     )
 
     content = completion.choices[0].message.content.strip()
@@ -251,13 +277,8 @@ async def handle_tavus_webhook(request: Request):
     try:
         post_data = await request.json()
         
-        # Verbose logging
-        print("=" * 80)
-        print("TAVUS WEBHOOK RECEIVED")
-        print("=" * 80)
-        print(f"Headers: {dict(request.headers)}")
-        print(f"Raw payload: {json.dumps(post_data, indent=2)}")
-        print("=" * 80)
+        # Log webhook receipt
+        print(f"📥 Tavus webhook: {event_type} (conversation: {conversation_id})")
         
         # Extract key fields from payload
         conversation_id = post_data.get("conversation_id", "unknown")
@@ -282,20 +303,40 @@ async def handle_tavus_webhook(request: Request):
         with open(file_path, 'w') as f:
             json.dump(webhook_data, f, indent=2)
         
-        print(f"✓ Saved Tavus webhook to: {file_path}")
-        print(f"  Conversation ID: {conversation_id}")
-        print(f"  Event Type: {event_type}")
-        print("=" * 80)
+        print(f"✓ Saved to: {file_path.name}")
+        
+        # Check if this webhook contains a transcript (for grading)
+        has_transcript = "transcript" in post_data.get("payload", {}).get("properties", {})
+        
+        if has_transcript:
+            print("📊 Transcript detected - grading system design interview...")
+            from .grading import grade_interview, extract_transcript_from_tavus
+            
+            # Extract Tavus transcript
+            tavus_transcript = extract_transcript_from_tavus(webhook_data)
+            
+            if tavus_transcript:
+                # Grade system design interview
+                grade = grade_interview(tavus_transcript, "system_design")
+                print(f"✓ System design grade: {grade['score']}/3")
+                
+                # Save grade to file
+                grade_filename = f"{conversation_id}_{timestamp}_system_design_grade.json"
+                grade_file_path = TAVUS_WEBHOOK_DIR / grade_filename
+                
+                with open(grade_file_path, 'w') as f:
+                    json.dump(grade, f, indent=2)
+                
+                print(f"✓ Saved grade to: {grade_file_path}")
+            else:
+                print("⚠ Could not extract transcript from Tavus webhook")
         
         return JSONResponse(status_code=200, content={"received": True})
     
     except Exception as err:
-        print("=" * 80)
-        print(f"❌ ERROR in Tavus webhook: {err}")
-        print(f"Error type: {type(err).__name__}")
+        print(f"❌ Tavus webhook error: {err}")
         import traceback
-        print(f"Traceback:\n{traceback.format_exc()}")
-        print("=" * 80)
+        traceback.print_exc()
         return JSONResponse(
             status_code=500, content={"message": "Internal Server Error", "error": str(err)}
         )
@@ -308,13 +349,11 @@ async def handle_webhook(request: Request):
     try:
         post_data = await request.json()
         
-        # Verbose logging for debugging
-        print("=" * 80)
-        print("WEBHOOK RECEIVED")
-        print("=" * 80)
-        print(f"Headers: {dict(request.headers)}")
-        print(f"Raw payload: {json.dumps(post_data, indent=2)}")
-        print("=" * 80)
+        # Log webhook receipt
+        event = post_data.get("event")
+        call_data = post_data.get("data") or post_data.get("call", {})
+        call_id = call_data.get("call_id", "unknown")
+        print(f"📥 Retell webhook: {event} (call: {call_id})")
         
         # Verify signature
         skip_verification = os.getenv("SKIP_SIGNATURE_VERIFICATION", "false").lower() == "true"
@@ -334,48 +373,46 @@ async def handle_webhook(request: Request):
                 valid_signature = False
         
         if not valid_signature:
-            event = post_data.get("event")
-            call_data = post_data.get("data") or post_data.get("call", {})
-            call_id = call_data.get("call_id")
-            print(f"❌ Received Unauthorized - Event: {event}, Call ID: {call_id}")
-            print("=" * 80)
+            print(f"❌ Unauthorized webhook")
             return JSONResponse(status_code=401, content={"message": "Unauthorized"})
         
-        event = post_data.get("event")
-        # Handle both payload structures: {"event": "...", "data": {...}} and {"event": "...", "call": {...}}
-        call_data = post_data.get("data") or post_data.get("call", {})
-        call_id = call_data.get("call_id")
-        
-        print(f"✓ Signature verified")
-        print(f"Event: {event}")
-        print(f"Call ID: {call_id}")
-        print(f"Call data keys: {list(call_data.keys())}")
-        
         if not call_id:
-            print(f"ERROR: No call_id found in payload. Available keys: {list(post_data.keys())}")
+            print(f"❌ No call_id in payload")
             return JSONResponse(status_code=400, content={"message": "call_id missing from payload"})
         
         if event == "call_started":
-            print(f"✓ Call started event: {call_id}")
+            print(f"✓ Call started: {call_id}")
         elif event == "call_ended":
-            print(f"✓ Call ended event: {call_id}")
+            print(f"✓ Call ended: {call_id}")
             # Store call data in memory
             call_data_store[call_id] = {
                 "event": event,
                 "call_ended_data": call_data,
                 "received_at": datetime.utcnow().isoformat()
             }
-            print(f"✓ Stored call_ended data for {call_id}")
+            # Grade phone screen interview
+            transcript = call_data.get("transcript", "")
+            if transcript:
+                print(f"📊 Grading phone screen...")
+                from .grading import grade_interview
+                
+                grade = grade_interview(transcript, "phone_screen")
+                print(f"✓ Grade: {grade['score']}/3 - Saved to {call_id}_phone_screen_grade.json")
+                
+                # Save grade to file
+                grade_filename = f"{call_id}_phone_screen_grade.json"
+                grade_file_path = CALL_DATA_DIR / grade_filename
+                
+                with open(grade_file_path, 'w') as f:
+                    json.dump(grade, f, indent=2)
+
         elif event == "call_analyzed":
-            print(f"✓ Call analyzed event: {call_id}")
+            print(f"✓ Call analyzed: {call_id}")
             # Get stored call_ended data
             stored_data = call_data_store.get(call_id, {})
-            print(f"✓ Retrieved stored data: {bool(stored_data)}")
             
             # Fetch full call details from Retell API
-            print(f"→ Fetching call details from Retell API...")
             api_call_data = fetch_retell_call_details(call_id)
-            print(f"✓ API call data retrieved: {bool(api_call_data)}")
             
             # Merge all data
             merged_data = {
@@ -390,25 +427,19 @@ async def handle_webhook(request: Request):
             }
             
             # Save merged data to JSON file
-            print(f"→ Saving merged data to file...")
             save_call_data(call_id, merged_data)
             
             # Clean up from memory
             if call_id in call_data_store:
                 del call_data_store[call_id]
-                print(f"✓ Cleaned up memory for {call_id}")
         else:
             print(f"⚠ Unknown event: {event}")
         
-        print("=" * 80)
         return JSONResponse(status_code=200, content={"received": True})
     except Exception as err:
-        print("=" * 80)
-        print(f"❌ ERROR in webhook: {err}")
-        print(f"Error type: {type(err).__name__}")
+        print(f"❌ Retell webhook error: {err}")
         import traceback
-        print(f"Traceback:\n{traceback.format_exc()}")
-        print("=" * 80)
+        traceback.print_exc()
         return JSONResponse(
             status_code=500, content={"message": "Internal Server Error", "error": str(err)}
         )
