@@ -10,6 +10,8 @@ export default function SystemDesignPage() {
 
     // Initialize Tavus conversation on page load
     useEffect(() => {
+        // Temporarily disabled
+        /*
         const initializeTavusConversation = async () => {
             try {
                 const conversationalContext = getSystemDesignContext()
@@ -30,28 +32,27 @@ export default function SystemDesignPage() {
         }
 
         initializeTavusConversation()
+        */
     }, [startConversation])
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="space-y-6">
+            <div>
+                <h1 className="text-3xl font-light text-foreground">System Design Interview</h1>
+                <p className="text-muted-foreground mt-1">
+                    Collaborate on the system design diagram below.
+                </p>
+            </div>
+
             <VideoBox
                 conversationUrl={conversationState.conversationUrl}
                 isLoading={conversationState.status === 'loading'}
             />
 
-            <div className="mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                    System Design Interview
-                </h2>
-                <p className="text-gray-600">
-                    Collaborate on the system design diagram below.
-                </p>
-            </div>
-
-            <div className="w-full h-[800px] border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+            <div className="w-full h-[800px] border border-border rounded-xl overflow-hidden shadow-sm bg-card">
                 <iframe
                     src="http://localhost:3010"
-                    className="w-full h-full"
+                    className="w-full h-full block"
                     title="Excalidraw Canvas"
                 />
             </div>
