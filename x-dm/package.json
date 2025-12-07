@@ -1,0 +1,14 @@
+{
+  "name": "x-dm-poc",
+  "version": "1.0.0",
+  "description": "POC for sending DMs via X API",
+  "main": "send-dm.js",
+  "type": "module",
+  "scripts": {
+    "send": "node send-dm.js"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.17.2",
+    "dotenv": "^16.4.5"
+  }
+}
